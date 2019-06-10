@@ -1,0 +1,238 @@
+@charset "UTF-8";
+body {
+  font-size: 0.21333rem;
+  color: #444444;
+}
+
+p {
+  line-height: 1.6;
+}
+
+a:hover {
+  color: #f05630;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+i {
+  font-style: normal;
+}
+
+.header, .study {
+  zoom: 1;
+}
+
+.header:after, .study:after {
+  clear: both;
+}
+
+.header:before, .study:before, .header:after, .study:after {
+  content: "";
+  display: table;
+}
+
+.header {
+  padding: 0.21333rem 0.26667rem;
+}
+
+.header .logo {
+  float: left;
+  width: 2.22667rem;
+  height: 0.73333rem;
+}
+
+.header .detail {
+  float: left;
+  width: 2.93333rem;
+  font-size: 0.21333rem;
+  line-height: 0.4rem;
+  color: #888888;
+  margin-left: 0.13333rem;
+}
+
+.header .tel {
+  float: right;
+  height: 0.37333rem;
+  margin-top: 0.2rem;
+}
+
+.header .tel img {
+  height: 100%;
+}
+
+.header .tel span {
+  font-family: Arial-BoldMT;
+  font-weight: bold;
+  font-size: 0.42667rem;
+  line-height: 0.32rem;
+  color: #f05630;
+}
+
+.nav {
+  padding: 0 0.26667rem;
+  border-top: 1px solid #dddddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.nav a {
+  line-height: 0.93333rem;
+  font-size: 0.4rem;
+}
+
+.banner {
+  padding-top: 4.2rem;
+  padding-bottom: 1.13333rem;
+  padding-left: 2.05333rem;
+  background: url("../images/banner_1.png") no-repeat center;
+  background-size: 100% 100%;
+}
+
+.banner .btn {
+  width: 4.8rem;
+  height: 0.66667rem;
+  line-height: 0.66667rem;
+  border-radius: 0.32rem;
+  border: solid 0.02667rem #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #ffffff;
+  padding-left: 0.26667rem;
+}
+
+.banner .btn span {
+  float: left;
+  line-height: 0.61333rem;
+}
+
+.banner .btn a {
+  float: right;
+  background: #f84949;
+  border-radius: 0.32rem;
+  font-size: 0.32rem;
+  padding: 0 0.13333rem;
+  color: #ffffff;
+  margin-top: -0.02667rem;
+  margin-right: -0.02667rem;
+}
+
+/* 预约探校 */
+.study {
+  padding: 0.4rem 0.25333rem 0.4rem 0rem;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 0.16rem 0 rgba(37, 59, 163, 0.32);
+          box-shadow: 0 0 0.16rem 0 rgba(37, 59, 163, 0.32);
+  border-radius: 0.16rem;
+  margin: -0.46667rem 0.26667rem 0.4rem;
+  z-index: 30;
+}
+
+.study .study-item {
+  float: left;
+  border-right: 1px solid #dddddd;
+  padding-left: 0.37333rem;
+  padding-right: 0.37333rem;
+}
+
+.study .study-item img {
+  height: 1.29333rem;
+  float: left;
+  margin-right: 0.25333rem;
+}
+
+.study .study-item .item-detail {
+  float: right;
+  font-family: NotoSansHans-Regular;
+  line-height: 0.48rem;
+  margin-top: 0.2rem;
+}
+
+.study .study-item .item-detail .item-title {
+  font-size: 0.42667rem;
+}
+
+.study .study-item .item-detail p {
+  font-size: 0.32rem;
+  color: #888888;
+}
+
+.study .study-item:last-child {
+  border-right: none;
+  padding-right: 0.13333rem;
+}
+
+.banner-2 {
+  margin: 0 0.26667rem 0.26667rem;
+}
+
+/* 立即预约 */
+.appoint {
+  margin: 0 0.26667rem;
+}
+
+.appoint input {
+  width: 100%;
+  height: 0.77333rem;
+  line-height: 0.77333rem;
+  border: solid 1px #dddddd;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 0.26667rem;
+  margin-bottom: 0.26667rem;
+}
+
+.appoint input[type='submit'] {
+  background-image: -webkit-gradient(linear, right top, left top, from(#f05630), to(#f09c30)), -webkit-gradient(linear, left top, left bottom, from(#f05630), to(#f05630));
+  background-image: linear-gradient(-90deg, #f05630 0%, #f09c30 100%), linear-gradient(#f05630, #f05630);
+  background-blend-mode: normal, normal;
+  -webkit-box-shadow: 0 0.04rem 0.05333rem 0 rgba(240, 86, 48, 0.3);
+          box-shadow: 0 0.04rem 0.05333rem 0 rgba(240, 86, 48, 0.3);
+  border-radius: 0.37333rem;
+  border: none;
+  font-size: 0.34667rem;
+  line-height: 0.48rem;
+  color: #ffffff;
+}
+
+/* 直击家长焦虑，解决孩子上学难题 */
+.good-teach {
+  height: 10.01333rem;
+  padding-top: 1.18667rem;
+  background: url("../images/bg_1.png") no-repeat center;
+  background-size: 100% 100%;
+}
+
+.title {
+  font-family: NotoSansHans-Black;
+  font-weight: bold;
+  font-size: 0.48rem;
+  height: 0.54667rem;
+  line-height: 0.54667rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 0.10667rem;
+}
+
+.title img {
+  height: 100%;
+}
+
+.subhead {
+  font-family: NotoSansHans-Regular;
+  font-size: 0.34667rem;
+  line-height: 0.32rem;
+  color: #ffffff;
+  opacity: 0.36;
+  text-align: center;
+}

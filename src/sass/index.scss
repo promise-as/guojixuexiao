@@ -1,0 +1,235 @@
+$txt-color: #f05630;
+$bg-color: #6a80ea;
+$browser-default-font-size: 75px!default;;
+@function pr($px){
+  @return $px / $browser-default-font-size * 1rem;
+}
+
+$padding-size: pr(20px);
+
+body {
+  font-size: pr(16px);
+  color: #444444;
+}
+
+p {
+  line-height: 1.6;
+}
+
+a:hover {
+  color: $txt-color;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+i {
+  font-style: normal;
+}
+
+%one {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+%in-b {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+
+%clearfix {
+  zoom: 1;
+  &:after {
+    clear: both;
+  }
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+}
+
+.header{
+  @extend %clearfix;
+  padding: pr(16px) $padding-size;
+  .logo{
+    float: left;
+    width: pr(167px);
+    height: pr(55px);
+  }
+  .detail{
+    float: left;
+    width: pr(220px);
+    font-size: pr(16px);
+    line-height: pr(30px);
+    color: #888888;
+    margin-left: pr(10px);
+  }
+  .tel{
+    float: right;
+    height: pr(28px);
+    margin-top: pr(15px);
+    img{
+      height: 100%;
+    }
+    span{
+      font-family: Arial-BoldMT;
+      font-weight: bold;
+      font-size: pr(32px);
+      line-height: pr(24px);
+      color: #f05630;
+    }
+  }
+}
+
+.nav{
+  padding: 0 $padding-size;
+  border-top: 1px solid #dddddd;
+  display: flex;
+  justify-content: space-around;
+  a{
+    line-height: pr(70px);
+    font-size: pr(30px);
+  }
+}
+
+.banner{
+  padding-top: pr(315px);
+  padding-bottom: pr(85px);
+  padding-left: pr(154px);
+  background: url("../images/banner_1.png") no-repeat center;
+  background-size: 100% 100%;
+  .btn{
+    width: pr(360px);
+    height: pr(50px);
+    line-height: pr(50px);
+    border-radius: pr(24px);
+    border: solid pr(2px) #ffffff;
+    box-sizing: border-box;
+    color: #ffffff;
+    padding-left: $padding-size;
+    span{
+      float: left;
+      line-height: pr(46px);
+    }
+    a{
+      float: right;
+      background: #f84949;
+      border-radius: pr(24px);
+      font-size: pr(24px);
+      padding: 0 pr(10px);
+      color: #ffffff;
+      margin-top: pr(-2px);
+      margin-right: pr(-2px);
+    }
+  }
+}
+/* 预约探校 */
+.study{
+  padding: pr(30px) pr(19px) pr(30px) pr(0px);
+  background-color: #ffffff;
+  box-shadow: 0 0 pr(12px) 0 rgba(37, 59, 163, 0.32);
+  border-radius: pr(12px);
+  //position: absolute;
+  margin: pr(-35px) $padding-size pr(30px);
+  z-index: 30;
+  @extend %clearfix;
+  .study-item{
+    float: left;
+    border-right: 1px solid #dddddd;
+    padding-left: pr(28px);
+    padding-right: pr(28px);
+    img{
+      height: pr(97px);
+      float: left;
+      margin-right: pr(19px);
+    }
+    .item-detail{
+      float: right;
+      font-family: NotoSansHans-Regular;
+      line-height: pr(36px);
+      margin-top: pr(15px);
+      .item-title{
+        font-size: pr(32px);
+      }
+      p{
+        font-size: pr(24px);
+        color: #888888;
+      }
+    }
+    &:last-child{
+      border-right: none;
+      padding-right: pr(10px);
+    }
+  }
+}
+
+.banner-2{
+  margin: 0 $padding-size pr(20px);
+}
+/* 立即预约 */
+.appoint{
+  margin: 0 $padding-size;
+  input{
+    width: 100%;
+    height: pr(58px);
+    line-height: pr(58px);
+    border: solid 1px #dddddd;
+    box-sizing: border-box;
+    padding-left: $padding-size;
+    margin-bottom: $padding-size;
+  }
+  input[type='submit']{
+    background-image: linear-gradient(-90deg,
+      #f05630 0%,
+      #f09c30 100%),
+    linear-gradient(
+        #f05630,
+        #f05630);
+    background-blend-mode: normal, normal;
+    box-shadow: 0 pr(3px) pr(4px) 0 rgba(240, 86, 48, 0.3);
+    border-radius: pr(28px);
+    border: none;
+    font-size: pr(26px);
+    line-height: pr(36px);
+    color: #ffffff;
+  }
+}
+/* 直击家长焦虑，解决孩子上学难题 */
+.good-teach{
+  height: pr(751px);
+  padding-top: pr(89px);
+  background: url("../images/bg_1.png") no-repeat center;
+  background-size: 100% 100%;
+}
+
+.title{
+  font-family: NotoSansHans-Black;
+  font-weight: bold;
+  font-size: pr(36px);
+  height: pr(41px);
+  line-height: pr(41px);
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: pr(8px);
+  img{
+    height: 100%;
+  }
+}
+.subhead{
+  font-family: NotoSansHans-Regular;
+  font-size: pr(26px);
+  line-height: pr(24px);
+  color: #ffffff;
+  opacity: 0.36;
+  text-align: center;
+}
