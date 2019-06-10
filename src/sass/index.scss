@@ -210,13 +210,14 @@ i {
   padding-top: pr(89px);
   background: url("../images/bg_1.png") no-repeat center;
   background-size: 100% 100%;
+  margin-bottom: pr(30px);
   .subhead{
     margin-bottom: pr(84px);
   }
-  .teach-item{
-    margin: 0 pr(36px);
-    border: 1px solid red;
-    padding: pr(30px) pr(34px);
+  .cont-item{
+    margin: 0 pr(50px) 0 pr(36px);
+    //border: 1px solid red;
+    padding: pr(30px) 0 pr(30px) pr(30px);
     @extend %clearfix;
     .num{
       float: left;
@@ -238,7 +239,7 @@ i {
       color: #fefeff;
       text-align: center;
       border-radius: 50%;
-      margin-right: pr(20px);
+      margin-right: pr(15px);
     }
     .item-detail{
       float: left;
@@ -254,13 +255,109 @@ i {
       p{
         font-family: NotoSansHans-Regular;
         font-size: pr(22px);
-        line-height: pr(24px);
+        line-height: pr(30px);
         color: #ffffff;
         opacity: 0.6;
       }
     }
     &:nth-child(even){
-      padding-left: pr(83px);
+      padding-left: pr(70px);
+    }
+    &:nth-of-type(2){
+      .item-detail{
+        width: pr(312px);
+      }
+    }
+    &:nth-of-type(3){
+      padding-top: pr(16px);
+      padding-bottom: pr(20px);
+      .item-detail{
+        width: pr(430px);
+      }
+    }
+    &:nth-of-type(4){
+      padding-top: pr(20px);
+      .item-detail{
+        width: pr(515px);
+      }
+    }
+  }
+}
+
+/* 国际学校大全 */
+.all-school{
+  text-align: center;
+  .title{
+    @extend %in-b;
+    width: pr(663px);
+    background: url("../images/icon_5.png") no-repeat top center;
+    background-size: contain;
+    padding-top: pr(10px);
+    margin-bottom: pr(20px);
+    span{
+      font-family: NotoSansHans-Black;
+      font-weight: bold;
+      font-size: pr(36px);
+      line-height: pr(24px);
+      color: #444444;
+    }
+  }
+  .tab-head{
+    padding: 0 $padding-size;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .head-item{
+      width: pr(230px);
+      height: pr(58px);
+      line-height: pr(58px);
+      border: solid 1px #dddddd;
+      box-sizing: border-box;
+      cursor: pointer;
+      &:hover{
+        background: $bg-color;
+        color: #ffffff;
+      }
+    }
+  }
+  .tab-cont{
+    padding: 0 $padding-size;
+    margin-top: pr(20px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: pr(22px);
+    grid-row-gap: pr(15px);
+    .cont-item{
+      //height: pr(416px);
+      background-color: #ffffff;
+      box-shadow: 0 0 pr(12px) 0 rgba(106, 128, 234, 0.4);
+      border: solid 1px #d0d9ff;
+      padding: pr(21px) pr(21px) pr(31px);
+      text-align: center;
+      img{
+        margin-bottom: pr(14px);
+      }
+      .item-title{
+        font-family: NotoSansHans-Regular;
+        font-size: pr(24px);
+        line-height: pr(24px);
+      }
+      li{
+        font-size: pr(22px);
+        text-align: left;
+        span{
+          color: #888888;
+        }
+      }
+      .btn{
+        @extend %in-b;
+        width: pr(220px);
+        height: pr(46px);
+        line-height: pr(46px);
+        background-color: $bg-color;
+        color: #ffffff;
+        margin-top: pr(29px);
+      }
     }
   }
 }
@@ -286,3 +383,4 @@ i {
   opacity: 0.36;
   text-align: center;
 }
+

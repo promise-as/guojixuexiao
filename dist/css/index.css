@@ -26,21 +26,21 @@ i {
   font-style: normal;
 }
 
-.good-teach .teach-item .item-detail .detail-title {
+.good-teach .cont-item .item-detail .detail-title, .all-school .title, .all-school .tab-cont .cont-item .btn {
   display: inline-block;
   *zoom: 1;
   *display: inline;
 }
 
-.header, .study, .good-teach .teach-item {
+.header, .study, .good-teach .cont-item {
   zoom: 1;
 }
 
-.header:after, .study:after, .good-teach .teach-item:after {
+.header:after, .study:after, .good-teach .cont-item:after {
   clear: both;
 }
 
-.header:before, .study:before, .good-teach .teach-item:before, .header:after, .study:after, .good-teach .teach-item:after {
+.header:before, .study:before, .good-teach .cont-item:before, .header:after, .study:after, .good-teach .cont-item:after {
   content: "";
   display: table;
 }
@@ -217,19 +217,19 @@ i {
   padding-top: 1.18667rem;
   background: url("../images/bg_1.png") no-repeat center;
   background-size: 100% 100%;
+  margin-bottom: 0.4rem;
 }
 
 .good-teach .subhead {
   margin-bottom: 1.12rem;
 }
 
-.good-teach .teach-item {
-  margin: 0 0.48rem;
-  border: 1px solid red;
-  padding: 0.4rem 0.45333rem;
+.good-teach .cont-item {
+  margin: 0 0.66667rem 0 0.48rem;
+  padding: 0.4rem 0 0.4rem 0.4rem;
 }
 
-.good-teach .teach-item .num {
+.good-teach .cont-item .num {
   float: left;
   width: 0.42667rem;
   height: 0.42667rem;
@@ -243,14 +243,14 @@ i {
   color: #fefeff;
   text-align: center;
   border-radius: 50%;
-  margin-right: 0.26667rem;
+  margin-right: 0.2rem;
 }
 
-.good-teach .teach-item .item-detail {
+.good-teach .cont-item .item-detail {
   float: left;
 }
 
-.good-teach .teach-item .item-detail .detail-title {
+.good-teach .cont-item .item-detail .detail-title {
   font-family: NotoSansHans-Bold;
   font-size: 0.37333rem;
   font-weight: bold;
@@ -259,16 +259,132 @@ i {
   margin-bottom: 0.16rem;
 }
 
-.good-teach .teach-item .item-detail p {
+.good-teach .cont-item .item-detail p {
   font-family: NotoSansHans-Regular;
   font-size: 0.29333rem;
-  line-height: 0.32rem;
+  line-height: 0.4rem;
   color: #ffffff;
   opacity: 0.6;
 }
 
-.good-teach .teach-item:nth-child(even) {
-  padding-left: 1.10667rem;
+.good-teach .cont-item:nth-child(even) {
+  padding-left: 0.93333rem;
+}
+
+.good-teach .cont-item:nth-of-type(2) .item-detail {
+  width: 4.16rem;
+}
+
+.good-teach .cont-item:nth-of-type(3) {
+  padding-top: 0.21333rem;
+  padding-bottom: 0.26667rem;
+}
+
+.good-teach .cont-item:nth-of-type(3) .item-detail {
+  width: 5.73333rem;
+}
+
+.good-teach .cont-item:nth-of-type(4) {
+  padding-top: 0.26667rem;
+}
+
+.good-teach .cont-item:nth-of-type(4) .item-detail {
+  width: 6.86667rem;
+}
+
+/* 国际学校大全 */
+.all-school {
+  text-align: center;
+}
+
+.all-school .title {
+  width: 8.84rem;
+  background: url("../images/icon_5.png") no-repeat top center;
+  background-size: contain;
+  padding-top: 0.13333rem;
+  margin-bottom: 0.26667rem;
+}
+
+.all-school .title span {
+  font-family: NotoSansHans-Black;
+  font-weight: bold;
+  font-size: 0.48rem;
+  line-height: 0.32rem;
+  color: #444444;
+}
+
+.all-school .tab-head {
+  padding: 0 0.26667rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.all-school .tab-head .head-item {
+  width: 3.06667rem;
+  height: 0.77333rem;
+  line-height: 0.77333rem;
+  border: solid 1px #dddddd;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+
+.all-school .tab-head .head-item:hover {
+  background: #6a80ea;
+  color: #ffffff;
+}
+
+.all-school .tab-cont {
+  padding: 0 0.26667rem;
+  margin-top: 0.26667rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 0.29333rem;
+  grid-row-gap: 0.2rem;
+}
+
+.all-school .tab-cont .cont-item {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 0.16rem 0 rgba(106, 128, 234, 0.4);
+          box-shadow: 0 0 0.16rem 0 rgba(106, 128, 234, 0.4);
+  border: solid 1px #d0d9ff;
+  padding: 0.28rem 0.28rem 0.41333rem;
+  text-align: center;
+}
+
+.all-school .tab-cont .cont-item img {
+  margin-bottom: 0.18667rem;
+}
+
+.all-school .tab-cont .cont-item .item-title {
+  font-family: NotoSansHans-Regular;
+  font-size: 0.32rem;
+  line-height: 0.32rem;
+}
+
+.all-school .tab-cont .cont-item li {
+  font-size: 0.29333rem;
+  text-align: left;
+}
+
+.all-school .tab-cont .cont-item li span {
+  color: #888888;
+}
+
+.all-school .tab-cont .cont-item .btn {
+  width: 2.93333rem;
+  height: 0.61333rem;
+  line-height: 0.61333rem;
+  background-color: #6a80ea;
+  color: #ffffff;
+  margin-top: 0.38667rem;
 }
 
 .title {
