@@ -133,6 +133,7 @@ i {
     }
   }
 }
+
 /* 预约探校 */
 .study{
   padding: pr(30px) pr(19px) pr(30px) pr(0px);
@@ -176,6 +177,7 @@ i {
 .banner-2{
   margin: 0 $padding-size pr(20px);
 }
+
 /* 立即预约 */
 .appoint{
   margin: 0 $padding-size;
@@ -204,6 +206,7 @@ i {
     color: #ffffff;
   }
 }
+
 /* 直击家长焦虑，解决孩子上学难题 */
 .good-teach{
   height: pr(751px);
@@ -211,8 +214,14 @@ i {
   background: url("../images/bg_1.png") no-repeat center;
   background-size: 100% 100%;
   margin-bottom: pr(30px);
+  .title{
+    color: #ffffff;
+    margin-bottom: pr(8px);
+  }
   .subhead{
     margin-bottom: pr(84px);
+    color: #ffffff;
+    opacity: 0.36;
   }
   .cont-item{
     margin: 0 pr(50px) 0 pr(36px);
@@ -287,6 +296,7 @@ i {
 /* 国际学校大全 */
 .all-school{
   text-align: center;
+  margin-bottom: pr(30px);
   .title{
     @extend %in-b;
     width: pr(663px);
@@ -308,12 +318,18 @@ i {
     justify-content: space-between;
     align-items: center;
     .head-item{
-      width: pr(230px);
+      //width: pr(230px);
       height: pr(58px);
       line-height: pr(58px);
       border: solid 1px #dddddd;
       box-sizing: border-box;
       cursor: pointer;
+      font-size: pr(26px);
+      padding: 0 pr(34px);
+      &.active{
+        background: $bg-color;
+        color: #ffffff;
+      }
       &:hover{
         background: $bg-color;
         color: #ffffff;
@@ -328,7 +344,6 @@ i {
     grid-column-gap: pr(22px);
     grid-row-gap: pr(15px);
     .cont-item{
-      //height: pr(416px);
       background-color: #ffffff;
       box-shadow: 0 0 pr(12px) 0 rgba(106, 128, 234, 0.4);
       border: solid 1px #d0d9ff;
@@ -348,6 +363,9 @@ i {
         span{
           color: #888888;
         }
+        strong{
+          font-weight: normal;
+        }
       }
       .btn{
         @extend %in-b;
@@ -362,15 +380,481 @@ i {
   }
 }
 
+/* 如何顺利进入心仪国际学校 */
+.goal-school{
+  background: url("../images/bg_2.png") no-repeat top;
+  background-size: contain;
+  padding-top: pr(79px);
+  text-align: center;
+  .title{
+    @extend %in-b;
+    width: pr(639px);
+    background: url("../images/icon_5.png") no-repeat top center;
+    background-size: contain;
+    padding-top: pr(10px);
+    //margin-bottom: pr(20px);
+    span{
+      font-family: NotoSansHans-Black;
+      font-weight: bold;
+      font-size: pr(36px);
+      line-height: pr(24px);
+      color: #ffffff;
+    }
+  }
+  .subhead{
+    color: #ffffff;
+    opacity: 0.36;
+  }
+
+  .goal-cont{
+    background-color: #ffffff;
+    box-shadow: 0 0 12px 0 rgba(18, 38, 137, 0.4);
+    border-radius: 12px;
+    margin: pr(29px) $padding-size;
+    padding-top: $padding-size;
+    padding-left: pr(41px);
+    padding-bottom: pr(41px);
+    li{
+      text-align: left;
+      @extend %clearfix;
+      .icon{
+        @extend %in-b;
+        width: pr(32px);
+        height: pr(92px);
+        background: url("../images/step.png") no-repeat;
+        background-size: 100% 100%;
+        text-align: center;
+        padding-top: pr(12px);
+        box-sizing: border-box;
+        color: #ffffff;
+        font-size: pr(18px);
+        line-height: pr(28px);
+        float: left;
+        margin-right: pr(30px);
+      }
+      .text{
+        float: left;
+        .text-title{
+          font-family: NotoSansHans-Black;
+          font-size: pr(30px);
+          font-weight: bold;
+          line-height: pr(42px);
+          color: $bg-color;
+        }
+        p{
+          font-family: NotoSansHans-Regular;
+          font-size: pr(26px);
+          color: #666666;
+        }
+      }
+    }
+    .btn{
+      @extend %in-b;
+      background-image: linear-gradient(-90deg,
+        #f05630 0%,
+        #f09c30 100%),
+      linear-gradient(
+          #f08830,
+          #f08830);
+      background-blend-mode: normal, normal;
+      box-shadow: 0 pr(3px) pr(4px) 0 rgba(240, 86, 48, 0.3);
+      border-radius: pr(24px);
+      padding: 0 pr(100px);
+      height: pr(48px);
+      line-height: pr(48px);
+      font-family: NotoSansHans-Regular;
+      font-size: pr(26px);
+      color: #ffffff;
+      margin-top: pr(10px);
+    }
+  }
+}
+
+/* 国际学校入学能力免费评估 */
+.assess{
+  margin: 0 $padding-size pr(30px);
+  padding: $padding-size $padding-size pr(29px);
+  background: url("../images/bg_3.png") no-repeat center;
+  background-size: 100% 100%;
+  text-align: center;
+  .assess-title{
+    @extend %in-b;
+    font-family: NotoSansHans-Black;
+    font-size: pr(36px);
+    font-weight: bold;
+    line-height: pr(42px);
+    color: #ffffff;
+    strong{
+      color: #ffcc00;
+    }
+  }
+  .exam{
+    font-family: NotoSansHans-Regular;
+    font-size: pr(26px);
+    line-height: pr(42px);
+    color: #ffffff;
+    opacity: 0.7;
+  }
+  .population{
+    @extend %in-b;
+    width: pr(407px);
+    color: #ffffff;
+    font-family: NotoSansHans-Regular;
+    font-size: pr(24px);
+    line-height: pr(42px);
+    background: url("../images/icon_6.png") no-repeat center;
+    background-size: cover;
+    margin-bottom: pr(17px);
+  }
+  .sign-in{
+    background-color: #ffffff;
+    padding: pr(30px) pr(21px) pr(10px) pr(19px);
+    input{
+      width: 100%;
+      height: pr(58px);
+      line-height: pr(58px);
+      border: solid 1px #dddddd;
+      box-sizing: border-box;
+      padding-left: $padding-size;
+      margin-bottom: $padding-size;
+    }
+    input[type='submit']{
+      background-image: linear-gradient(-90deg,
+        #f05630 0%,
+        #f09c30 100%),
+      linear-gradient(
+          #f05630,
+          #f05630);
+      background-blend-mode: normal, normal;
+      box-shadow: 0 pr(3px) pr(4px) 0 rgba(240, 86, 48, 0.3);
+      border-radius: pr(28px);
+      border: none;
+      font-size: pr(26px);
+      line-height: pr(36px);
+      color: #ffffff;
+    }
+  }
+}
+
+/* 多维度评估 全方位解读 */
+.reading{
+  margin: 0 $padding-size pr(28px);
+  height: pr(486px);
+  background: url("../images/bg_4.png") no-repeat center;
+  background-size: 100% 100%;
+  padding-right: $padding-size;
+  .reading-title{
+    font-family: NotoSansHans-Black;
+    font-size: pr(36px);
+    font-weight: bold;
+    line-height: pr(70px);
+    padding-left: pr(57px);
+    color: #ffffff;
+  }
+  .explain{
+    padding-left: pr(290px);
+    padding-top: pr(58px);
+    color: #ffffff;
+    font-size: pr(26px);
+    margin-bottom: pr(34px);
+  }
+  .reading-cont{
+    @extend %clearfix;
+    .cont-btn{
+      //@extend %in-b;
+      float: left;
+      background-image: linear-gradient(-90deg,
+        #f05830 0%,
+        #f09930 100%),
+      linear-gradient(
+          #f05830,
+          #f05830);
+      background-blend-mode: normal, normal;
+      border-radius: 0 47px 47px 0;
+      padding: pr(10px) pr(64px);
+
+      font-size: pr(26px);
+      line-height: pr(36px);
+      color: #ffffff;
+      margin-top: pr(50px);
+
+    }
+    .report{
+      float: right;
+      //width: pr(332px);
+      //height: pr(104px);
+      background: url("../images/icon_7.png") no-repeat center;
+      background-size: 100% 100%;
+      padding: $padding-size $padding-size $padding-size pr(40px);
+
+      font-family: NotoSansHans-Regular;
+      font-size: pr(22px);
+      color: #ffffff;
+      opacity: 0.7;
+    }
+  }
+}
+
+/* 从国际学校面试真题 */
+.past-exam{
+  text-align: center;
+  padding-bottom: pr(30px);
+  .subhead{
+    color: #666666;
+    margin-bottom: pr(29px);
+  }
+  .exam-cont{
+    padding: 0 $padding-size;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: pr(30px);
+    .cont-item{
+      //width: pr(220px);
+      width: 32%;
+      height: pr(164px);
+      background: url("../images/interview_1.png");
+      background-size: 100% 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      img{
+        width: pr(64px);
+      }
+      span{
+        font-family: NotoSansHans-Regular;
+        font-size: pr(26px);
+        line-height: pr(30px);
+        color: #ffffff;
+      }
+      &:nth-of-type(2){
+        background: url("../images/interview_2.png");
+        background-size: 100% 100%;
+        img{
+          width: pr(52px);
+        }
+      }
+      &:nth-of-type(3){
+        background: url("../images/interview_3.png");
+        background-size: 100% 100%;
+        img{
+          width: pr(48px);
+        }
+      }
+    }
+  }
+  .exam-btn{
+    @extend %in-b;
+    width: pr(300px);
+    height: pr(48px);
+    border-radius: pr(23px);
+    border: dotted 1px #f95b34;
+    font-family: NotoSansHans-Regular;
+    font-size: pr(26px);
+    line-height: pr(48px);
+    color: #ee5f3c;
+  }
+}
+
+/* 预约看校流程 */
+.look-school{
+  text-align: center;
+  padding-bottom: pr(30px);
+  .title{
+    @extend %in-b;
+    width: pr(449px);
+    background: url("../images/icon_9.png") no-repeat top center;
+    background-size: contain;
+    padding-top: pr(10px);
+    span{
+      font-family: NotoSansHans-Black;
+      font-size: pr(36px);
+      font-weight: bold;
+      line-height: pr(36px);
+    }
+  }
+  .step{
+    margin: pr(45px) $padding-size pr(39px);
+    @extend %clearfix;
+    .step-item{
+      width: 20%;
+      float: left;
+      .icon{
+        @extend %in-b;
+        height: pr(109px);
+        width: 100%;
+        background: url("../images/icon_10.png");
+        background-size: 100% 100%;
+        font-family: NotoSansHans-Medium;
+        font-size: pr(36px);
+        line-height: pr(100px);
+        color: #ffffff;
+      }
+      span{
+        font-family: NotoSansHans-Regular;
+        font-size: pr(22px);
+        line-height: pr(36px);
+      }
+    }
+  }
+  .btn{
+    @extend %in-b;
+    background-image: linear-gradient(-90deg,
+      #f05630 0%,
+      #f09c30 100%),
+    linear-gradient(
+        #f08830,
+        #f08830);
+    background-blend-mode: normal, normal;
+    box-shadow: 0 pr(3px) pr(4px) 0 rgba(240, 86, 48, 0.3);
+    border-radius: pr(24px);
+    padding: 0 pr(74px);
+    height: pr(48px);
+    line-height: pr(48px);
+    font-family: NotoSansHans-Regular;
+    font-size: pr(26px);
+    color: #ffffff;
+    margin-top: pr(10px);
+  }
+}
+
+/* 第十一届国际学校择校展 */
+.school-fair{
+  padding: $padding-size $padding-size pr(29px);
+  background: url("../images/bg_5.png") no-repeat top;
+  background-size: contain;
+  text-align: center;
+  .assess-title{
+    @extend %in-b;
+    font-family: NotoSansHans-Black;
+    font-size: pr(36px);
+    font-weight: bold;
+    line-height: pr(42px);
+    color: $txt-color;
+    strong{
+      background-color: $txt-color;
+      color: #ffffff;
+      border-radius: 45% 50%;
+      padding: 0 pr(4px);
+      margin: 0 pr(-2px);
+    }
+  }
+  .exam{
+    font-family: NotoSansHans-Regular;
+    font-size: pr(26px);
+    line-height: pr(42px);
+  }
+  .population{
+    img{
+      @extend %in-b;
+      width: pr(10px);
+      height: pr(14px);
+      vertical-align: middle;
+    }
+    @extend %in-b;
+    width: pr(407px);
+    color: #ffffff;
+    font-family: NotoSansHans-Regular;
+    font-size: pr(18px);
+    line-height: pr(42px);
+    background: url("../images/icon_6.png") no-repeat center;
+    background-size: cover;
+    margin-bottom: pr(17px);
+    span{
+      color: rgba(255, 255, 255, 0.28);
+      margin-left: pr(8px);
+      padding-right: pr(5px);
+    }
+  }
+  .sign-in{
+    background-color: #ffffff;
+    box-shadow: 0 0 12px 0 rgba(99, 99, 99, 0.4);
+    border-radius: 12px;
+    padding: pr(39px) pr(41px) pr(20px) pr(39px);
+    .title{
+      @extend %in-b;
+      //width: pr(400px);
+      background: url("../images/icon_13.png") no-repeat bottom center;
+      background-size: contain;
+      padding-bottom: pr(10px);
+      margin-bottom: pr(30px);
+      span{
+        font-family: NotoSansHans-Black;
+        font-size: pr(36px);
+        font-weight: bold;
+        line-height: pr(36px);
+      }
+    }
+    input{
+      width: 100%;
+      height: pr(58px);
+      line-height: pr(58px);
+      border: solid 1px #dddddd;
+      box-sizing: border-box;
+      padding-left: $padding-size;
+      margin-bottom: $padding-size;
+    }
+    input[type='submit']{
+      background-image: linear-gradient(-90deg,
+        #f05630 0%,
+        #f09c30 100%),
+      linear-gradient(
+          #f05630,
+          #f05630);
+      background-blend-mode: normal, normal;
+      box-shadow: 0 pr(3px) pr(4px) 0 rgba(240, 86, 48, 0.3);
+      border-radius: pr(28px);
+      border: none;
+      font-size: pr(26px);
+      line-height: pr(36px);
+      color: #ffffff;
+    }
+  }
+}
+
+.copyright{
+  font-size: pr(26px);
+  line-height: pr(36px);
+  color: #999999;
+  text-align: center;
+  margin: 0 $padding-size;
+  .company{
+    position: absolute;
+    &:before, &:after{
+      content: '';
+      @extend %in-b;
+      width: pr(116px);
+      height: 1px;
+      background-color: #dddddd;
+      vertical-align: middle;
+    }
+  }
+}
+
+.footer{
+  @extend %clearfix;
+  a{
+    float: left;
+    width: 33.3%;
+    height: pr(98px);
+    background-color: #6a7fea;
+    img{
+      width: pr(40px);
+      height: pr(40px);
+    }
+    &:nth-of-type(2){
+
+    }
+  }
+}
+
 .title{
   font-family: NotoSansHans-Black;
   font-weight: bold;
   font-size: pr(36px);
   height: pr(41px);
   line-height: pr(41px);
-  color: #ffffff;
   text-align: center;
-  margin-bottom: pr(8px);
   img{
     height: 100%;
   }
@@ -379,8 +863,6 @@ i {
   font-family: NotoSansHans-Regular;
   font-size: pr(26px);
   line-height: pr(24px);
-  color: #ffffff;
-  opacity: 0.36;
   text-align: center;
 }
 
