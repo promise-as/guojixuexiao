@@ -2,6 +2,7 @@
 body {
   font-size: 0.21333rem;
   color: #444444;
+  padding-bottom: 2.05333rem;
 }
 
 p {
@@ -26,21 +27,25 @@ i {
   font-style: normal;
 }
 
+input[type="text"] {
+  -webkit-appearance: none;
+}
+
 .good-teach .cont-item .item-detail .detail-title, .all-school .title, .all-school .tab-cont .cont-item .btn, .goal-school .title, .goal-school .goal-cont li .icon, .goal-school .goal-cont .btn, .assess .assess-title, .assess .population, .past-exam .exam-btn, .look-school .title, .look-school .step .step-item .icon, .look-school .btn, .school-fair .assess-title, .school-fair .population img, .school-fair .population, .school-fair .sign-in .title, .copyright .company:before, .copyright .company:after {
   display: inline-block;
   *zoom: 1;
   *display: inline;
 }
 
-.header, .study, .good-teach .cont-item, .goal-school .goal-cont li, .reading .reading-cont, .look-school .step, .footer {
+.header, .study, .good-teach .cont-item, .goal-school .goal-cont li, .reading .reading-cont, .look-school .step {
   zoom: 1;
 }
 
-.header:after, .study:after, .good-teach .cont-item:after, .goal-school .goal-cont li:after, .reading .reading-cont:after, .look-school .step:after, .footer:after {
+.header:after, .study:after, .good-teach .cont-item:after, .goal-school .goal-cont li:after, .reading .reading-cont:after, .look-school .step:after {
   clear: both;
 }
 
-.header:before, .study:before, .good-teach .cont-item:before, .goal-school .goal-cont li:before, .reading .reading-cont:before, .look-school .step:before, .footer:before, .header:after, .study:after, .good-teach .cont-item:after, .goal-school .goal-cont li:after, .reading .reading-cont:after, .look-school .step:after, .footer:after {
+.header:before, .study:before, .good-teach .cont-item:before, .goal-school .goal-cont li:before, .reading .reading-cont:before, .look-school .step:before, .header:after, .study:after, .good-teach .cont-item:after, .goal-school .goal-cont li:after, .reading .reading-cont:after, .look-school .step:after {
   content: "";
   display: table;
 }
@@ -95,6 +100,10 @@ i {
 .nav a {
   line-height: 0.93333rem;
   font-size: 0.4rem;
+}
+
+.nav a.active {
+  color: #f05630;
 }
 
 .banner {
@@ -278,21 +287,16 @@ i {
   padding-left: 0.93333rem;
 }
 
+.good-teach .cont-item:nth-of-type(2) {
+  padding-top: 0.53333rem;
+}
+
 .good-teach .cont-item:nth-of-type(2) .item-detail {
   width: 4.16rem;
 }
 
-.good-teach .cont-item:nth-of-type(3) {
-  padding-top: 0.21333rem;
-  padding-bottom: 0.26667rem;
-}
-
 .good-teach .cont-item:nth-of-type(3) .item-detail {
   width: 5.73333rem;
-}
-
-.good-teach .cont-item:nth-of-type(4) {
-  padding-top: 0.26667rem;
 }
 
 .good-teach .cont-item:nth-of-type(4) .item-detail {
@@ -358,10 +362,10 @@ i {
 .all-school .tab-cont {
   padding: 0 0.26667rem;
   margin-top: 0.26667rem;
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 0.29333rem;
   grid-row-gap: 0.2rem;
+  display: none;
 }
 
 .all-school .tab-cont .cont-item {
@@ -403,6 +407,10 @@ i {
   background-color: #6a80ea;
   color: #ffffff;
   margin-top: 0.38667rem;
+}
+
+.all-school .tab-cont.active {
+  display: grid;
 }
 
 /* 如何顺利进入心仪国际学校 */
@@ -880,16 +888,62 @@ i {
   vertical-align: middle;
 }
 
-.footer a {
-  float: left;
-  width: 33.3%;
-  height: 1.30667rem;
-  background-color: #6a7fea;
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
 }
 
-.footer a img {
+.footer .footer-cont {
+  position: relative;
+  text-align: center;
+}
+
+.footer .footer-cont a {
+  display: block;
+  width: 3.6rem;
+  height: 1.30667rem;
+  background-color: #6a7fea;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #ffffff;
+}
+
+.footer .footer-cont a img {
   width: 0.53333rem;
   height: 0.53333rem;
+  vertical-align: middle;
+}
+
+.footer .footer-cont a:first-child {
+  float: left;
+  padding-left: 0.48rem;
+  padding-right: 0.76rem;
+  line-height: 1.30667rem;
+}
+
+.footer .footer-cont a:nth-of-type(2) {
+  background-color: #f05830;
+  height: 2.05333rem;
+  border-radius: 2.05333rem 2.05333rem 0 0;
+  float: left;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: -0.74667rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.54667rem;
+  padding-bottom: 0.44rem;
+}
+
+.footer .footer-cont a:nth-of-type(3) {
+  float: right;
+  background-color: #f09330;
+  padding-left: 0.76rem;
+  padding-right: 0.48rem;
+  line-height: 1.30667rem;
 }
 
 .title {

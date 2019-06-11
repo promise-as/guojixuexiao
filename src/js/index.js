@@ -4,6 +4,20 @@ $(function () {
   $('.banner-bg').load(function(){ // 等图片加载完成
     $('.banner').height($(this).height() - 38);
   });
+  
+  /* tab 切换 */
+  function tabSwitch(ele, content) {
+    $(ele).each(function (index) {
+      var that = this;
+      $(that).click(function () {
+        $(that).addClass('active').siblings().removeClass('active');
+        $($(content)[index]).addClass('active').siblings().removeClass('active');
+      });
+    })
+
+  }
+
+  tabSwitch($('.all-school .head-item'), $('.all-school .tab-cont'));
 
   // 监听滚动
   /*$(window).scroll(function () {
