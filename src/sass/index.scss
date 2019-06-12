@@ -129,14 +129,14 @@ input[type="submit"] {
     color: #888888;
     margin-left: pr(10px);
   }
-  .tel{
+  .mobile{
     float: right;
     height: pr(28px);
     margin-top: pr(15px);
     img{
       height: 100%;
     }
-    span{
+    .tel{
       font-family: Arial-BoldMT;
       font-weight: bold;
       font-size: pr(32px);
@@ -173,21 +173,25 @@ input[type="submit"] {
     border-radius: pr(24px);
     border: solid pr(2px) #ffffff;
     box-sizing: border-box;
-    color: #ffffff;
     padding-left: $padding-size;
-    span{
+    .tel{
       float: left;
-      line-height: pr(46px);
+      font-size: pr(24px);
+      line-height: pr(48px);
+      color: #ffffff;
+      box-sizing: border-box;
     }
-    a{
+    .know{
       float: right;
       background: #f84949;
-      border-radius: pr(24px);
+      border-radius: pr(25px);
       font-size: pr(24px);
       padding: 0 pr(10px);
       color: #ffffff;
       margin-top: pr(-2px);
-      margin-right: pr(-2px);
+      margin-right: pr(-4px);
+      height: pr(50px);
+      line-height: pr(50px);
     }
   }
 }
@@ -282,8 +286,10 @@ input[type="submit"] {
   }
   .cont-item{
     margin: 0 pr(50px) 0 pr(36px);
-    //border: 1px solid red;
-    padding: pr(30px) 0 pr(30px) pr(30px);
+    padding-top: pr(28px);
+    padding-left: pr(34px);
+    height: pr(130px);
+    box-sizing: border-box;
     @extend %clearfix;
     .num{
       float: left;
@@ -305,7 +311,7 @@ input[type="submit"] {
       color: #fefeff;
       text-align: center;
       border-radius: 50%;
-      margin-right: pr(15px);
+      margin-right: $padding-size;
     }
     .item-detail{
       float: left;
@@ -327,23 +333,25 @@ input[type="submit"] {
       }
     }
     &:nth-child(even){
-      padding-left: pr(70px);
+      padding-left: pr(83px);
     }
     &:nth-of-type(2){
-      padding-top: pr(40px);
+      height: pr(150px);
       .item-detail{
         width: pr(312px);
 
       }
     }
     &:nth-of-type(3){
+      padding-top: pr(10px);
       .item-detail{
-        width: pr(430px);
+        width: pr(424px);
       }
     }
     &:nth-of-type(4){
+      padding-top: pr(17px);
       .item-detail{
-        width: pr(515px);
+        width: pr(504px);
       }
     }
   }
@@ -384,10 +392,12 @@ input[type="submit"] {
       padding: 0 pr(34px);
       &.active{
         background: $bg-color;
+        border: solid 1px $bg-color;
         color: #ffffff;
       }
       &:hover{
         background: $bg-color;
+        border: solid 1px $bg-color;
         color: #ffffff;
       }
     }
@@ -407,12 +417,12 @@ input[type="submit"] {
       padding: pr(21px) pr(21px) pr(31px);
       text-align: center;
       img{
-        margin-bottom: pr(14px);
+        margin-bottom: pr(8px);
       }
       .item-title{
         font-family: NotoSansHans-Regular;
         font-size: pr(24px);
-        line-height: pr(24px);
+        line-height: pr(36px);
         display: block;
       }
       li{
@@ -432,7 +442,7 @@ input[type="submit"] {
         line-height: pr(46px);
         background-color: $bg-color;
         color: #ffffff;
-        margin-top: pr(29px);
+        margin-top: $padding-size;
       }
     }
     &.active{
@@ -513,6 +523,7 @@ input[type="submit"] {
         background-size: 100% 100%;
         text-align: center;
         padding-top: pr(12px);
+        padding-right: pr(3px);
         box-sizing: border-box;
         color: #ffffff;
         font-size: pr(18px);
@@ -597,13 +608,13 @@ input[type="submit"] {
   .sign-in{
     background-color: #ffffff;
     padding: pr(30px) pr(21px) pr(10px) pr(19px);
+    font-size: pr(24px);
     input{
       width: 100%;
       height: pr(58px);
       line-height: pr(58px);
       border: solid 1px #dddddd;
       box-sizing: border-box;
-      //padding-left: $padding-size;
       margin-bottom: $padding-size;
     }
     .grade {
@@ -623,7 +634,6 @@ input[type="submit"] {
           background: url("../images/triangle.png") no-repeat 95% center #ffffff;
           box-sizing: border-box;
           color: #999999;
-          font-size: pr(14px);
           outline: none;
           margin-bottom: 0;
           border: solid 1px #dddddd;
@@ -637,7 +647,6 @@ input[type="submit"] {
           background-color: #FFF;
           z-index: 10;
           color: #666666;
-          font-size: pr(14px);
           border: 1px solid $bg-color;
           box-sizing: border-box;
           li {
@@ -768,9 +777,10 @@ input[type="submit"] {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: center;
       img{
         width: pr(64px);
+        margin-bottom: $padding-size;
       }
       span{
         font-family: NotoSansHans-Regular;
@@ -790,6 +800,7 @@ input[type="submit"] {
         background-size: 100% 100%;
         img{
           width: pr(48px);
+          margin-bottom: pr(15px);
         }
       }
     }
@@ -798,7 +809,7 @@ input[type="submit"] {
     @extend %in-b;
     width: pr(300px);
     height: pr(48px);
-    border-radius: pr(23px);
+    border-radius: pr(24px);
     border: dotted 1px #f95b34;
     font-family: NotoSansHans-Regular;
     font-size: pr(26px);
@@ -927,13 +938,13 @@ input[type="submit"] {
       //width: pr(400px);
       background: url("../images/icon_13.png") no-repeat bottom center;
       background-size: contain;
-      padding-bottom: pr(10px);
+      padding-bottom: pr(6px);
       margin-bottom: pr(30px);
       span{
         font-family: NotoSansHans-Black;
         font-size: pr(36px);
         font-weight: bold;
-        line-height: pr(36px);
+        line-height: pr(20px);
       }
     }
     input{
