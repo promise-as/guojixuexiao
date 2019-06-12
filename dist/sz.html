@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-  <title>北上广国际学校</title>
+  <title>深圳国际学校</title>
   <!--<script type="text/javascript" src="http://img.thea.cn/public/js/thea.debug.js"></script>-->
   <script type="text/javascript" src="js/thea.debug.js"></script>
   <!--<script src="https://img.thea.cn/public/js/jquery-1.12.3.min.js"></script>-->
   <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+  <script type="text/javascript" src="https://img.thea.cn/public/js/thea.ms.form.js"></script>
 
   <!--<link rel="stylesheet" type="text/css" href="https://img.thea.cn/public/css/base.css">-->
   <link rel="stylesheet" type="text/css" href="css/base.css">
@@ -17,6 +18,37 @@
 <body>
 
 <div>
+  <!-- 弹窗 -->
+  <div class="popup">
+    <i class="close">
+      <img src="images/close.png" alt="close">
+    </i>
+    <form action="" class="sign-in">
+      <div class="popup-title">
+        请选择您要预约的项目：
+      </div>
+      <div class="project">
+        <div class="project-item active">
+          <i class="circle"></i>
+          <span>我要探校</span>
+        </div>
+        <div class="project-item">
+          <i class="circle"></i>
+          <span>体验课程</span>
+        </div>
+        <div class="project-item">
+          <i class="circle"></i>
+          <span>预约考试</span>
+        </div>
+      </div>
+      <input type="hidden" class="appoint-project user-con" value="我要探校">
+      <input type="text" placeholder="请输入孩子的姓名">
+      <input type="text" placeholder="请输入孩子就读年级">
+      <input type="text" placeholder="请输入您的联系方式">
+      <input type="submit" value="立即预约">
+    </form>
+  </div>
+
   <div class="header">
     <a href="" target="_blank" class="logo">
       <img src="images/logo.png" alt="诺达">
@@ -74,7 +106,7 @@
   </div>
 
   <!-- 立即预约 -->
-  <form class="appoint">
+  <form class="appoint sign-in">
     <input type="text" placeholder="请输入孩子的姓名">
     <input type="text" placeholder="请输入孩子就读年级">
     <input type="text" placeholder="请输入您的联系方式">
@@ -148,19 +180,19 @@
     </div>
 
     <div class="tab-head">
-      <div class="head-item active">广州国际学校</div>
-      <div class="head-item">北京国际学校</div>
-      <div class="head-item">上海国际学校</div>
+      <div class="head-item active">人气国际学校</div>
+      <div class="head-item">优质国际学校</div>
+      <div class="head-item">外籍国际学校</div>
     </div>
-    <div class="tab-cont active">
+    <div class="tab-cont sz active">
       <div class="cont-item">
-        <img src="images/school_1.png" alt="">
+        <img src="images/school_sz_1.png" alt="">
         <a href="" target="_blank" class="item-title">
-          中黄书院美国GIA国际高中
+          万科梅沙书院
         </a>
         <li>
           <span>课程体系：</span>
-          <strong>美国GIA高中课程</strong>
+          <strong>IGCSE、A-LEVEL  、AP课程</strong>
         </li>
         <li>
           <span>招生阶段：</span>
@@ -175,9 +207,157 @@
         </a>
       </div>
       <div class="cont-item">
-        <img src="images/school_2.png" alt="">
+        <img src="images/school_sz_2.png" alt="">
         <a href="" target="_blank" class="item-title">
-          广东实验中学AP国际课程
+          深圳（南山）中加学校
+        </a>
+        <li>
+          <span>课程体系：</span>
+          <strong>国内普通高中、加拿大高中课程、AP课程</strong>
+        </li>
+        <li>
+          <span>招生阶段：</span>
+          <strong>高中</strong>
+        </li>
+        <li>
+          <span>收费标准：</span>
+          <strong>在线咨询</strong>
+        </li>
+        <a href="" target="_blank" class="btn">
+          学校详情
+        </a>
+      </div>
+      <div class="cont-item">
+        <img src="images/school_sz_3.png" alt="">
+        <a href="" target="_blank" class="item-title">
+          深圳国际交流学院
+        </a>
+        <li>
+          <span>课程体系：</span>
+          <strong>美国课程、剑桥课程、加拿大课程</strong>
+        </li>
+        <li>
+          <span>招生阶段：</span>
+          <strong>高中</strong>
+        </li>
+        <li>
+          <span>收费标准：</span>
+          <strong>在线咨询</strong>
+        </li>
+        <a href="" target="_blank" class="btn">
+          学校详情
+        </a>
+      </div>
+      <div class="cont-item">
+        <img src="images/school_sz_4.png" alt="">
+        <a href="" target="_blank" class="item-title">
+          城市绿洲学校
+        </a>
+        <li>
+          <span>课程体系：</span>
+          <strong>--</strong>
+        </li>
+        <li>
+          <span>招生阶段：</span>
+          <strong>小学、中学 </strong>
+        </li>
+        <li>
+          <span>收费标准：</span>
+          <strong>在线咨询</strong>
+        </li>
+        <a href="" target="_blank" class="btn">
+          学校详情
+        </a>
+      </div>
+      <div class="cont-item">
+        <img src="images/school_sz_5.png" alt="">
+        <a href="" target="_blank" class="item-title">
+          深圳市南山国王学校
+        </a>
+        <li>
+          <span>课程体系：</span>
+          <strong>--</strong>
+        </li>
+        <li>
+          <span>招生阶段：</span>
+          <strong>幼儿园-高中
+            （2019年开设幼儿园）</strong>
+        </li>
+        <li>
+          <span>收费标准：</span>
+          <strong>在线咨询</strong>
+        </li>
+        <a href="" target="_blank" class="btn">
+          学校详情
+        </a>
+      </div>
+      <div class="cont-item">
+        <img src="images/school_sz_6.png" alt="">
+        <a href="" target="_blank" class="item-title">
+          深圳荟同学校
+        </a>
+        <li>
+          <span>课程体系：</span>
+          <strong>瑞吉欧教育体系 、AP课程</strong>
+        </li>
+        <li>
+          <span>招生阶段：</span>
+          <strong>幼儿园、小学、初中</strong>
+        </li>
+        <li>
+          <span>收费标准：</span>
+          <strong>在线咨询</strong>
+        </li>
+        <a href="" target="_blank" class="btn">
+          学校详情
+        </a>
+      </div>
+      <div class="cont-item">
+        <img src="images/school_sz_7.png" alt="">
+        <a href="" target="_blank" class="item-title">
+          深圳枫叶国际书院
+        </a>
+        <li>
+          <span>课程体系：</span>
+          <strong>中加两国课程、AP课程</strong>
+        </li>
+        <li>
+          <span>招生阶段：</span>
+          <strong>小学、初中、高中</strong>
+        </li>
+        <li>
+          <span>收费标准：</span>
+          <strong>在线咨询</strong>
+        </li>
+        <a href="" target="_blank" class="btn">
+          学校详情
+        </a>
+      </div>
+      <div class="cont-item">
+        <img src="images/school_sz_8.png" alt="">
+        <a href="" target="_blank" class="item-title">
+          梅沙双语学校
+        </a>
+        <li>
+          <span>课程体系：</span>
+          <strong>IGCSE课程</strong>
+        </li>
+        <li>
+          <span>招生阶段：</span>
+          <strong>初中</strong>
+        </li>
+        <li>
+          <span>收费标准：</span>
+          <strong>在线咨询</strong>
+        </li>
+        <a href="" target="_blank" class="btn">
+          学校详情
+        </a>
+      </div>
+      <div class="cont-item">
+        <img src="images/school_sz_9.png" alt="">
+        <a href="" target="_blank" class="item-title">
+          讯得达国际书院
         </a>
         <li>
           <span>课程体系：</span>
@@ -185,27 +365,6 @@
         </li>
         <li>
           <span>招生阶段：</span>
-          <strong>高中</strong>
-        </li>
-        <li>
-          <span>收费标准：</span>
-          <strong>在线咨询</strong>
-        </li>
-        <a href="" target="_blank" class="btn">
-          学校详情
-        </a>
-      </div>
-      <div class="cont-item">
-        <img src="images/school_3.png" alt="">
-        <a href="" target="_blank" class="item-title">
-          衡水一中马来西亚分校
-        </a>
-        <li>
-          <span>课程体系：</span>
-          <strong>中方课程体系、IGCSE课程体系</strong>
-        </li>
-        <li>
-          <span>招生阶段：</span>
           <strong>初中、高中</strong>
         </li>
         <li>
@@ -217,17 +376,18 @@
         </a>
       </div>
       <div class="cont-item">
-        <img src="images/school_4.png" alt="">
+        <img src="images/school_sz_10.png" alt="">
         <a href="" target="_blank" class="item-title">
-          为明广州实验学校
+          爱文世界学校
         </a>
         <li>
           <span>课程体系：</span>
-          <strong>中澳班、中美班、国际课程预备班</strong>
+          <strong>--</strong>
         </li>
         <li>
           <span>招生阶段：</span>
-          <strong>初中、高中</strong>
+          <strong>幼儿园、小学、初
+            中、高中</strong>
         </li>
         <li>
           <span>收费标准：</span>
@@ -237,142 +397,17 @@
           学校详情
         </a>
       </div>
-      <div class="cont-item">
-        <img src="images/school_5.png" alt="">
-        <a href="" target="_blank" class="item-title">
-          中大附属外国语实验中学
-        </a>
-        <li>
-          <span>课程体系：</span>
-          <strong>IB PYP课程体系</strong>
-        </li>
-        <li>
-          <span>招生阶段：</span>
-          <strong>7-9年级</strong>
-        </li>
-        <li>
-          <span>收费标准：</span>
-          <strong>在线咨询</strong>
-        </li>
-        <a href="" target="_blank" class="btn">
-          学校详情
-        </a>
-      </div>
-      <div class="cont-item">
-        <img src="images/school_6.png" alt="">
-        <a href="" target="_blank" class="item-title">
-          中大附属外国语小学
-        </a>
-        <li>
-          <span>课程体系：</span>
-          <strong>UOI探究课程</strong>
-        </li>
-        <li>
-          <span>招生阶段：</span>
-          <strong>小学</strong>
-        </li>
-        <li>
-          <span>收费标准：</span>
-          <strong>在线咨询</strong>
-        </li>
-        <a href="" target="_blank" class="btn">
-          学校详情
-        </a>
-      </div>
-      <div class="cont-item">
-        <img src="images/school_7.png" alt="">
-        <a href="" target="_blank" class="item-title">
-          广州市第六中学国际部
-        </a>
-        <li>
-          <span>课程体系：</span>
-          <strong>AP课程、国际初中 课程</strong>
-        </li>
-        <li>
-          <span>招生阶段：</span>
-          <strong>7-9年级</strong>
-        </li>
-        <li>
-          <span>收费标准：</span>
-          <strong>在线咨询</strong>
-        </li>
-        <a href="" target="_blank" class="btn">
-          学校详情
-        </a>
-      </div>
-      <div class="cont-item">
-        <img src="images/school_8.png" alt="">
-        <a href="" target="_blank" class="item-title">
-          广州大学附属中学国际部
-        </a>
-        <li>
-          <span>课程体系：</span>
-          <strong>初中中英双语课程、美国高中</strong>
-        </li>
-        <li>
-          <span>招生阶段：</span>
-          <strong>初中、高中</strong>
-        </li>
-        <li>
-          <span>收费标准：</span>
-          <strong>在线咨询</strong>
-        </li>
-        <a href="" target="_blank" class="btn">
-          学校详情
-        </a>
-      </div>
-      <div class="cont-item">
-        <img src="images/school_9.png" alt="">
-        <a href="" target="_blank" class="item-title">
-          广东实验越秀中学国际部
-        </a>
-        <li>
-          <span>课程体系：</span>
-          <strong>美国AP班、澳洲VCE班</strong>
-        </li>
-        <li>
-          <span>招生阶段：</span>
-          <strong>高中</strong>
-        </li>
-        <li>
-          <span>收费标准：</span>
-          <strong>在线咨询</strong>
-        </li>
-        <a href="" target="_blank" class="btn">
-          学校详情
-        </a>
-      </div>
-      <div class="cont-item">
-        <img src="images/school_10.png" alt="">
-        <a href="" target="_blank" class="item-title">
-          广东华侨中学国际课程
-        </a>
-        <li>
-          <span>课程体系：</span>
-          <strong>美国课程</strong>
-        </li>
-        <li>
-          <span>招生阶段：</span>
-          <strong>高中</strong>
-        </li>
-        <li>
-          <span>收费标准：</span>
-          <strong>在线咨询</strong>
-        </li>
-        <a href="" target="_blank" class="btn">
-          学校详情
-        </a>
-      </div>
+      <span class="more">点击加载更多>></span>
     </div>
-    <div class="tab-cont">
+    <div class="tab-cont sz">
       <div class="cont-item">
-        <img src="images/school_1.png" alt="">
+        <img src="images/school_sz_1.png" alt="">
         <a href="" target="_blank" class="item-title">
-          北京
+          优质国际学校
         </a>
         <li>
           <span>课程体系：</span>
-          <strong>美国GIA高中课程</strong>
+          <strong>IGCSE、A-LEVEL  、AP课程</strong>
         </li>
         <li>
           <span>招生阶段：</span>
@@ -387,9 +422,157 @@
         </a>
       </div>
       <div class="cont-item">
-        <img src="images/school_2.png" alt="">
+        <img src="images/school_sz_2.png" alt="">
         <a href="" target="_blank" class="item-title">
-          广东实验中学AP国际课程
+          深圳（南山）中加学校
+        </a>
+        <li>
+          <span>课程体系：</span>
+          <strong>国内普通高中、加拿大高中课程、AP课程</strong>
+        </li>
+        <li>
+          <span>招生阶段：</span>
+          <strong>高中</strong>
+        </li>
+        <li>
+          <span>收费标准：</span>
+          <strong>在线咨询</strong>
+        </li>
+        <a href="" target="_blank" class="btn">
+          学校详情
+        </a>
+      </div>
+      <div class="cont-item">
+        <img src="images/school_sz_3.png" alt="">
+        <a href="" target="_blank" class="item-title">
+          深圳国际交流学院
+        </a>
+        <li>
+          <span>课程体系：</span>
+          <strong>美国课程、剑桥课程、加拿大课程</strong>
+        </li>
+        <li>
+          <span>招生阶段：</span>
+          <strong>高中</strong>
+        </li>
+        <li>
+          <span>收费标准：</span>
+          <strong>在线咨询</strong>
+        </li>
+        <a href="" target="_blank" class="btn">
+          学校详情
+        </a>
+      </div>
+      <div class="cont-item">
+        <img src="images/school_sz_4.png" alt="">
+        <a href="" target="_blank" class="item-title">
+          城市绿洲学校
+        </a>
+        <li>
+          <span>课程体系：</span>
+          <strong>--</strong>
+        </li>
+        <li>
+          <span>招生阶段：</span>
+          <strong>小学、中学 </strong>
+        </li>
+        <li>
+          <span>收费标准：</span>
+          <strong>在线咨询</strong>
+        </li>
+        <a href="" target="_blank" class="btn">
+          学校详情
+        </a>
+      </div>
+      <div class="cont-item">
+        <img src="images/school_sz_5.png" alt="">
+        <a href="" target="_blank" class="item-title">
+          深圳市南山国王学校
+        </a>
+        <li>
+          <span>课程体系：</span>
+          <strong>--</strong>
+        </li>
+        <li>
+          <span>招生阶段：</span>
+          <strong>幼儿园-高中
+            （2019年开设幼儿园）</strong>
+        </li>
+        <li>
+          <span>收费标准：</span>
+          <strong>在线咨询</strong>
+        </li>
+        <a href="" target="_blank" class="btn">
+          学校详情
+        </a>
+      </div>
+      <div class="cont-item">
+        <img src="images/school_sz_6.png" alt="">
+        <a href="" target="_blank" class="item-title">
+          深圳荟同学校
+        </a>
+        <li>
+          <span>课程体系：</span>
+          <strong>瑞吉欧教育体系 、AP课程</strong>
+        </li>
+        <li>
+          <span>招生阶段：</span>
+          <strong>幼儿园、小学、初中</strong>
+        </li>
+        <li>
+          <span>收费标准：</span>
+          <strong>在线咨询</strong>
+        </li>
+        <a href="" target="_blank" class="btn">
+          学校详情
+        </a>
+      </div>
+      <div class="cont-item">
+        <img src="images/school_sz_7.png" alt="">
+        <a href="" target="_blank" class="item-title">
+          深圳枫叶国际书院
+        </a>
+        <li>
+          <span>课程体系：</span>
+          <strong>中加两国课程、AP课程</strong>
+        </li>
+        <li>
+          <span>招生阶段：</span>
+          <strong>小学、初中、高中</strong>
+        </li>
+        <li>
+          <span>收费标准：</span>
+          <strong>在线咨询</strong>
+        </li>
+        <a href="" target="_blank" class="btn">
+          学校详情
+        </a>
+      </div>
+      <div class="cont-item">
+        <img src="images/school_sz_8.png" alt="">
+        <a href="" target="_blank" class="item-title">
+          梅沙双语学校
+        </a>
+        <li>
+          <span>课程体系：</span>
+          <strong>IGCSE课程</strong>
+        </li>
+        <li>
+          <span>招生阶段：</span>
+          <strong>初中</strong>
+        </li>
+        <li>
+          <span>收费标准：</span>
+          <strong>在线咨询</strong>
+        </li>
+        <a href="" target="_blank" class="btn">
+          学校详情
+        </a>
+      </div>
+      <div class="cont-item">
+        <img src="images/school_sz_9.png" alt="">
+        <a href="" target="_blank" class="item-title">
+          讯得达国际书院
         </a>
         <li>
           <span>课程体系：</span>
@@ -397,27 +580,6 @@
         </li>
         <li>
           <span>招生阶段：</span>
-          <strong>高中</strong>
-        </li>
-        <li>
-          <span>收费标准：</span>
-          <strong>在线咨询</strong>
-        </li>
-        <a href="" target="_blank" class="btn">
-          学校详情
-        </a>
-      </div>
-      <div class="cont-item">
-        <img src="images/school_3.png" alt="">
-        <a href="" target="_blank" class="item-title">
-          衡水一中马来西亚分校
-        </a>
-        <li>
-          <span>课程体系：</span>
-          <strong>中方课程体系、IGCSE课程体系</strong>
-        </li>
-        <li>
-          <span>招生阶段：</span>
           <strong>初中、高中</strong>
         </li>
         <li>
@@ -429,17 +591,18 @@
         </a>
       </div>
       <div class="cont-item">
-        <img src="images/school_4.png" alt="">
+        <img src="images/school_sz_10.png" alt="">
         <a href="" target="_blank" class="item-title">
-          为明广州实验学校
+          爱文世界学校
         </a>
         <li>
           <span>课程体系：</span>
-          <strong>中澳班、中美班、国际课程预备班</strong>
+          <strong>--</strong>
         </li>
         <li>
           <span>招生阶段：</span>
-          <strong>初中、高中</strong>
+          <strong>幼儿园、小学、初
+            中、高中</strong>
         </li>
         <li>
           <span>收费标准：</span>
@@ -449,142 +612,17 @@
           学校详情
         </a>
       </div>
-      <div class="cont-item">
-        <img src="images/school_5.png" alt="">
-        <a href="" target="_blank" class="item-title">
-          中大附属外国语实验中学
-        </a>
-        <li>
-          <span>课程体系：</span>
-          <strong>IB PYP课程体系</strong>
-        </li>
-        <li>
-          <span>招生阶段：</span>
-          <strong>7-9年级</strong>
-        </li>
-        <li>
-          <span>收费标准：</span>
-          <strong>在线咨询</strong>
-        </li>
-        <a href="" target="_blank" class="btn">
-          学校详情
-        </a>
-      </div>
-      <div class="cont-item">
-        <img src="images/school_6.png" alt="">
-        <a href="" target="_blank" class="item-title">
-          中大附属外国语小学
-        </a>
-        <li>
-          <span>课程体系：</span>
-          <strong>UOI探究课程</strong>
-        </li>
-        <li>
-          <span>招生阶段：</span>
-          <strong>小学</strong>
-        </li>
-        <li>
-          <span>收费标准：</span>
-          <strong>在线咨询</strong>
-        </li>
-        <a href="" target="_blank" class="btn">
-          学校详情
-        </a>
-      </div>
-      <div class="cont-item">
-        <img src="images/school_7.png" alt="">
-        <a href="" target="_blank" class="item-title">
-          广州市第六中学国际部
-        </a>
-        <li>
-          <span>课程体系：</span>
-          <strong>AP课程、国际初中 课程</strong>
-        </li>
-        <li>
-          <span>招生阶段：</span>
-          <strong>7-9年级</strong>
-        </li>
-        <li>
-          <span>收费标准：</span>
-          <strong>在线咨询</strong>
-        </li>
-        <a href="" target="_blank" class="btn">
-          学校详情
-        </a>
-      </div>
-      <div class="cont-item">
-        <img src="images/school_8.png" alt="">
-        <a href="" target="_blank" class="item-title">
-          广州大学附属中学国际部
-        </a>
-        <li>
-          <span>课程体系：</span>
-          <strong>初中中英双语课程、美国高中</strong>
-        </li>
-        <li>
-          <span>招生阶段：</span>
-          <strong>初中、高中</strong>
-        </li>
-        <li>
-          <span>收费标准：</span>
-          <strong>在线咨询</strong>
-        </li>
-        <a href="" target="_blank" class="btn">
-          学校详情
-        </a>
-      </div>
-      <div class="cont-item">
-        <img src="images/school_9.png" alt="">
-        <a href="" target="_blank" class="item-title">
-          广东实验越秀中学国际部
-        </a>
-        <li>
-          <span>课程体系：</span>
-          <strong>美国AP班、澳洲VCE班</strong>
-        </li>
-        <li>
-          <span>招生阶段：</span>
-          <strong>高中</strong>
-        </li>
-        <li>
-          <span>收费标准：</span>
-          <strong>在线咨询</strong>
-        </li>
-        <a href="" target="_blank" class="btn">
-          学校详情
-        </a>
-      </div>
-      <div class="cont-item">
-        <img src="images/school_10.png" alt="">
-        <a href="" target="_blank" class="item-title">
-          广东华侨中学国际课程
-        </a>
-        <li>
-          <span>课程体系：</span>
-          <strong>美国课程</strong>
-        </li>
-        <li>
-          <span>招生阶段：</span>
-          <strong>高中</strong>
-        </li>
-        <li>
-          <span>收费标准：</span>
-          <strong>在线咨询</strong>
-        </li>
-        <a href="" target="_blank" class="btn">
-          学校详情
-        </a>
-      </div>
+      <span class="more">点击加载更多>></span>
     </div>
-    <div class="tab-cont">
+    <div class="tab-cont sz">
       <div class="cont-item">
-        <img src="images/school_1.png" alt="">
+        <img src="images/school_sz_1.png" alt="">
         <a href="" target="_blank" class="item-title">
-          上海
+          外籍国际学校
         </a>
         <li>
           <span>课程体系：</span>
-          <strong>美国GIA高中课程</strong>
+          <strong>IGCSE、A-LEVEL  、AP课程</strong>
         </li>
         <li>
           <span>招生阶段：</span>
@@ -599,9 +637,157 @@
         </a>
       </div>
       <div class="cont-item">
-        <img src="images/school_2.png" alt="">
+        <img src="images/school_sz_2.png" alt="">
         <a href="" target="_blank" class="item-title">
-          广东实验中学AP国际课程
+          深圳（南山）中加学校
+        </a>
+        <li>
+          <span>课程体系：</span>
+          <strong>国内普通高中、加拿大高中课程、AP课程</strong>
+        </li>
+        <li>
+          <span>招生阶段：</span>
+          <strong>高中</strong>
+        </li>
+        <li>
+          <span>收费标准：</span>
+          <strong>在线咨询</strong>
+        </li>
+        <a href="" target="_blank" class="btn">
+          学校详情
+        </a>
+      </div>
+      <div class="cont-item">
+        <img src="images/school_sz_3.png" alt="">
+        <a href="" target="_blank" class="item-title">
+          深圳国际交流学院
+        </a>
+        <li>
+          <span>课程体系：</span>
+          <strong>美国课程、剑桥课程、加拿大课程</strong>
+        </li>
+        <li>
+          <span>招生阶段：</span>
+          <strong>高中</strong>
+        </li>
+        <li>
+          <span>收费标准：</span>
+          <strong>在线咨询</strong>
+        </li>
+        <a href="" target="_blank" class="btn">
+          学校详情
+        </a>
+      </div>
+      <div class="cont-item">
+        <img src="images/school_sz_4.png" alt="">
+        <a href="" target="_blank" class="item-title">
+          城市绿洲学校
+        </a>
+        <li>
+          <span>课程体系：</span>
+          <strong>--</strong>
+        </li>
+        <li>
+          <span>招生阶段：</span>
+          <strong>小学、中学 </strong>
+        </li>
+        <li>
+          <span>收费标准：</span>
+          <strong>在线咨询</strong>
+        </li>
+        <a href="" target="_blank" class="btn">
+          学校详情
+        </a>
+      </div>
+      <div class="cont-item">
+        <img src="images/school_sz_5.png" alt="">
+        <a href="" target="_blank" class="item-title">
+          深圳市南山国王学校
+        </a>
+        <li>
+          <span>课程体系：</span>
+          <strong>--</strong>
+        </li>
+        <li>
+          <span>招生阶段：</span>
+          <strong>幼儿园-高中
+            （2019年开设幼儿园）</strong>
+        </li>
+        <li>
+          <span>收费标准：</span>
+          <strong>在线咨询</strong>
+        </li>
+        <a href="" target="_blank" class="btn">
+          学校详情
+        </a>
+      </div>
+      <div class="cont-item">
+        <img src="images/school_sz_6.png" alt="">
+        <a href="" target="_blank" class="item-title">
+          深圳荟同学校
+        </a>
+        <li>
+          <span>课程体系：</span>
+          <strong>瑞吉欧教育体系 、AP课程</strong>
+        </li>
+        <li>
+          <span>招生阶段：</span>
+          <strong>幼儿园、小学、初中</strong>
+        </li>
+        <li>
+          <span>收费标准：</span>
+          <strong>在线咨询</strong>
+        </li>
+        <a href="" target="_blank" class="btn">
+          学校详情
+        </a>
+      </div>
+      <div class="cont-item">
+        <img src="images/school_sz_7.png" alt="">
+        <a href="" target="_blank" class="item-title">
+          深圳枫叶国际书院
+        </a>
+        <li>
+          <span>课程体系：</span>
+          <strong>中加两国课程、AP课程</strong>
+        </li>
+        <li>
+          <span>招生阶段：</span>
+          <strong>小学、初中、高中</strong>
+        </li>
+        <li>
+          <span>收费标准：</span>
+          <strong>在线咨询</strong>
+        </li>
+        <a href="" target="_blank" class="btn">
+          学校详情
+        </a>
+      </div>
+      <div class="cont-item">
+        <img src="images/school_sz_8.png" alt="">
+        <a href="" target="_blank" class="item-title">
+          梅沙双语学校
+        </a>
+        <li>
+          <span>课程体系：</span>
+          <strong>IGCSE课程</strong>
+        </li>
+        <li>
+          <span>招生阶段：</span>
+          <strong>初中</strong>
+        </li>
+        <li>
+          <span>收费标准：</span>
+          <strong>在线咨询</strong>
+        </li>
+        <a href="" target="_blank" class="btn">
+          学校详情
+        </a>
+      </div>
+      <div class="cont-item">
+        <img src="images/school_sz_9.png" alt="">
+        <a href="" target="_blank" class="item-title">
+          讯得达国际书院
         </a>
         <li>
           <span>课程体系：</span>
@@ -609,27 +795,6 @@
         </li>
         <li>
           <span>招生阶段：</span>
-          <strong>高中</strong>
-        </li>
-        <li>
-          <span>收费标准：</span>
-          <strong>在线咨询</strong>
-        </li>
-        <a href="" target="_blank" class="btn">
-          学校详情
-        </a>
-      </div>
-      <div class="cont-item">
-        <img src="images/school_3.png" alt="">
-        <a href="" target="_blank" class="item-title">
-          衡水一中马来西亚分校
-        </a>
-        <li>
-          <span>课程体系：</span>
-          <strong>中方课程体系、IGCSE课程体系</strong>
-        </li>
-        <li>
-          <span>招生阶段：</span>
           <strong>初中、高中</strong>
         </li>
         <li>
@@ -641,17 +806,18 @@
         </a>
       </div>
       <div class="cont-item">
-        <img src="images/school_4.png" alt="">
+        <img src="images/school_sz_10.png" alt="">
         <a href="" target="_blank" class="item-title">
-          为明广州实验学校
+          爱文世界学校
         </a>
         <li>
           <span>课程体系：</span>
-          <strong>中澳班、中美班、国际课程预备班</strong>
+          <strong>--</strong>
         </li>
         <li>
           <span>招生阶段：</span>
-          <strong>初中、高中</strong>
+          <strong>幼儿园、小学、初
+            中、高中</strong>
         </li>
         <li>
           <span>收费标准：</span>
@@ -661,132 +827,7 @@
           学校详情
         </a>
       </div>
-      <div class="cont-item">
-        <img src="images/school_5.png" alt="">
-        <a href="" target="_blank" class="item-title">
-          中大附属外国语实验中学
-        </a>
-        <li>
-          <span>课程体系：</span>
-          <strong>IB PYP课程体系</strong>
-        </li>
-        <li>
-          <span>招生阶段：</span>
-          <strong>7-9年级</strong>
-        </li>
-        <li>
-          <span>收费标准：</span>
-          <strong>在线咨询</strong>
-        </li>
-        <a href="" target="_blank" class="btn">
-          学校详情
-        </a>
-      </div>
-      <div class="cont-item">
-        <img src="images/school_6.png" alt="">
-        <a href="" target="_blank" class="item-title">
-          中大附属外国语小学
-        </a>
-        <li>
-          <span>课程体系：</span>
-          <strong>UOI探究课程</strong>
-        </li>
-        <li>
-          <span>招生阶段：</span>
-          <strong>小学</strong>
-        </li>
-        <li>
-          <span>收费标准：</span>
-          <strong>在线咨询</strong>
-        </li>
-        <a href="" target="_blank" class="btn">
-          学校详情
-        </a>
-      </div>
-      <div class="cont-item">
-        <img src="images/school_7.png" alt="">
-        <a href="" target="_blank" class="item-title">
-          广州市第六中学国际部
-        </a>
-        <li>
-          <span>课程体系：</span>
-          <strong>AP课程、国际初中 课程</strong>
-        </li>
-        <li>
-          <span>招生阶段：</span>
-          <strong>7-9年级</strong>
-        </li>
-        <li>
-          <span>收费标准：</span>
-          <strong>在线咨询</strong>
-        </li>
-        <a href="" target="_blank" class="btn">
-          学校详情
-        </a>
-      </div>
-      <div class="cont-item">
-        <img src="images/school_8.png" alt="">
-        <a href="" target="_blank" class="item-title">
-          广州大学附属中学国际部
-        </a>
-        <li>
-          <span>课程体系：</span>
-          <strong>初中中英双语课程、美国高中</strong>
-        </li>
-        <li>
-          <span>招生阶段：</span>
-          <strong>初中、高中</strong>
-        </li>
-        <li>
-          <span>收费标准：</span>
-          <strong>在线咨询</strong>
-        </li>
-        <a href="" target="_blank" class="btn">
-          学校详情
-        </a>
-      </div>
-      <div class="cont-item">
-        <img src="images/school_9.png" alt="">
-        <a href="" target="_blank" class="item-title">
-          广东实验越秀中学国际部
-        </a>
-        <li>
-          <span>课程体系：</span>
-          <strong>美国AP班、澳洲VCE班</strong>
-        </li>
-        <li>
-          <span>招生阶段：</span>
-          <strong>高中</strong>
-        </li>
-        <li>
-          <span>收费标准：</span>
-          <strong>在线咨询</strong>
-        </li>
-        <a href="" target="_blank" class="btn">
-          学校详情
-        </a>
-      </div>
-      <div class="cont-item">
-        <img src="images/school_10.png" alt="">
-        <a href="" target="_blank" class="item-title">
-          广东华侨中学国际课程
-        </a>
-        <li>
-          <span>课程体系：</span>
-          <strong>美国课程</strong>
-        </li>
-        <li>
-          <span>招生阶段：</span>
-          <strong>高中</strong>
-        </li>
-        <li>
-          <span>收费标准：</span>
-          <strong>在线咨询</strong>
-        </li>
-        <a href="" target="_blank" class="btn">
-          学校详情
-        </a>
-      </div>
+      <span class="more">点击加载更多>></span>
     </div>
 
   </div>

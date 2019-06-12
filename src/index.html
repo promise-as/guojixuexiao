@@ -12,6 +12,7 @@
   <!--<link rel="stylesheet" type="text/css" href="https://img.thea.cn/public/css/base.css">-->
   <link rel="stylesheet" type="text/css" href="css/base.css">
   <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js"></script>
 </head>
 <body>
 
@@ -38,7 +39,6 @@
     <a href="" target="_blank">预约访校</a>
   </div>
   <div class="banner">
-    <!--<img src="images/banner_1.png" alt="banner" class="banner-bg">-->
     <div class="btn">
       <span>18926791348</span>
       <a href="" target="_blank">了解国际学校</a>
@@ -797,7 +797,7 @@
       <span>如何顺利进入心仪国际学校</span>
     </div>
     <p class="subhead">
-      享受国际化教育，轻松留学海外名校
+      紧跟升学5步走，快速锁定目标学校
     </p>
 
     <div class="goal-cont">
@@ -874,7 +874,46 @@
     <form class="sign-in">
       <input type="text" placeholder="请输入孩子的姓名">
       <input type="text" placeholder="请输入您的联系方式">
-      <input type="text" placeholder="请选择孩子在读点击">
+      <div class="grade">
+        <!--原本的select 隐藏-->
+        <select class="grade-select">
+          <option>请选择孩子在读年级</option>
+          <option value="grade-1">幼儿园</option>
+          <option value="grade-2">一年级</option>
+          <option value="grade-3">二年级</option>
+          <option value="grade-4">三年级</option>
+          <option value="grade-5">四年级</option>
+          <option value="grade-6">五年级</option>
+          <option value="grade-7">六年级</option>
+          <option value="grade-8">七年级</option>
+          <option value="grade-9">八年级</option>
+          <option value="grade-10">九年级</option>
+          <option value="grade-11">十年级</option>
+          <option value="grade-12">十一年级</option>
+          <option value="grade-13">十二年级</option>
+        </select>
+        <!--显示模拟的select-->
+        <div class="grade-replace">
+          <!--提交的数据-->
+          <input class="current-type" type="text" value="请选择孩子在读年级">
+          <ul class="grade-options">
+            <li rel="grade-1">幼儿园</li>
+            <li rel="grade-2">一年级</li>
+            <li rel="grade-3">二年级</li>
+            <li rel="grade-4">三年级</li>
+            <li rel="grade-5">四年级</li>
+            <li rel="grade-6">五年级</li>
+            <li rel="grade-7">六年级</li>
+            <li rel="grade-8">七年级</li>
+            <li rel="grade-9">八年级</li>
+            <li rel="grade-10">九年级</li>
+            <li rel="grade-11">十年级</li>
+            <li rel="grade-12">十一年级</li>
+            <li rel="grade-13">十二年级</li>
+          </ul>
+        </div>
+      </div>
+      <input type="hidden" class="sel-grade user-con" value="幼儿园">
       <input type="submit" value="立即预约">
     </form>
   </div>
@@ -904,10 +943,10 @@
   <!-- 从国际学校面试真题 -->
   <div class="past-exam">
     <div class="title">
-      <span>如何顺利进入心仪国际学校</span>
+      <span>从国际学校面试真题</span>
     </div>
     <p class="subhead">
-      享受国际化教育，轻松留学海外名校
+      感受名校录取四点核心逻辑
     </p>
     <div class="exam-cont">
       <div class="cont-item">
@@ -993,7 +1032,7 @@
   </div>
 
   <div class="copyright">
-      <p class="company">版权所有 深圳市诺达教育股份有限公司</p><br/>
+      <p class="company">版权所有 深圳市诺达教育股份有限公司</p>
       <p>©粤ICP备10032899号-3</p>
   </div>
 

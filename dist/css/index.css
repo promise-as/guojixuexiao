@@ -27,25 +27,84 @@ i {
   font-style: normal;
 }
 
-input[type="text"] {
+input[type="text"],
+select {
+  appearance: none;
+  -moz-appearance: none;
   -webkit-appearance: none;
 }
 
-.good-teach .cont-item .item-detail .detail-title, .all-school .title, .all-school .tab-cont .cont-item .btn, .goal-school .title, .goal-school .goal-cont li .icon, .goal-school .goal-cont .btn, .assess .assess-title, .assess .population, .past-exam .exam-btn, .look-school .title, .look-school .step .step-item .icon, .look-school .btn, .school-fair .assess-title, .school-fair .population img, .school-fair .population, .school-fair .sign-in .title, .copyright .company:before, .copyright .company:after {
+input[type="text"]::-webkit-input-placeholder,
+select::-webkit-input-placeholder {
+  color: #999;
+  font-size: inherit;
+}
+
+input[type="text"]:-moz-placeholder,
+select:-moz-placeholder {
+  color: #999;
+  font-size: inherit;
+}
+
+input[type="text"]::-moz-placeholder,
+select::-moz-placeholder {
+  color: #999;
+  font-size: inherit;
+}
+
+input[type="text"]:-ms-input-placeholder,
+select:-ms-input-placeholder {
+  color: #999;
+  font-size: inherit;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+input, textarea, select {
+  background-color: transparent;
+  font-family: '微软雅黑';
+}
+
+select {
+  border: none;
+  text-indent: 1em;
+}
+
+option {
+  text-indent: 1em;
+  font-family: '微软雅黑';
+}
+
+input[type="text"],
+select {
+  border: none;
+  text-indent: 1em;
+}
+
+input[type="submit"] {
+  border: none;
+}
+
+.good-teach .cont-item .item-detail .detail-title, .all-school .title, .all-school .tab-cont .cont-item .btn, .goal-school .title, .goal-school .goal-cont li .icon, .goal-school .goal-cont .btn, .assess .assess-title, .assess .population, .past-exam .exam-btn, .look-school .title, .look-school .step .step-item .icon, .look-school .btn, .school-fair .assess-title, .school-fair .population, .school-fair .population img, .school-fair .sign-in .title, .copyright .company:before, .copyright .company:after, .popup .sign-in .project .project-item .circle {
   display: inline-block;
   *zoom: 1;
   *display: inline;
 }
 
-.header, .study, .good-teach .cont-item, .goal-school .goal-cont li, .reading .reading-cont, .look-school .step {
+.header, .study, .good-teach .cont-item, .goal-school .goal-cont li, .reading .reading-cont, .look-school .step, .popup .sign-in .project {
   zoom: 1;
 }
 
-.header:after, .study:after, .good-teach .cont-item:after, .goal-school .goal-cont li:after, .reading .reading-cont:after, .look-school .step:after {
+.header:after, .study:after, .good-teach .cont-item:after, .goal-school .goal-cont li:after, .reading .reading-cont:after, .look-school .step:after, .popup .sign-in .project:after {
   clear: both;
 }
 
-.header:before, .study:before, .good-teach .cont-item:before, .goal-school .goal-cont li:before, .reading .reading-cont:before, .look-school .step:before, .header:after, .study:after, .good-teach .cont-item:after, .goal-school .goal-cont li:after, .reading .reading-cont:after, .look-school .step:after {
+.header:before, .study:before, .good-teach .cont-item:before, .goal-school .goal-cont li:before, .reading .reading-cont:before, .look-school .step:before, .popup .sign-in .project:before, .header:after, .study:after, .good-teach .cont-item:after, .goal-school .goal-cont li:after, .reading .reading-cont:after, .look-school .step:after, .popup .sign-in .project:after {
   content: "";
   display: table;
 }
@@ -203,7 +262,6 @@ input[type="text"] {
   border: solid 1px #dddddd;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-left: 0.26667rem;
   margin-bottom: 0.26667rem;
 }
 
@@ -307,6 +365,7 @@ input[type="text"] {
 .all-school {
   text-align: center;
   margin-bottom: 0.4rem;
+  /* 深圳国际学校 */
 }
 
 .all-school .title {
@@ -364,7 +423,7 @@ input[type="text"] {
   margin-top: 0.26667rem;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 0.29333rem;
-  grid-row-gap: 0.2rem;
+  grid-row-gap: 0.25333rem;
   display: none;
 }
 
@@ -385,6 +444,7 @@ input[type="text"] {
   font-family: NotoSansHans-Regular;
   font-size: 0.32rem;
   line-height: 0.32rem;
+  display: block;
 }
 
 .all-school .tab-cont .cont-item li {
@@ -411,6 +471,31 @@ input[type="text"] {
 
 .all-school .tab-cont.active {
   display: grid;
+}
+
+.all-school .sz .cont-item img {
+  width: 73%;
+}
+
+.all-school .sz .cont-item .item-title {
+  color: #3c55d1;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 0.26667rem;
+  margin-bottom: 0.26667rem;
+}
+
+.all-school .sz .more {
+  display: block;
+  width: 205%;
+  height: 0.77333rem;
+  line-height: 0.77333rem;
+  border: solid 1px #d0d9ff;
+  font-family: NotoSansHans-Regular;
+  font-size: 0.32rem;
+  color: #6a80ea;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 0.18667rem;
 }
 
 /* 如何顺利进入心仪国际学校 */
@@ -558,8 +643,74 @@ input[type="text"] {
   border: solid 1px #dddddd;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-left: 0.26667rem;
   margin-bottom: 0.26667rem;
+}
+
+.assess .sign-in .grade .grade-select {
+  display: none;
+}
+
+.assess .sign-in .grade .grade-replace {
+  cursor: default;
+  overflow: visible;
+  position: relative;
+  width: 100%;
+  text-align: left;
+}
+
+.assess .sign-in .grade .grade-replace .current-type {
+  width: 100%;
+  height: 0.77333rem;
+  line-height: 0.77333rem;
+  background: url("../images/triangle.png") no-repeat 95% center #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #999999;
+  font-size: 0.18667rem;
+  outline: none;
+  margin-bottom: 0;
+  border: solid 1px #dddddd;
+}
+
+.assess .sign-in .grade .grade-replace .grade-options {
+  display: none;
+  list-style-type: none;
+  margin-top: 0;
+  position: absolute;
+  width: 100%;
+  background-color: #FFF;
+  z-index: 10;
+  color: #666666;
+  font-size: 0.18667rem;
+  border: 1px solid #6a80ea;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.assess .sign-in .grade .grade-replace .grade-options li {
+  line-height: 0.77333rem;
+  padding: 0 0.2rem;
+  background-color: #FFF;
+}
+
+.assess .sign-in .grade .grade-replace .grade-options li:hover {
+  background-color: #dfe5ff;
+  color: #6a80ea;
+}
+
+.assess .sign-in .grade .download {
+  width: 360px;
+  height: 44px;
+  background-color: #ff4b02;
+  font-size: 16px;
+  line-height: 44px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 
 .assess .sign-in input[type='submit'] {
@@ -573,6 +724,7 @@ input[type="text"] {
   font-size: 0.34667rem;
   line-height: 0.48rem;
   color: #ffffff;
+  margin-top: 0.26667rem;
 }
 
 /* 多维度评估 全方位解读 */
@@ -800,12 +952,12 @@ input[type="text"] {
 }
 
 .school-fair .population {
-  width: 5.42667rem;
+  width: 5.6rem;
   color: #ffffff;
   font-family: NotoSansHans-Regular;
   font-size: 0.24rem;
   line-height: 0.56rem;
-  background: url("../images/icon_6.png") no-repeat center;
+  background: url("../images/icon_12.png") no-repeat center;
   background-size: cover;
   margin-bottom: 0.22667rem;
 }
@@ -851,7 +1003,6 @@ input[type="text"] {
   border: solid 1px #dddddd;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-left: 0.26667rem;
   margin-bottom: 0.26667rem;
 }
 
@@ -877,7 +1028,15 @@ input[type="text"] {
 }
 
 .copyright .company {
-  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .copyright .company:before, .copyright .company:after {
@@ -902,7 +1061,7 @@ input[type="text"] {
 
 .footer .footer-cont a {
   display: block;
-  width: 3.6rem;
+  width: 38%;
   height: 1.30667rem;
   background-color: #6a7fea;
   -webkit-box-sizing: border-box;
@@ -944,6 +1103,110 @@ input[type="text"] {
   padding-left: 0.76rem;
   padding-right: 0.48rem;
   line-height: 1.30667rem;
+}
+
+/* 弹窗 */
+.popup {
+  border-radius: 0.16rem;
+  position: fixed;
+  top: 50%;
+  left: 0.73333rem;
+  right: 0.73333rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 500;
+  padding: 2.66667rem 0.26667rem 0.29333rem;
+  background: url("../images/popup.png");
+  background-size: 100% 100%;
+  display: none;
+}
+
+.popup .close {
+  width: 0.26667rem;
+  height: 0.26667rem;
+  position: absolute;
+  top: 0.61333rem;
+  right: 0.24rem;
+}
+
+.popup .sign-in {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 10px 0 rgba(168, 47, 16, 0.57);
+          box-shadow: 0 0 10px 0 rgba(168, 47, 16, 0.57);
+  border-radius: 12px;
+  padding: 0.4rem 0.25333rem 0.13333rem;
+}
+
+.popup .sign-in .popup-title {
+  font-family: MicrosoftYaHei-Bold;
+  font-weight: bold;
+  font-size: 0.34667rem;
+  line-height: 0.4rem;
+  margin-bottom: 0.26667rem;
+}
+
+.popup .sign-in .project {
+  margin-bottom: 0.26667rem;
+}
+
+.popup .sign-in .project .project-item {
+  float: left;
+  text-align: left;
+  margin-right: 0.4rem;
+  cursor: pointer;
+}
+
+.popup .sign-in .project .project-item .circle {
+  width: 0.18667rem;
+  height: 0.18667rem;
+  border: 1px solid #cccccc;
+  border-radius: 50%;
+  background-color: #fff;
+  vertical-align: middle;
+  position: relative;
+}
+
+.popup .sign-in .project .project-item span {
+  font-size: 0.34667rem;
+  line-height: 0.4rem;
+}
+
+.popup .sign-in .project .project-item.active .circle:before {
+  position: absolute;
+  content: '';
+  top: 0.04rem;
+  right: 0.04rem;
+  bottom: 0.04rem;
+  left: 0.04rem;
+  background-color: #f05630;
+  border-radius: 50%;
+}
+
+.popup .sign-in .project .project-item.active span {
+  color: #f05630;
+}
+
+.popup .sign-in input {
+  width: 100%;
+  height: 0.77333rem;
+  line-height: 0.77333rem;
+  border: solid 1px #dddddd;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 0.26667rem;
+}
+
+.popup .sign-in input[type='submit'] {
+  background-image: -webkit-gradient(linear, right top, left top, from(#f05630), to(#f09c30)), -webkit-gradient(linear, left top, left bottom, from(#f05630), to(#f05630));
+  background-image: linear-gradient(-90deg, #f05630 0%, #f09c30 100%), linear-gradient(#f05630, #f05630);
+  background-blend-mode: normal, normal;
+  -webkit-box-shadow: 0 0.04rem 0.05333rem 0 rgba(240, 86, 48, 0.3);
+          box-shadow: 0 0.04rem 0.05333rem 0 rgba(240, 86, 48, 0.3);
+  border-radius: 0.37333rem;
+  border: none;
+  font-size: 0.34667rem;
+  line-height: 0.48rem;
+  color: #ffffff;
 }
 
 .title {

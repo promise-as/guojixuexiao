@@ -35,8 +35,58 @@ i {
   font-style: normal;
 }
 
-input[type="text"] {
+input[type="text"],
+select {
+  appearance: none;
+  -moz-appearance: none;
   -webkit-appearance: none; // 去除safari浏览器的内阴影
+  &::-webkit-input-placeholder {
+    color: #999;
+    font-size: inherit;
+  }
+  &:-moz-placeholder {
+    color: #999;
+    font-size: inherit;
+  }
+  &::-moz-placeholder {
+    color: #999;
+    font-size: inherit;
+  }
+  &:-ms-input-placeholder {
+    color: #999;
+    font-size: inherit;
+  }
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+input, textarea, select {
+  background-color: transparent;
+  font-family: '微软雅黑';
+}
+
+select {
+  border: none;
+  text-indent: 1em;
+}
+
+option {
+  text-indent: 1em;
+  font-family: '微软雅黑';
+}
+
+input[type='text'], select {
+  border: none;
+  text-indent: 1em;
+}
+
+input[type="submit"] {
+  border: none;
 }
 
 %one {
@@ -195,7 +245,6 @@ input[type="text"] {
     line-height: pr(58px);
     border: solid 1px #dddddd;
     box-sizing: border-box;
-    padding-left: $padding-size;
     margin-bottom: $padding-size;
   }
   input[type='submit']{
@@ -349,7 +398,7 @@ input[type="text"] {
     //display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: pr(22px);
-    grid-row-gap: pr(15px);
+    grid-row-gap: pr(19px);
     display: none;
     .cont-item{
       background-color: #ffffff;
@@ -364,6 +413,7 @@ input[type="text"] {
         font-family: NotoSansHans-Regular;
         font-size: pr(24px);
         line-height: pr(24px);
+        display: block;
       }
       li{
         font-size: pr(22px);
@@ -387,6 +437,33 @@ input[type="text"] {
     }
     &.active{
       display: grid;
+    }
+  }
+  /* 深圳国际学校 */
+  .sz{
+    .cont-item{
+      img{
+        width: 73%;
+      }
+      .item-title{
+        color: #3c55d1;
+        border-bottom: 1px solid #eeeeee;
+        padding-bottom: $padding-size;
+        margin-bottom: $padding-size;
+      }
+    }
+    .more{
+      display: block;
+      width: 205%; // grid layout affect
+      height: pr(58px);
+      line-height: pr(58px);
+      border: solid 1px #d0d9ff;
+      font-family: NotoSansHans-Regular;
+      font-size: pr(24px);
+      color: #6a80ea;
+      text-align: center;
+      cursor: pointer;
+      margin-top: pr(14px);
     }
   }
 }
@@ -526,8 +603,70 @@ input[type="text"] {
       line-height: pr(58px);
       border: solid 1px #dddddd;
       box-sizing: border-box;
-      padding-left: $padding-size;
+      //padding-left: $padding-size;
       margin-bottom: $padding-size;
+    }
+    .grade {
+      .grade-select {
+        display: none;
+      }
+      .grade-replace {
+        cursor: default;
+        overflow: visible;
+        position: relative;
+        width: 100%;
+        text-align: left;
+        .current-type {
+          width: 100%;
+          height: pr(58px);
+          line-height: pr(58px);
+          background: url("../images/triangle.png") no-repeat 95% center #ffffff;
+          box-sizing: border-box;
+          color: #999999;
+          font-size: pr(14px);
+          outline: none;
+          margin-bottom: 0;
+          border: solid 1px #dddddd;
+        }
+        .grade-options {
+          display: none;
+          list-style-type: none;
+          margin-top: 0;
+          position: absolute;
+          width: 100%;
+          background-color: #FFF;
+          z-index: 10;
+          color: #666666;
+          font-size: pr(14px);
+          border: 1px solid $bg-color;
+          box-sizing: border-box;
+          li {
+            line-height: pr(58px);
+            padding: 0 pr(15px);
+            background-color: #FFF;
+            &:hover {
+              background-color: #dfe5ff;
+              color: $bg-color;
+            }
+          }
+        }
+      }
+      .download{
+        width: 360px;
+        height: 44px;
+        background-color: #ff4b02;
+
+        font-size: 16px;
+        line-height: 44px;
+        letter-spacing: 1px;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 16px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        //@extend .hover-effect;
+      }
     }
     input[type='submit']{
       background-image: linear-gradient(-90deg,
@@ -543,6 +682,7 @@ input[type="text"] {
       font-size: pr(26px);
       line-height: pr(36px);
       color: #ffffff;
+      margin-top: $padding-size;
     }
   }
 }
@@ -756,21 +896,21 @@ input[type="text"] {
     line-height: pr(42px);
   }
   .population{
+    width: pr(420px);
+    @extend %in-b;
+    color: #ffffff;
+    font-family: NotoSansHans-Regular;
+    font-size: pr(18px);
+    line-height: pr(42px);
+    background: url("../images/icon_12.png") no-repeat center;
+    background-size: cover;
+    margin-bottom: pr(17px);
     img{
       @extend %in-b;
       width: pr(10px);
       height: pr(14px);
       vertical-align: middle;
     }
-    @extend %in-b;
-    width: pr(407px);
-    color: #ffffff;
-    font-family: NotoSansHans-Regular;
-    font-size: pr(18px);
-    line-height: pr(42px);
-    background: url("../images/icon_6.png") no-repeat center;
-    background-size: cover;
-    margin-bottom: pr(17px);
     span{
       color: rgba(255, 255, 255, 0.28);
       margin-left: pr(8px);
@@ -802,7 +942,6 @@ input[type="text"] {
       line-height: pr(58px);
       border: solid 1px #dddddd;
       box-sizing: border-box;
-      padding-left: $padding-size;
       margin-bottom: $padding-size;
     }
     input[type='submit']{
@@ -830,7 +969,10 @@ input[type="text"] {
   text-align: center;
   margin: 0 $padding-size;
   .company{
-    position: absolute;
+    //position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     &:before, &:after{
       content: '';
       @extend %in-b;
@@ -852,7 +994,7 @@ input[type="text"] {
     text-align: center;
     a{
       display: block;
-      width: pr(270px);
+      width: 38%;
       height: pr(98px);
       background-color: #6a7fea;
       box-sizing: border-box;
@@ -889,6 +1031,106 @@ input[type="text"] {
         padding-right: pr(36px);
         line-height: pr(98px);
       }
+    }
+  }
+}
+
+/* 弹窗 */
+.popup{
+  border-radius: pr(12px);
+  position: fixed;
+  top: 50%;
+  left: pr(55px);
+  right: pr(55px);
+  transform: translateY(-50%);
+  z-index: 500;
+  padding: pr(200px) $padding-size pr(22px);
+  background: url("../images/popup.png");
+  background-size: 100% 100%;
+  display: none;
+  .close{
+    width: pr(20px);
+    height: pr(20px);
+    position: absolute;
+    top: pr(46px);
+    right: pr(18px);
+  }
+  .sign-in{
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0 rgba(168, 47, 16, 0.57);
+    border-radius: 12px;
+    padding: pr(30px) pr(19px) pr(10px);
+    .popup-title{
+      font-family: MicrosoftYaHei-Bold;
+      font-weight: bold;
+      font-size: pr(26px);
+      line-height: pr(30px);
+      margin-bottom: $padding-size;
+    }
+    .project{
+      @extend %clearfix;
+      margin-bottom: $padding-size;
+      .project-item{
+        float: left;
+        text-align: left;
+        margin-right: pr(30px);
+        cursor: pointer;
+        .circle{
+          @extend %in-b;
+          width: pr(14px);
+          height: pr(14px);
+          border: 1px solid #cccccc;
+          border-radius: 50%;
+          background-color: #fff;
+          vertical-align: middle;
+          position: relative;
+        }
+        span{
+          font-size: pr(26px);
+          line-height: pr(30px);
+        }
+        &.active{
+          .circle{
+            &:before{
+              position: absolute;
+              content: '';
+              top: pr(3px);
+              right: pr(3px);
+              bottom: pr(3px);
+              left: pr(3px);
+              background-color: $txt-color;
+              border-radius: 50%;
+            }
+          }
+          span{
+            color: $txt-color;
+          }
+        }
+      }
+    }
+
+    input{
+      width: 100%;
+      height: pr(58px);
+      line-height: pr(58px);
+      border: solid 1px #dddddd;
+      box-sizing: border-box;
+      margin-bottom: $padding-size;
+    }
+    input[type='submit']{
+      background-image: linear-gradient(-90deg,
+              #f05630 0%,
+              #f09c30 100%),
+      linear-gradient(
+                      #f05630,
+                      #f05630);
+      background-blend-mode: normal, normal;
+      box-shadow: 0 pr(3px) pr(4px) 0 rgba(240, 86, 48, 0.3);
+      border-radius: pr(28px);
+      border: none;
+      font-size: pr(26px);
+      line-height: pr(36px);
+      color: #ffffff;
     }
   }
 }
