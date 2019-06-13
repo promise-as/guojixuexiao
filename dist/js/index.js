@@ -1,6 +1,13 @@
 'use strict';
 
 $(function () {
+  theaMsForm($('.sign-in'), function ($data) {
+    console.log(11111111);
+    if ($data.flag == 'ok') {
+      $(".popup").css("display", "none");
+    } else if ($data.flag == 'no') {}
+  });
+
   /* tab 切换 */
   function tabSwitch(ele, content) {
     $(ele).each(function (index) {
@@ -12,6 +19,7 @@ $(function () {
     });
   }
 
+  // 学校大全
   tabSwitch($('.all-school .head-item'), $('.all-school .tab-cont'));
 
   /* 重置select */
@@ -43,7 +51,6 @@ $(function () {
     var $num = 1;
     popupTc(f);
     $(c).click(function () {
-      console.log(1111);
       $par.hide();
       if ($num < n) {
         popupTc(a);
@@ -58,7 +65,7 @@ $(function () {
   }
 
   if ($(".popup").size() > 0) {
-    popupHandle('.popup', '.popup .close', 3000, 6000, 2);
+    popupHandle('.popup', '.popup .close', 15000, 30000, 2);
   }
 
   //  弹窗的 预约的项目
@@ -70,9 +77,7 @@ $(function () {
     });
   });
 
-  // theaMsForm($('.sign-in'), function ($data) {
-  //   if ($data.flag == 'ok') {
-  //     $(".popup").css("display", "none");
-  //   } else if ($data.flag == 'no') {}
-  // });
+  $('.visit-schools').click(function () {
+    $('.popup').css('display', 'block');
+  });
 });

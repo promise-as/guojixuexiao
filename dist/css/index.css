@@ -2,7 +2,13 @@
 body {
   font-size: 0.21333rem;
   color: #444444;
-  padding-bottom: 2.05333rem;
+  padding-bottom: 2.26667rem;
+}
+
+.wrap {
+  max-width: 10rem;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 p {
@@ -96,15 +102,15 @@ input[type="submit"] {
   *display: inline;
 }
 
-.header, .study, .good-teach .cont-item, .goal-school .goal-cont li, .reading .reading-cont, .look-school .step, .popup .sign-in .project {
+.header, .study, .good-teach .cont-item, .goal-school .goal-cont li, .reading .reading-cont, .look-school .step, .footer .footer-cont, .popup .sign-in .project {
   zoom: 1;
 }
 
-.header:after, .study:after, .good-teach .cont-item:after, .goal-school .goal-cont li:after, .reading .reading-cont:after, .look-school .step:after, .popup .sign-in .project:after {
+.header:after, .study:after, .good-teach .cont-item:after, .goal-school .goal-cont li:after, .reading .reading-cont:after, .look-school .step:after, .footer .footer-cont:after, .popup .sign-in .project:after {
   clear: both;
 }
 
-.header:before, .study:before, .good-teach .cont-item:before, .goal-school .goal-cont li:before, .reading .reading-cont:before, .look-school .step:before, .popup .sign-in .project:before, .header:after, .study:after, .good-teach .cont-item:after, .goal-school .goal-cont li:after, .reading .reading-cont:after, .look-school .step:after, .popup .sign-in .project:after {
+.header:before, .study:before, .good-teach .cont-item:before, .goal-school .goal-cont li:before, .reading .reading-cont:before, .look-school .step:before, .footer .footer-cont:before, .popup .sign-in .project:before, .header:after, .study:after, .good-teach .cont-item:after, .goal-school .goal-cont li:after, .reading .reading-cont:after, .look-school .step:after, .footer .footer-cont:after, .popup .sign-in .project:after {
   content: "";
   display: table;
 }
@@ -132,6 +138,7 @@ input[type="submit"] {
   float: right;
   height: 0.37333rem;
   margin-top: 0.2rem;
+  color: #f05630;
 }
 
 .header .mobile img {
@@ -139,7 +146,6 @@ input[type="submit"] {
 }
 
 .header .mobile .tel {
-  font-family: Arial-BoldMT;
   font-weight: bold;
   font-size: 0.42667rem;
   line-height: 0.32rem;
@@ -156,12 +162,12 @@ input[type="submit"] {
       justify-content: space-around;
 }
 
-.nav a {
+.nav .nav-item {
   line-height: 0.93333rem;
   font-size: 0.4rem;
 }
 
-.nav a.active {
+.nav .nav-item.active {
   color: #f05630;
 }
 
@@ -169,7 +175,7 @@ input[type="submit"] {
   padding-top: 4.2rem;
   padding-bottom: 1.13333rem;
   padding-left: 2.05333rem;
-  background: url("../images/banner_1.png") no-repeat center;
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/banner_1.png") no-repeat center;
   background-size: 100% 100%;
 }
 
@@ -188,7 +194,7 @@ input[type="submit"] {
   float: left;
   font-size: 0.32rem;
   line-height: 0.64rem;
-  color: #ffffff;
+  color: white;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -232,7 +238,6 @@ input[type="submit"] {
 
 .study .study-item .item-detail {
   float: right;
-  font-family: NotoSansHans-Regular;
   line-height: 0.48rem;
   margin-top: 0.2rem;
 }
@@ -287,9 +292,9 @@ input[type="submit"] {
 .good-teach {
   height: 10.01333rem;
   padding-top: 1.18667rem;
-  background: url("../images/bg_1.png") no-repeat center;
+  margin-bottom: 0.13333rem;
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/bg_1.png") no-repeat center;
   background-size: 100% 100%;
-  margin-bottom: 0.4rem;
 }
 
 .good-teach .title {
@@ -321,7 +326,6 @@ input[type="submit"] {
   background-blend-mode: normal, normal;
   -webkit-box-shadow: 0 0.02667rem 0.06667rem 0 rgba(240, 89, 48, 0.75);
           box-shadow: 0 0.02667rem 0.06667rem 0 rgba(240, 89, 48, 0.75);
-  font-family: NotoSansHans-Medium;
   font-size: 0.37333rem;
   color: #fefeff;
   text-align: center;
@@ -334,7 +338,6 @@ input[type="submit"] {
 }
 
 .good-teach .cont-item .item-detail .detail-title {
-  font-family: NotoSansHans-Bold;
   font-size: 0.37333rem;
   font-weight: bold;
   line-height: 0.32rem;
@@ -343,7 +346,6 @@ input[type="submit"] {
 }
 
 .good-teach .cont-item .item-detail p {
-  font-family: NotoSansHans-Regular;
   font-size: 0.29333rem;
   line-height: 0.4rem;
   color: #ffffff;
@@ -381,20 +383,20 @@ input[type="submit"] {
 /* 国际学校大全 */
 .all-school {
   text-align: center;
+  padding-top: 0.26667rem;
   margin-bottom: 0.4rem;
   /* 深圳国际学校 */
 }
 
 .all-school .title {
   width: 8.84rem;
-  background: url("../images/icon_5.png") no-repeat top center;
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_5.png") no-repeat top center;
   background-size: contain;
   padding-top: 0.13333rem;
   margin-bottom: 0.26667rem;
 }
 
 .all-school .title span {
-  font-family: NotoSansHans-Black;
   font-weight: bold;
   font-size: 0.48rem;
   line-height: 0.32rem;
@@ -460,7 +462,6 @@ input[type="submit"] {
 }
 
 .all-school .tab-cont .cont-item .item-title {
-  font-family: NotoSansHans-Regular;
   font-size: 0.32rem;
   line-height: 0.48rem;
   display: block;
@@ -509,7 +510,6 @@ input[type="submit"] {
   height: 0.77333rem;
   line-height: 0.77333rem;
   border: solid 1px #d0d9ff;
-  font-family: NotoSansHans-Regular;
   font-size: 0.32rem;
   color: #6a80ea;
   text-align: center;
@@ -519,21 +519,21 @@ input[type="submit"] {
 
 /* 如何顺利进入心仪国际学校 */
 .goal-school {
-  background: url("../images/bg_2.png") no-repeat top;
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/bg_2.png") no-repeat top;
   background-size: contain;
   padding-top: 1.05333rem;
+  padding-bottom: 0.13333rem;
   text-align: center;
 }
 
 .goal-school .title {
   width: 8.52rem;
-  background: url("../images/icon_5.png") no-repeat top center;
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_5.png") no-repeat top center;
   background-size: contain;
   padding-top: 0.13333rem;
 }
 
 .goal-school .title span {
-  font-family: NotoSansHans-Black;
   font-weight: bold;
   font-size: 0.48rem;
   line-height: 0.32rem;
@@ -550,7 +550,7 @@ input[type="submit"] {
   -webkit-box-shadow: 0 0 12px 0 rgba(18, 38, 137, 0.4);
           box-shadow: 0 0 12px 0 rgba(18, 38, 137, 0.4);
   border-radius: 12px;
-  margin: 0.38667rem 0.26667rem;
+  margin: 0.38667rem 0.26667rem 0;
   padding-top: 0.26667rem;
   padding-left: 0.54667rem;
   padding-bottom: 0.54667rem;
@@ -563,7 +563,7 @@ input[type="submit"] {
 .goal-school .goal-cont li .icon {
   width: 0.42667rem;
   height: 1.22667rem;
-  background: url("../images/step.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/step.png") no-repeat;
   background-size: 100% 100%;
   text-align: center;
   padding-top: 0.16rem;
@@ -582,7 +582,6 @@ input[type="submit"] {
 }
 
 .goal-school .goal-cont li .text .text-title {
-  font-family: NotoSansHans-Black;
   font-size: 0.4rem;
   font-weight: bold;
   line-height: 0.56rem;
@@ -590,7 +589,6 @@ input[type="submit"] {
 }
 
 .goal-school .goal-cont li .text p {
-  font-family: NotoSansHans-Regular;
   font-size: 0.34667rem;
   color: #666666;
 }
@@ -605,7 +603,6 @@ input[type="submit"] {
   padding: 0 1.33333rem;
   height: 0.64rem;
   line-height: 0.64rem;
-  font-family: NotoSansHans-Regular;
   font-size: 0.34667rem;
   color: #ffffff;
   margin-top: 0.13333rem;
@@ -614,18 +611,19 @@ input[type="submit"] {
 /* 国际学校入学能力免费评估 */
 .assess {
   margin: 0 0.26667rem 0.4rem;
-  padding: 0.26667rem 0.26667rem 0.38667rem;
-  background: url("../images/bg_3.png") no-repeat center;
+  padding: 0.4rem 0.26667rem;
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/bg_3.png") no-repeat;
   background-size: 100% 100%;
   text-align: center;
+  border-top: 0.26667rem solid transparent;
 }
 
 .assess .assess-title {
-  font-family: NotoSansHans-Black;
   font-size: 0.48rem;
   font-weight: bold;
   line-height: 0.56rem;
   color: #ffffff;
+  margin-top: 0.26667rem;
 }
 
 .assess .assess-title strong {
@@ -633,7 +631,6 @@ input[type="submit"] {
 }
 
 .assess .exam {
-  font-family: NotoSansHans-Regular;
   font-size: 0.34667rem;
   line-height: 0.56rem;
   color: #ffffff;
@@ -643,10 +640,9 @@ input[type="submit"] {
 .assess .population {
   width: 5.42667rem;
   color: #ffffff;
-  font-family: NotoSansHans-Regular;
   font-size: 0.32rem;
   line-height: 0.56rem;
-  background: url("../images/icon_6.png") no-repeat center;
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_6.png") no-repeat center;
   background-size: cover;
   margin-bottom: 0.22667rem;
 }
@@ -683,7 +679,7 @@ input[type="submit"] {
   width: 100%;
   height: 0.77333rem;
   line-height: 0.77333rem;
-  background: url("../images/triangle.png") no-repeat 95% center #ffffff;
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/triangle.png") no-repeat 95% center #ffffff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #999999;
@@ -748,15 +744,14 @@ input[type="submit"] {
 
 /* 多维度评估 全方位解读 */
 .reading {
-  margin: 0 0.26667rem 0.37333rem;
-  height: 6.48rem;
-  background: url("../images/bg_4.png") no-repeat center;
-  background-size: 100% 100%;
+  margin: 0 0.26667rem 0.10667rem;
   padding-right: 0.26667rem;
+  height: 6.48rem;
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/bg_4.png") no-repeat center;
+  background-size: 100% 100%;
 }
 
 .reading .reading-title {
-  font-family: NotoSansHans-Black;
   font-size: 0.48rem;
   font-weight: bold;
   line-height: 0.93333rem;
@@ -787,10 +782,9 @@ input[type="submit"] {
 
 .reading .reading-cont .report {
   float: right;
-  background: url("../images/icon_7.png") no-repeat center;
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_7.png") no-repeat center;
   background-size: 100% 100%;
   padding: 0.26667rem 0.26667rem 0.26667rem 0.53333rem;
-  font-family: NotoSansHans-Regular;
   font-size: 0.29333rem;
   color: #ffffff;
   opacity: 0.7;
@@ -799,6 +793,7 @@ input[type="submit"] {
 /* 从国际学校面试真题 */
 .past-exam {
   text-align: center;
+  padding-top: 0.26667rem;
   padding-bottom: 0.4rem;
 }
 
@@ -821,7 +816,7 @@ input[type="submit"] {
 .past-exam .exam-cont .cont-item {
   width: 32%;
   height: 2.18667rem;
-  background: url("../images/interview_1.png");
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/interview_1.png");
   background-size: 100% 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -844,14 +839,13 @@ input[type="submit"] {
 }
 
 .past-exam .exam-cont .cont-item span {
-  font-family: NotoSansHans-Regular;
   font-size: 0.34667rem;
   line-height: 0.4rem;
   color: #ffffff;
 }
 
 .past-exam .exam-cont .cont-item:nth-of-type(2) {
-  background: url("../images/interview_2.png");
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/interview_2.png");
   background-size: 100% 100%;
 }
 
@@ -860,7 +854,7 @@ input[type="submit"] {
 }
 
 .past-exam .exam-cont .cont-item:nth-of-type(3) {
-  background: url("../images/interview_3.png");
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/interview_3.png");
   background-size: 100% 100%;
 }
 
@@ -874,7 +868,6 @@ input[type="submit"] {
   height: 0.64rem;
   border-radius: 0.32rem;
   border: dotted 1px #f95b34;
-  font-family: NotoSansHans-Regular;
   font-size: 0.34667rem;
   line-height: 0.64rem;
   color: #ee5f3c;
@@ -888,13 +881,12 @@ input[type="submit"] {
 
 .look-school .title {
   width: 5.98667rem;
-  background: url("../images/icon_9.png") no-repeat top center;
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_9.png") no-repeat top center;
   background-size: contain;
   padding-top: 0.13333rem;
 }
 
 .look-school .title span {
-  font-family: NotoSansHans-Black;
   font-size: 0.48rem;
   font-weight: bold;
   line-height: 0.48rem;
@@ -912,16 +904,14 @@ input[type="submit"] {
 .look-school .step .step-item .icon {
   height: 1.45333rem;
   width: 100%;
-  background: url("../images/icon_10.png");
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_10.png");
   background-size: 100% 100%;
-  font-family: NotoSansHans-Medium;
   font-size: 0.48rem;
   line-height: 1.33333rem;
   color: #ffffff;
 }
 
 .look-school .step .step-item span {
-  font-family: NotoSansHans-Regular;
   font-size: 0.29333rem;
   line-height: 0.48rem;
 }
@@ -936,7 +926,6 @@ input[type="submit"] {
   padding: 0 0.98667rem;
   height: 0.64rem;
   line-height: 0.64rem;
-  font-family: NotoSansHans-Regular;
   font-size: 0.34667rem;
   color: #ffffff;
   margin-top: 0.13333rem;
@@ -945,13 +934,12 @@ input[type="submit"] {
 /* 第十一届国际学校择校展 */
 .school-fair {
   padding: 0.26667rem 0.26667rem 0.38667rem;
-  background: url("../images/bg_5.png") no-repeat top;
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/bg_5.png") no-repeat top;
   background-size: contain;
   text-align: center;
 }
 
 .school-fair .assess-title {
-  font-family: NotoSansHans-Black;
   font-size: 0.48rem;
   font-weight: bold;
   line-height: 0.56rem;
@@ -967,7 +955,6 @@ input[type="submit"] {
 }
 
 .school-fair .exam {
-  font-family: NotoSansHans-Regular;
   font-size: 0.34667rem;
   line-height: 0.56rem;
 }
@@ -975,10 +962,9 @@ input[type="submit"] {
 .school-fair .population {
   width: 5.6rem;
   color: #ffffff;
-  font-family: NotoSansHans-Regular;
   font-size: 0.24rem;
   line-height: 0.56rem;
-  background: url("../images/icon_12.png") no-repeat center;
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_12.png") no-repeat center;
   background-size: cover;
   margin-bottom: 0.22667rem;
 }
@@ -1004,7 +990,7 @@ input[type="submit"] {
 }
 
 .school-fair .sign-in .title {
-  background: url("../images/icon_13.png") no-repeat bottom center;
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_13.png") no-repeat bottom center;
   background-size: contain;
   padding-bottom: 0.08rem;
   margin-bottom: 0.4rem;
@@ -1071,13 +1057,17 @@ input[type="submit"] {
 .footer {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 10rem;
+  margin: 0 auto;
   z-index: 100;
+  left: 0;
+  right: 0;
 }
 
 .footer .footer-cont {
   position: relative;
   text-align: center;
+  font-size: 0.42667rem;
 }
 
 .footer .footer-cont a {
@@ -1128,16 +1118,19 @@ input[type="submit"] {
 
 /* 弹窗 */
 .popup {
+  max-width: 8.53333rem;
   border-radius: 0.16rem;
   position: fixed;
   top: 50%;
-  left: 0.73333rem;
-  right: 0.73333rem;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 500;
   padding: 2.66667rem 0.26667rem 0.29333rem;
-  background: url("../images/popup.png");
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/popup.png");
   background-size: 100% 100%;
   display: none;
 }
@@ -1159,7 +1152,6 @@ input[type="submit"] {
 }
 
 .popup .sign-in .popup-title {
-  font-family: MicrosoftYaHei-Bold;
   font-weight: bold;
   font-size: 0.34667rem;
   line-height: 0.4rem;
@@ -1230,8 +1222,8 @@ input[type="submit"] {
   color: #ffffff;
 }
 
+/* 公共标题 */
 .title {
-  font-family: NotoSansHans-Black;
   font-weight: bold;
   font-size: 0.48rem;
   height: 0.54667rem;
@@ -1243,8 +1235,8 @@ input[type="submit"] {
   height: 100%;
 }
 
+/* 公共副标题 */
 .subhead {
-  font-family: NotoSansHans-Regular;
   font-size: 0.34667rem;
   line-height: 0.32rem;
   text-align: center;
