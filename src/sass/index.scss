@@ -211,12 +211,10 @@ input[type="submit"] {
   //position: absolute;
   margin: pr(-35px) $padding-size pr(30px);
   z-index: 30;
-  @extend %clearfix;
+  //@extend %clearfix;
+  display: flex;
+  justify-content: center;
   .study-item{
-    float: left;
-    border-right: 1px solid #dddddd;
-    padding-left: pr(28px);
-    padding-right: pr(28px);
     img{
       height: pr(97px);
       float: left;
@@ -234,9 +232,10 @@ input[type="submit"] {
         color: #888888;
       }
     }
-    &:last-child{
-      border-right: none;
-      padding-right: pr(10px);
+    &:first-child{
+      border-right: 1px solid #dddddd;
+      padding-right: pr(15px);
+      margin-right: pr(15px);
     }
   }
 }
@@ -367,7 +366,7 @@ input[type="submit"] {
   .title{
     @extend %in-b;
     width: pr(663px);
-    background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_5.png") no-repeat top center;
+    //background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_5.png") no-repeat top center;
     background-size: contain;
     padding-top: pr(10px);
     margin-bottom: pr(20px);
@@ -488,7 +487,7 @@ input[type="submit"] {
   .title{
     @extend %in-b;
     width: pr(639px);
-    background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_5.png") no-repeat top center;
+    //background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_5.png") no-repeat top center;
     background-size: contain;
     padding-top: pr(10px);
     //margin-bottom: pr(20px);
@@ -818,7 +817,7 @@ input[type="submit"] {
   .title{
     @extend %in-b;
     width: pr(449px);
-    background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_9.png") no-repeat top center;
+    //background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_9.png") no-repeat top center;
     background-size: contain;
     padding-top: pr(10px);
     span{
@@ -922,7 +921,7 @@ input[type="submit"] {
     .title{
       @extend %in-b;
       //width: pr(400px);
-      background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_13.png") no-repeat bottom center;
+      //background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_13.png") no-repeat bottom center;
       background-size: contain;
       padding-bottom: pr(6px);
       margin-bottom: pr(30px);

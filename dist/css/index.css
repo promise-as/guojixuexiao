@@ -102,15 +102,15 @@ input[type="submit"] {
   *display: inline;
 }
 
-.header, .study, .good-teach .cont-item, .goal-school .goal-cont li, .reading .reading-cont, .look-school .step, .footer .footer-cont, .popup .sign-in .project {
+.header, .good-teach .cont-item, .goal-school .goal-cont li, .reading .reading-cont, .look-school .step, .footer .footer-cont, .popup .sign-in .project {
   zoom: 1;
 }
 
-.header:after, .study:after, .good-teach .cont-item:after, .goal-school .goal-cont li:after, .reading .reading-cont:after, .look-school .step:after, .footer .footer-cont:after, .popup .sign-in .project:after {
+.header:after, .good-teach .cont-item:after, .goal-school .goal-cont li:after, .reading .reading-cont:after, .look-school .step:after, .footer .footer-cont:after, .popup .sign-in .project:after {
   clear: both;
 }
 
-.header:before, .study:before, .good-teach .cont-item:before, .goal-school .goal-cont li:before, .reading .reading-cont:before, .look-school .step:before, .footer .footer-cont:before, .popup .sign-in .project:before, .header:after, .study:after, .good-teach .cont-item:after, .goal-school .goal-cont li:after, .reading .reading-cont:after, .look-school .step:after, .footer .footer-cont:after, .popup .sign-in .project:after {
+.header:before, .good-teach .cont-item:before, .goal-school .goal-cont li:before, .reading .reading-cont:before, .look-school .step:before, .footer .footer-cont:before, .popup .sign-in .project:before, .header:after, .good-teach .cont-item:after, .goal-school .goal-cont li:after, .reading .reading-cont:after, .look-school .step:after, .footer .footer-cont:after, .popup .sign-in .project:after {
   content: "";
   display: table;
 }
@@ -221,13 +221,12 @@ input[type="submit"] {
   border-radius: 0.16rem;
   margin: -0.46667rem 0.26667rem 0.4rem;
   z-index: 30;
-}
-
-.study .study-item {
-  float: left;
-  border-right: 1px solid #dddddd;
-  padding-left: 0.37333rem;
-  padding-right: 0.37333rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .study .study-item img {
@@ -251,9 +250,10 @@ input[type="submit"] {
   color: #888888;
 }
 
-.study .study-item:last-child {
-  border-right: none;
-  padding-right: 0.13333rem;
+.study .study-item:first-child {
+  border-right: 1px solid #dddddd;
+  padding-right: 0.2rem;
+  margin-right: 0.2rem;
 }
 
 .banner-2 {
@@ -390,7 +390,6 @@ input[type="submit"] {
 
 .all-school .title {
   width: 8.84rem;
-  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_5.png") no-repeat top center;
   background-size: contain;
   padding-top: 0.13333rem;
   margin-bottom: 0.26667rem;
@@ -528,7 +527,6 @@ input[type="submit"] {
 
 .goal-school .title {
   width: 8.52rem;
-  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_5.png") no-repeat top center;
   background-size: contain;
   padding-top: 0.13333rem;
 }
@@ -881,7 +879,6 @@ input[type="submit"] {
 
 .look-school .title {
   width: 5.98667rem;
-  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_9.png") no-repeat top center;
   background-size: contain;
   padding-top: 0.13333rem;
 }
@@ -990,7 +987,6 @@ input[type="submit"] {
 }
 
 .school-fair .sign-in .title {
-  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_13.png") no-repeat bottom center;
   background-size: contain;
   padding-bottom: 0.08rem;
   margin-bottom: 0.4rem;
