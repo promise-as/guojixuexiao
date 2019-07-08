@@ -2,7 +2,7 @@
 
 $(function () {
   theaMsForm($('.sign-in'), function ($data) {
-    console.log(11111111);
+    // console.log(11111111);
     if ($data.flag == 'ok') {
       $(".popup").css("display", "none");
     } else if ($data.flag == 'no') {}
@@ -64,9 +64,9 @@ $(function () {
     }
   }
 
-  if ($(".popup").size() > 0) {
-    popupHandle('.popup', '.popup .close', 15000, 30000, 2);
-  }
+  if ($(".popup").size() > 0) {}
+  // popupHandle('.popup', '.popup .close', 15000, 30000, 2);
+
 
   //  弹窗的 预约的项目
   $('.project .project-item').each(function (index) {
