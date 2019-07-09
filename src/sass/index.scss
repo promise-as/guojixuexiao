@@ -122,7 +122,7 @@ input[type="submit"] {
 
 /* 弹窗 */
 .popup{
-  display: none;
+  //display: none;
 }
 .header{
   @extend %clearfix;
@@ -400,20 +400,19 @@ input[type="submit"] {
         }
       }
       &:nth-of-type(3){
-        padding-top: 16px;
+        padding-top: 36px;
         .item-detail{
           //width: pr(424px);
         }
       }
       &:nth-of-type(4){
-        padding-top: 18px;
+        padding-top: 32px;
         .item-detail{
           //width: pr(504px);
         }
       }
     }
   }
-
 }
 
 /* 国际学校大全 */
@@ -472,7 +471,6 @@ input[type="submit"] {
       box-sizing: border-box;
       box-shadow: 0 0 pr(12px) 0 rgba(106, 128, 234, 0.4);
       text-align: center;
-
       width: 269px;
       height: 355px;
       float: left;
@@ -486,10 +484,12 @@ input[type="submit"] {
         font-size: 20px;
         line-height: 24px;
         display: block;
+        @extend %one;
       }
       li{
         font-size: 16px;
         text-align: left;
+        margin-top: 10px;
         span{
           color: #888888;
         }
@@ -529,6 +529,7 @@ input[type="submit"] {
       clear: both;
       font-size: 20px;
       color: $bg-color;
+      cursor: pointer;
     }
   }
   /* 深圳国际学校 */
@@ -540,21 +541,9 @@ input[type="submit"] {
       .item-title{
         color: #3c55d1;
         border-bottom: 1px solid #eeeeee;
-        padding-bottom: $padding-size;
-        margin-bottom: $padding-size;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
       }
-    }
-    .more{
-      display: block;
-      width: 205%; // grid layout affect
-      height: pr(58px);
-      line-height: pr(58px);
-      border: solid 1px #d0d9ff;
-      font-size: pr(24px);
-      color: #6a80ea;
-      text-align: center;
-      cursor: pointer;
-      margin-top: pr(14px);
     }
   }
 }
@@ -581,7 +570,7 @@ input[type="submit"] {
 
   .goal-cont{
     width: 1100px;
-    height: 490px;
+    //height: 490px;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 0 12px 0 rgba(18, 38, 137, 0.4);
@@ -597,11 +586,11 @@ input[type="submit"] {
       @extend %clearfix;
       .icon{
         width: 32px;
-        height: 84px;
-        background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/step.png") no-repeat;
+        height: 70px;
+        background: url("../images/step.png") no-repeat;
         background-size: 100% 100%;
         text-align: center;
-        padding-top: 12px;
+        padding-top: 20px;
         padding-right: 3px;
         box-sizing: border-box;
         color: #ffffff;
@@ -612,10 +601,11 @@ input[type="submit"] {
       }
       .text{
         float: left;
+        margin-top: 16px;
         .text-title{
           font-size: 22px;
           font-weight: bold;
-          line-height: 32px;
+          line-height: 24px;
           color: $bg-color;
         }
         p{
@@ -640,6 +630,8 @@ input[type="submit"] {
       line-height: 54px;
       color: #ffffff;
       text-align: center;
+      margin-top: 18px;
+      margin-bottom: -19px;
     }
   }
 }
@@ -693,66 +685,6 @@ input[type="submit"] {
       float: left;
       margin-right: 10px;
     }
-    /*.grade {
-      .grade-select {
-        display: none;
-      }
-      .grade-replace {
-        cursor: default;
-        overflow: visible;
-        position: relative;
-        width: 100%;
-        text-align: left;
-        .current-type {
-          width: 100%;
-          height: pr(58px);
-          line-height: pr(58px);
-          background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/triangle.png") no-repeat 95% center #ffffff;
-          box-sizing: border-box;
-          color: #999999;
-          outline: none;
-          margin-bottom: 0;
-          border: solid 1px #dddddd;
-        }
-        .grade-options {
-          display: none;
-          list-style-type: none;
-          margin-top: 0;
-          position: absolute;
-          width: 100%;
-          background-color: #FFF;
-          z-index: 10;
-          color: #666666;
-          border: 1px solid $bg-color;
-          box-sizing: border-box;
-          li {
-            line-height: pr(58px);
-            padding: 0 pr(15px);
-            background-color: #FFF;
-            &:hover {
-              background-color: #dfe5ff;
-              color: $bg-color;
-            }
-          }
-        }
-      }
-      .download{
-        width: 360px;
-        height: 44px;
-        background-color: #ff4b02;
-
-        font-size: 16px;
-        line-height: 44px;
-        letter-spacing: 1px;
-        color: #ffffff;
-        text-align: center;
-        margin-top: 16px;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        //@extend .hover-effect;
-      }
-    }*/
     select{
       float: left;
       width: 292px;
@@ -761,6 +693,7 @@ input[type="submit"] {
       border-radius: 9px;
       margin-right: 10px;
       outline: none;
+      color: #999999;
     }
     input[type='submit']{
       width: 292px;
@@ -983,7 +916,7 @@ input[type="submit"] {
 /* 第十一届国际学校择校展 */
 .school-fair{
   padding: 60px $padding-size pr(29px);
-  background: url("../images/pc-bg_5.png") no-repeat top;
+  background: url("../images/pc-bg_6.png") no-repeat top;
   background-size: contain;
   text-align: center;
   .assess-title{
@@ -1086,8 +1019,13 @@ input[type="submit"] {
   box-sizing: border-box;
   .footer-nav{
     margin-bottom: 10px;
+    color: #cccccc;
     a{
       padding: 0 20px;
+      color: #444444;
+      &:hover{
+        color: $txt-color;
+      }
     }
   }
 }
@@ -1098,6 +1036,124 @@ input[type="submit"] {
 .footer-fixed{
   display: none;
 }
+
+/* 弹窗 */
+.popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: none;
+  .mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .cont{
+    width: 481px;
+    border-radius: pr(12px);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    padding: 154px 15px 16px;
+    background: url("../images/pc-popup.png") no-repeat;
+    background-size: 100% 100%;
+    .close{
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 40px;
+      right: 20px;
+      cursor: pointer;
+    }
+    .sign-in{
+      background-color: #ffffff;
+      box-shadow: 0 0 10px 0 rgba(168, 47, 16, 0.57);
+      border-radius: 12px;
+      padding: 20px pr(19px) pr(10px);
+      .popup-title{
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 24px;
+        margin-bottom: 15px;
+      }
+      .project{
+        @extend %clearfix;
+        margin-bottom: 15px;
+        .project-item{
+          float: left;
+          text-align: left;
+          margin-right: pr(30px);
+          cursor: pointer;
+          .circle{
+            @extend %in-b;
+            width: 12px;
+            height: 12px;
+            border: 1px solid #cccccc;
+            border-radius: 50%;
+            background-color: #ffffff;
+            vertical-align: text-top;
+            position: relative;
+            margin-right: 5px;
+          }
+          span{
+            font-size: 20px;
+            line-height: 20px;
+          }
+          &.active{
+            .circle{
+              &:before{
+                position: absolute;
+                content: '';
+                top: pr(3px);
+                right: pr(3px);
+                bottom: pr(3px);
+                left: pr(3px);
+                background-color: $txt-color;
+                border-radius: 50%;
+              }
+            }
+            span{
+              color: $txt-color;
+            }
+          }
+        }
+      }
+
+      input{
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        border: solid 1px #dddddd;
+        box-sizing: border-box;
+        margin-bottom: 14px;
+        font-size: 18px;
+      }
+      input[type='submit']{
+        background-image: linear-gradient(-90deg,
+                #f05630 0%,
+                #f09c30 100%),
+        linear-gradient(
+                        #f05630,
+                        #f05630);
+        box-shadow: 0 pr(3px) pr(4px) 0 rgba(240, 86, 48, 0.3);
+        border-radius: pr(28px);
+        font-size: 20px;
+        color: #ffffff;
+        border: none;
+      }
+    }
+  }
+}
+
 /*mobile*/
 @media screen and (max-width: 750px) {
   body{
@@ -1137,102 +1193,100 @@ input[type="submit"] {
   }
   /* 弹窗 */
   .popup{
-    max-width: pr(640px);
-    border-radius: pr(12px);
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 500;
-    padding: pr(200px) $padding-size pr(22px);
-    background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/popup.png");
-    background-size: 100% 100%;
-    display: none;
-    .close{
-      width: pr(20px);
-      height: pr(20px);
-      position: absolute;
-      top: pr(46px);
-      right: pr(18px);
-    }
-    .sign-in{
-      background-color: #ffffff;
-      box-shadow: 0 0 10px 0 rgba(168, 47, 16, 0.57);
-      border-radius: 12px;
-      padding: pr(30px) pr(19px) pr(10px);
-      .popup-title{
-        font-weight: bold;
-        font-size: pr(26px);
-        line-height: pr(30px);
-        margin-bottom: $padding-size;
+    .cont{
+      max-width: pr(640px);
+      border-radius: pr(12px);
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 500;
+      padding: pr(210px) $padding-size pr(22px);
+      background: url("../images/popup.png") no-repeat;
+      background-size: 100% 100%;
+      .close{
+        width: pr(20px);
+        height: pr(20px);
+        top: pr(48px);
+        right: pr(22px);
       }
-      .project{
-        //@extend %clearfix;
-        margin-bottom: $padding-size;
-        .project-item{
-          float: left;
-          text-align: left;
-          margin-right: pr(30px);
-          cursor: pointer;
-          .circle{
-            //@extend %in-b;
-            width: pr(14px);
-            height: pr(14px);
-            border: 1px solid #cccccc;
-            border-radius: 50%;
-            background-color: #fff;
-            vertical-align: middle;
-            position: relative;
-          }
-          span{
-            font-size: pr(26px);
-            line-height: pr(30px);
-          }
-          &.active{
+      .sign-in{
+        background-color: #ffffff;
+        box-shadow: 0 0 10px 0 rgba(168, 47, 16, 0.57);
+        border-radius: 12px;
+        padding: pr(30px) pr(19px) pr(10px);
+        .popup-title{
+          font-weight: bold;
+          font-size: pr(26px);
+          line-height: pr(30px);
+          margin-bottom: $padding-size;
+        }
+        .project{
+          margin-bottom: $padding-size;
+          .project-item{
+            float: left;
+            text-align: left;
+            margin-right: pr(30px);
+            cursor: pointer;
             .circle{
-              &:before{
-                position: absolute;
-                content: '';
-                top: pr(3px);
-                right: pr(3px);
-                bottom: pr(3px);
-                left: pr(3px);
-                background-color: $txt-color;
-                border-radius: 50%;
-              }
+              width: pr(14px);
+              height: pr(14px);
+              border: 1px solid #cccccc;
+              border-radius: 50%;
+              background-color: #fff;
+              position: relative;
             }
             span{
-              color: $txt-color;
+              font-size: pr(26px);
+              line-height: pr(30px);
+            }
+            &.active{
+              .circle{
+                &:before{
+                  position: absolute;
+                  content: '';
+                  top: pr(3px);
+                  right: pr(3px);
+                  bottom: pr(3px);
+                  left: pr(3px);
+                  background-color: $txt-color;
+                  border-radius: 50%;
+                }
+              }
+              span{
+                color: $txt-color;
+              }
             }
           }
         }
-      }
 
-      input{
-        width: 100%;
-        height: pr(58px);
-        line-height: pr(58px);
-        border: solid 1px #dddddd;
-        box-sizing: border-box;
-        margin-bottom: $padding-size;
-      }
-      input[type='submit']{
-        background-image: linear-gradient(-90deg,
-            #f05630 0%,
-            #f09c30 100%),
-        linear-gradient(
-                #f05630,
-                #f05630);
-        background-blend-mode: normal, normal;
-        box-shadow: 0 pr(3px) pr(4px) 0 rgba(240, 86, 48, 0.3);
-        border-radius: pr(28px);
-        border: none;
-        font-size: pr(26px);
-        line-height: pr(36px);
-        color: #ffffff;
+        input{
+          width: 100%;
+          height: pr(58px);
+          line-height: pr(58px);
+          border: solid 1px #dddddd;
+          box-sizing: border-box;
+          margin-bottom: $padding-size;
+          font-size: pr(26px);
+        }
+        input[type='submit']{
+          background-image: linear-gradient(-90deg,
+                  #f05630 0%,
+                  #f09c30 100%),
+          linear-gradient(
+                          #f05630,
+                          #f05630);
+          background-blend-mode: normal, normal;
+          box-shadow: 0 pr(3px) pr(4px) 0 rgba(240, 86, 48, 0.3);
+          border-radius: pr(28px);
+          border: none;
+          font-size: pr(26px);
+          line-height: pr(36px);
+          color: #ffffff;
+        }
       }
     }
   }
@@ -1470,13 +1524,13 @@ input[type="submit"] {
           }
         }
         &:nth-of-type(3){
-          padding-top: pr(10px);
+          padding-top: pr(15px);
           .item-detail{
             width: pr(424px);
           }
         }
         &:nth-of-type(4){
-          padding-top: pr(17px);
+          padding-top: pr(20px);
           .item-detail{
             width: pr(470px);
           }
@@ -1542,7 +1596,7 @@ input[type="submit"] {
       display: none;
       .cont-item{
         width: pr(344px);
-        height: pr(416px);
+        height: pr(420px);
         background-color: #ffffff;
         box-shadow: 0 0 pr(12px) 0 rgba(106, 128, 234, 0.4);
         border: solid 1px #d0d9ff;
@@ -1562,6 +1616,7 @@ input[type="submit"] {
         li{
           font-size: pr(22px);
           text-align: left;
+          margin-top: pr(5px);
           span{
             color: #888888;
           }
@@ -1577,7 +1632,7 @@ input[type="submit"] {
           color: #ffffff;
           margin-top: $padding-size;
           border-radius: 0;
-          bottom: pr(30px);
+          bottom: pr(20px);
         }
       }
       &.active{
@@ -1590,27 +1645,10 @@ input[type="submit"] {
     /* 深圳国际学校 */
     .sz{
       .cont-item{
-        img{
-          width: 73%;
-        }
         .item-title{
-          color: #3c55d1;
-          border-bottom: 1px solid #eeeeee;
-          padding-bottom: $padding-size;
-          margin-bottom: $padding-size;
+          margin-bottom: pr(20px);
+          padding-bottom: pr(20px);
         }
-      }
-      .more{
-        display: block;
-        width: 205%; // grid layout affect
-        height: pr(58px);
-        line-height: pr(58px);
-        border: solid 1px #d0d9ff;
-        font-size: pr(24px);
-        color: #6a80ea;
-        text-align: center;
-        cursor: pointer;
-        margin-top: pr(14px);
       }
     }
   }
@@ -1640,7 +1678,7 @@ input[type="submit"] {
 
     .goal-cont{
       width: 100%;
-      height: pr(608px);
+      //height: pr(608px);
       background-color: #ffffff;
       background-image: none;
       box-shadow: 0 0 12px 0 rgba(18, 38, 137, 0.4);
@@ -1654,21 +1692,22 @@ input[type="submit"] {
         .icon{
           //@extend %in-b;
           width: pr(32px);
-          height: pr(92px);
-          background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/step.png") no-repeat;
+          height: pr(90px);
+          background: url("../images/wap-step.png") no-repeat;
           background-size: 100% 100%;
           text-align: center;
-          padding-top: pr(12px);
+          padding-top: pr(14px);
           padding-right: pr(3px);
           box-sizing: border-box;
           color: #ffffff;
           font-size: pr(18px);
-          line-height: pr(28px);
+          line-height: pr(22px);
           float: left;
           margin-right: pr(30px);
         }
         .text{
           float: left;
+          margin-top: pr(9px);
           .text-title{
             font-size: pr(30px);
             font-weight: bold;
@@ -1692,12 +1731,12 @@ input[type="submit"] {
         background-blend-mode: normal, normal;
         box-shadow: 0 pr(3px) pr(4px) 0 rgba(240, 86, 48, 0.3);
         border-radius: pr(24px);
-        padding: 0 pr(100px);
+        //padding: 0 pr(100px);
         height: pr(48px);
         line-height: pr(48px);
         font-size: pr(26px);
         color: #ffffff;
-        margin-top: pr(10px);
+        margin-top: pr(39px);
       }
     }
   }
@@ -1751,66 +1790,6 @@ input[type="submit"] {
         box-sizing: border-box;
         margin-bottom: $padding-size;
       }
-      /*.grade {
-        .grade-select {
-          display: none;
-        }
-        .grade-replace {
-          cursor: default;
-          overflow: visible;
-          position: relative;
-          width: 100%;
-          text-align: left;
-          .current-type {
-            width: 100%;
-            height: pr(58px);
-            line-height: pr(58px);
-            background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/triangle.png") no-repeat 95% center #ffffff;
-            box-sizing: border-box;
-            color: #999999;
-            outline: none;
-            margin-bottom: 0;
-            border: solid 1px #dddddd;
-          }
-          .grade-options {
-            display: none;
-            list-style-type: none;
-            margin-top: 0;
-            position: absolute;
-            width: 100%;
-            background-color: #FFF;
-            z-index: 10;
-            color: #666666;
-            border: 1px solid $bg-color;
-            box-sizing: border-box;
-            li {
-              line-height: pr(58px);
-              padding: 0 pr(15px);
-              background-color: #FFF;
-              &:hover {
-                background-color: #dfe5ff;
-                color: $bg-color;
-              }
-            }
-          }
-        }
-        .download{
-          width: 360px;
-          height: 44px;
-          background-color: #ff4b02;
-
-          font-size: 16px;
-          line-height: 44px;
-          letter-spacing: 1px;
-          color: #ffffff;
-          text-align: center;
-          margin-top: 16px;
-          outline: none;
-          border: none;
-          cursor: pointer;
-          //@extend .hover-effect;
-        }
-      }*/
       select{
         width: 100%;
         height: pr(58px);

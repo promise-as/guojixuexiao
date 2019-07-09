@@ -14,38 +14,40 @@
 </head>
 <body>
 
-<!--<div class="defaults_dataid" data-id="2-0-126-0-0-0-1-国际高中择校">-->
-
-<div>
+<div class="defaults_dataid" data-id="2-0-126-0-0-0-1-国际高中择校">
   <!-- 弹窗 -->
   <div class="popup">
-    <i class="close">
-      <img src="https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/close.png" alt="close">
-    </i>
-    <form action="" class="sign-in">
-      <div class="popup-title">
-        请选择您要预约的项目：
-      </div>
-      <div class="project">
-        <div class="project-item active">
-          <i class="circle"></i>
-          <span>我要探校</span>
+    <div class="mask"></div>
+
+    <div class="cont">
+      <i class="close">
+        <img src="https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/close.png" alt="close">
+      </i>
+      <form action="" class="sign-in">
+        <div class="popup-title">
+          请选择您要预约的项目：
         </div>
-        <div class="project-item">
-          <i class="circle"></i>
-          <span>体验课程</span>
+        <div class="project">
+          <div class="project-item active">
+            <i class="circle"></i>
+            <span>我要探校</span>
+          </div>
+          <div class="project-item">
+            <i class="circle"></i>
+            <span>体验课程</span>
+          </div>
+          <div class="project-item">
+            <i class="circle"></i>
+            <span>预约考试</span>
+          </div>
         </div>
-        <div class="project-item">
-          <i class="circle"></i>
-          <span>预约考试</span>
-        </div>
-      </div>
-      <input type="hidden" class="appoint-project user-con" value="我要探校">
-      <input type="text" placeholder="请输入孩子的姓名" class="user-name">
-      <input type="text" placeholder="请输入孩子就读年级" class="user-con">
-      <input type="text" placeholder="请输入您的联系方式" class="user-tel">
-      <input type="submit" value="立即预约">
-    </form>
+        <input type="hidden" class="appoint-project user-con" value="我要探校">
+        <input type="text" placeholder="请输入孩子的姓名" class="user-name">
+        <input type="text" placeholder="请输入孩子就读年级" class="user-con">
+        <input type="text" placeholder="请输入您的联系方式" class="user-tel">
+        <input type="submit" value="立即预约">
+      </form>
+    </div>
   </div>
 
   <div class="wrap header">
@@ -1110,51 +1112,12 @@
         <option value="">十一年级</option>
         <option value="">十二年级</option>
       </select>
-      <!--<div class="grade">
-        &lt;!&ndash;原本的select 隐藏&ndash;&gt;
-        <select class="grade-select">
-          <option>请选择孩子在读年级</option>
-          <option value="grade-1">幼儿园</option>
-          <option value="grade-2">一年级</option>
-          <option value="grade-3">二年级</option>
-          <option value="grade-4">三年级</option>
-          <option value="grade-5">四年级</option>
-          <option value="grade-6">五年级</option>
-          <option value="grade-7">六年级</option>
-          <option value="grade-8">七年级</option>
-          <option value="grade-9">八年级</option>
-          <option value="grade-10">九年级</option>
-          <option value="grade-11">十年级</option>
-          <option value="grade-12">十一年级</option>
-          <option value="grade-13">十二年级</option>
-        </select>
-        &lt;!&ndash;显示模拟的select&ndash;&gt;
-        <div class="grade-replace">
-          &lt;!&ndash;提交的数据&ndash;&gt;
-          <input class="current-type" type="text" value="请选择孩子在读年级">
-          <ul class="grade-options">
-            <li rel="grade-1">幼儿园</li>
-            <li rel="grade-2">一年级</li>
-            <li rel="grade-3">二年级</li>
-            <li rel="grade-4">三年级</li>
-            <li rel="grade-5">四年级</li>
-            <li rel="grade-6">五年级</li>
-            <li rel="grade-7">六年级</li>
-            <li rel="grade-8">七年级</li>
-            <li rel="grade-9">八年级</li>
-            <li rel="grade-10">九年级</li>
-            <li rel="grade-11">十年级</li>
-            <li rel="grade-12">十一年级</li>
-            <li rel="grade-13">十二年级</li>
-          </ul>
-        </div>
-      </div>-->
       <input type="submit" value="立即预约">
     </form>
   </div>
 
   <!-- 多维度评估 全方位解读 -->
-  <div class="wrap">
+  <div class="wrap" id="remarks">
     <div class="reading">
       <div class="reading-title">
         多维度评估 全方位解读
@@ -1175,7 +1138,7 @@
       </div>
     </div>
     <!-- 从国际学校面试真题 -->
-    <div class="past-exam" id="remarks">
+    <div class="past-exam">
       <div class="title">
         <span>从国际学校面试真题</span>
       </div>
@@ -1349,7 +1312,7 @@
   </div>
 </div>
 
-<!--<script type="text/javascript">
+<script type="text/javascript">
   var _echatServer = ['v.rainbowred.com'];
   window._echat=window._echat||function(){(_echat.q=_echat.q||[]).push(arguments)};_echat.l=+new Date;
   _echat('initParam', { companyId: 378});
@@ -1364,8 +1327,8 @@
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(echat, s);
   })();
-</script>-->
-<!--<script type="text/javascript" src="https://img.thea.cn/public/js/thea.ms.form.js"></script>-->
+</script>
+<script type="text/javascript" src="https://img.thea.cn/public/js/thea.ms.form.js"></script>
 <script src="js/index.js"></script>
 
 </body>

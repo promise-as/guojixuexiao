@@ -1,19 +1,25 @@
 @charset "UTF-8";
-.all-school .tab-head .head-item, .goal-school .goal-cont .btn, .look-school .step .step-item .icon, .look-school .btn {
+.all-school .tab-cont .cont-item .item-title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.all-school .tab-head .head-item, .goal-school .goal-cont .btn, .look-school .step .step-item .icon, .look-school .btn, .popup .cont .sign-in .project .project-item .circle {
   display: inline-block;
   *zoom: 1;
   *display: inline;
 }
 
-.header, .visit .study .study-item, .good-teach, .all-school .tab-head, .all-school .tab-cont, .goal-school .goal-cont li, .assess .sign-in, .reading .reading-cont, .past-exam .exam-cont, .look-school .step, .school-fair .sign-in {
+.header, .visit .study .study-item, .good-teach, .all-school .tab-head, .all-school .tab-cont, .goal-school .goal-cont li, .assess .sign-in, .reading .reading-cont, .past-exam .exam-cont, .look-school .step, .school-fair .sign-in, .popup .cont .sign-in .project {
   zoom: 1;
 }
 
-.header:after, .visit .study .study-item:after, .good-teach:after, .all-school .tab-head:after, .all-school .tab-cont:after, .goal-school .goal-cont li:after, .assess .sign-in:after, .reading .reading-cont:after, .past-exam .exam-cont:after, .look-school .step:after, .school-fair .sign-in:after {
+.header:after, .visit .study .study-item:after, .good-teach:after, .all-school .tab-head:after, .all-school .tab-cont:after, .goal-school .goal-cont li:after, .assess .sign-in:after, .reading .reading-cont:after, .past-exam .exam-cont:after, .look-school .step:after, .school-fair .sign-in:after, .popup .cont .sign-in .project:after {
   clear: both;
 }
 
-.header:before, .visit .study .study-item:before, .good-teach:before, .all-school .tab-head:before, .all-school .tab-cont:before, .goal-school .goal-cont li:before, .assess .sign-in:before, .reading .reading-cont:before, .past-exam .exam-cont:before, .look-school .step:before, .school-fair .sign-in:before, .header:after, .visit .study .study-item:after, .good-teach:after, .all-school .tab-head:after, .all-school .tab-cont:after, .goal-school .goal-cont li:after, .assess .sign-in:after, .reading .reading-cont:after, .past-exam .exam-cont:after, .look-school .step:after, .school-fair .sign-in:after {
+.header:before, .visit .study .study-item:before, .good-teach:before, .all-school .tab-head:before, .all-school .tab-cont:before, .goal-school .goal-cont li:before, .assess .sign-in:before, .reading .reading-cont:before, .past-exam .exam-cont:before, .look-school .step:before, .school-fair .sign-in:before, .popup .cont .sign-in .project:before, .header:after, .visit .study .study-item:after, .good-teach:after, .all-school .tab-head:after, .all-school .tab-cont:after, .goal-school .goal-cont li:after, .assess .sign-in:after, .reading .reading-cont:after, .past-exam .exam-cont:after, .look-school .step:after, .school-fair .sign-in:after, .popup .cont .sign-in .project:after {
   content: "";
   display: table;
 }
@@ -135,10 +141,6 @@ input[type="submit"] {
 }
 
 /* 弹窗 */
-.popup {
-  display: none;
-}
-
 .header {
   padding-top: 13px;
   padding-bottom: 18px;
@@ -436,11 +438,11 @@ input[type="submit"] {
 }
 
 .good-teach .cont .cont-item:nth-of-type(3) {
-  padding-top: 16px;
+  padding-top: 36px;
 }
 
 .good-teach .cont .cont-item:nth-of-type(4) {
-  padding-top: 18px;
+  padding-top: 32px;
 }
 
 /* 国际学校大全 */
@@ -527,6 +529,7 @@ input[type="submit"] {
 .all-school .tab-cont .cont-item li {
   font-size: 16px;
   text-align: left;
+  margin-top: 10px;
 }
 
 .all-school .tab-cont .cont-item li span {
@@ -570,6 +573,7 @@ input[type="submit"] {
   clear: both;
   font-size: 20px;
   color: #6a80ea;
+  cursor: pointer;
 }
 
 .all-school .sz .cont-item img {
@@ -579,21 +583,8 @@ input[type="submit"] {
 .all-school .sz .cont-item .item-title {
   color: #3c55d1;
   border-bottom: 1px solid #eeeeee;
-  padding-bottom: 0.26667rem;
-  margin-bottom: 0.26667rem;
-}
-
-.all-school .sz .more {
-  display: block;
-  width: 205%;
-  height: 0.77333rem;
-  line-height: 0.77333rem;
-  border: solid 1px #d0d9ff;
-  font-size: 0.32rem;
-  color: #6a80ea;
-  text-align: center;
-  cursor: pointer;
-  margin-top: 0.18667rem;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 /* 如何顺利进入心仪国际学校 */
@@ -617,7 +608,6 @@ input[type="submit"] {
 
 .goal-school .goal-cont {
   width: 1100px;
-  height: 490px;
   margin-left: auto;
   margin-right: auto;
   -webkit-box-shadow: 0 0 12px 0 rgba(18, 38, 137, 0.4);
@@ -637,11 +627,11 @@ input[type="submit"] {
 
 .goal-school .goal-cont li .icon {
   width: 32px;
-  height: 84px;
-  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/step.png") no-repeat;
+  height: 70px;
+  background: url("../images/step.png") no-repeat;
   background-size: 100% 100%;
   text-align: center;
-  padding-top: 12px;
+  padding-top: 20px;
   padding-right: 3px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -654,12 +644,13 @@ input[type="submit"] {
 
 .goal-school .goal-cont li .text {
   float: left;
+  margin-top: 16px;
 }
 
 .goal-school .goal-cont li .text .text-title {
   font-size: 22px;
   font-weight: bold;
-  line-height: 32px;
+  line-height: 24px;
   color: #6a80ea;
 }
 
@@ -680,6 +671,8 @@ input[type="submit"] {
   line-height: 54px;
   color: #ffffff;
   text-align: center;
+  margin-top: 18px;
+  margin-bottom: -19px;
 }
 
 /* 国际学校入学能力免费评估 */
@@ -727,66 +720,6 @@ input[type="submit"] {
   margin-left: auto;
   margin-right: auto;
   font-size: 16px;
-  /*.grade {
-      .grade-select {
-        display: none;
-      }
-      .grade-replace {
-        cursor: default;
-        overflow: visible;
-        position: relative;
-        width: 100%;
-        text-align: left;
-        .current-type {
-          width: 100%;
-          height: pr(58px);
-          line-height: pr(58px);
-          background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/triangle.png") no-repeat 95% center #ffffff;
-          box-sizing: border-box;
-          color: #999999;
-          outline: none;
-          margin-bottom: 0;
-          border: solid 1px #dddddd;
-        }
-        .grade-options {
-          display: none;
-          list-style-type: none;
-          margin-top: 0;
-          position: absolute;
-          width: 100%;
-          background-color: #FFF;
-          z-index: 10;
-          color: #666666;
-          border: 1px solid $bg-color;
-          box-sizing: border-box;
-          li {
-            line-height: pr(58px);
-            padding: 0 pr(15px);
-            background-color: #FFF;
-            &:hover {
-              background-color: #dfe5ff;
-              color: $bg-color;
-            }
-          }
-        }
-      }
-      .download{
-        width: 360px;
-        height: 44px;
-        background-color: #ff4b02;
-
-        font-size: 16px;
-        line-height: 44px;
-        letter-spacing: 1px;
-        color: #ffffff;
-        text-align: center;
-        margin-top: 16px;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        //@extend .hover-effect;
-      }
-    }*/
 }
 
 .assess .sign-in input {
@@ -806,6 +739,7 @@ input[type="submit"] {
   border-radius: 9px;
   margin-right: 10px;
   outline: none;
+  color: #999999;
 }
 
 .assess .sign-in input[type='submit'] {
@@ -1032,7 +966,7 @@ input[type="submit"] {
 /* 第十一届国际学校择校展 */
 .school-fair {
   padding: 60px 0.26667rem 0.38667rem;
-  background: url("../images/pc-bg_5.png") no-repeat top;
+  background: url("../images/pc-bg_6.png") no-repeat top;
   background-size: contain;
   text-align: center;
 }
@@ -1147,10 +1081,16 @@ input[type="submit"] {
 
 .pc-footer .footer-nav {
   margin-bottom: 10px;
+  color: #cccccc;
 }
 
 .pc-footer .footer-nav a {
   padding: 0 20px;
+  color: #444444;
+}
+
+.pc-footer .footer-nav a:hover {
+  color: #f05630;
 }
 
 .copyright {
@@ -1159,6 +1099,129 @@ input[type="submit"] {
 
 .footer-fixed {
   display: none;
+}
+
+/* 弹窗 */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: none;
+}
+
+.popup .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup .cont {
+  width: 481px;
+  border-radius: 0.16rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  padding: 154px 15px 16px;
+  background: url("../images/pc-popup.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.popup .cont .close {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.popup .cont .sign-in {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 10px 0 rgba(168, 47, 16, 0.57);
+          box-shadow: 0 0 10px 0 rgba(168, 47, 16, 0.57);
+  border-radius: 12px;
+  padding: 20px 0.25333rem 0.13333rem;
+}
+
+.popup .cont .sign-in .popup-title {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.popup .cont .sign-in .project {
+  margin-bottom: 15px;
+}
+
+.popup .cont .sign-in .project .project-item {
+  float: left;
+  text-align: left;
+  margin-right: 0.4rem;
+  cursor: pointer;
+}
+
+.popup .cont .sign-in .project .project-item .circle {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 50%;
+  background-color: #ffffff;
+  vertical-align: text-top;
+  position: relative;
+  margin-right: 5px;
+}
+
+.popup .cont .sign-in .project .project-item span {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.popup .cont .sign-in .project .project-item.active .circle:before {
+  position: absolute;
+  content: '';
+  top: 0.04rem;
+  right: 0.04rem;
+  bottom: 0.04rem;
+  left: 0.04rem;
+  background-color: #f05630;
+  border-radius: 50%;
+}
+
+.popup .cont .sign-in .project .project-item.active span {
+  color: #f05630;
+}
+
+.popup .cont .sign-in input {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  border: solid 1px #dddddd;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 14px;
+  font-size: 18px;
+}
+
+.popup .cont .sign-in input[type='submit'] {
+  background-image: -webkit-gradient(linear, right top, left top, from(#f05630), to(#f09c30)), -webkit-gradient(linear, left top, left bottom, from(#f05630), to(#f05630));
+  background-image: linear-gradient(-90deg, #f05630 0%, #f09c30 100%), linear-gradient(#f05630, #f05630);
+  -webkit-box-shadow: 0 0.04rem 0.05333rem 0 rgba(240, 86, 48, 0.3);
+          box-shadow: 0 0.04rem 0.05333rem 0 rgba(240, 86, 48, 0.3);
+  border-radius: 0.37333rem;
+  font-size: 20px;
+  color: #ffffff;
+  border: none;
 }
 
 /*mobile*/
@@ -1195,7 +1258,7 @@ input[type="submit"] {
     text-align: center;
   }
   /* 弹窗 */
-  .popup {
+  .popup .cont {
     max-width: 8.53333rem;
     border-radius: 0.16rem;
     position: fixed;
@@ -1207,54 +1270,51 @@ input[type="submit"] {
     margin-left: auto;
     margin-right: auto;
     z-index: 500;
-    padding: 2.66667rem 0.26667rem 0.29333rem;
-    background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/popup.png");
+    padding: 2.8rem 0.26667rem 0.29333rem;
+    background: url("../images/popup.png") no-repeat;
     background-size: 100% 100%;
-    display: none;
   }
-  .popup .close {
+  .popup .cont .close {
     width: 0.26667rem;
     height: 0.26667rem;
-    position: absolute;
-    top: 0.61333rem;
-    right: 0.24rem;
+    top: 0.64rem;
+    right: 0.29333rem;
   }
-  .popup .sign-in {
+  .popup .cont .sign-in {
     background-color: #ffffff;
     -webkit-box-shadow: 0 0 10px 0 rgba(168, 47, 16, 0.57);
             box-shadow: 0 0 10px 0 rgba(168, 47, 16, 0.57);
     border-radius: 12px;
     padding: 0.4rem 0.25333rem 0.13333rem;
   }
-  .popup .sign-in .popup-title {
+  .popup .cont .sign-in .popup-title {
     font-weight: bold;
     font-size: 0.34667rem;
     line-height: 0.4rem;
     margin-bottom: 0.26667rem;
   }
-  .popup .sign-in .project {
+  .popup .cont .sign-in .project {
     margin-bottom: 0.26667rem;
   }
-  .popup .sign-in .project .project-item {
+  .popup .cont .sign-in .project .project-item {
     float: left;
     text-align: left;
     margin-right: 0.4rem;
     cursor: pointer;
   }
-  .popup .sign-in .project .project-item .circle {
+  .popup .cont .sign-in .project .project-item .circle {
     width: 0.18667rem;
     height: 0.18667rem;
     border: 1px solid #cccccc;
     border-radius: 50%;
     background-color: #fff;
-    vertical-align: middle;
     position: relative;
   }
-  .popup .sign-in .project .project-item span {
+  .popup .cont .sign-in .project .project-item span {
     font-size: 0.34667rem;
     line-height: 0.4rem;
   }
-  .popup .sign-in .project .project-item.active .circle:before {
+  .popup .cont .sign-in .project .project-item.active .circle:before {
     position: absolute;
     content: '';
     top: 0.04rem;
@@ -1264,10 +1324,10 @@ input[type="submit"] {
     background-color: #f05630;
     border-radius: 50%;
   }
-  .popup .sign-in .project .project-item.active span {
+  .popup .cont .sign-in .project .project-item.active span {
     color: #f05630;
   }
-  .popup .sign-in input {
+  .popup .cont .sign-in input {
     width: 100%;
     height: 0.77333rem;
     line-height: 0.77333rem;
@@ -1275,8 +1335,9 @@ input[type="submit"] {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin-bottom: 0.26667rem;
+    font-size: 0.34667rem;
   }
-  .popup .sign-in input[type='submit'] {
+  .popup .cont .sign-in input[type='submit'] {
     background-image: -webkit-gradient(linear, right top, left top, from(#f05630), to(#f09c30)), -webkit-gradient(linear, left top, left bottom, from(#f05630), to(#f05630));
     background-image: linear-gradient(-90deg, #f05630 0%, #f09c30 100%), linear-gradient(#f05630, #f05630);
     background-blend-mode: normal, normal;
@@ -1518,13 +1579,13 @@ input[type="submit"] {
     width: 4.16rem;
   }
   .good-teach .cont .cont-item:nth-of-type(3) {
-    padding-top: 0.13333rem;
+    padding-top: 0.2rem;
   }
   .good-teach .cont .cont-item:nth-of-type(3) .item-detail {
     width: 5.65333rem;
   }
   .good-teach .cont .cont-item:nth-of-type(4) {
-    padding-top: 0.22667rem;
+    padding-top: 0.26667rem;
   }
   .good-teach .cont .cont-item:nth-of-type(4) .item-detail {
     width: 6.26667rem;
@@ -1594,7 +1655,7 @@ input[type="submit"] {
   }
   .all-school .tab-cont .cont-item {
     width: 4.58667rem;
-    height: 5.54667rem;
+    height: 5.6rem;
     background-color: #ffffff;
     -webkit-box-shadow: 0 0 0.16rem 0 rgba(106, 128, 234, 0.4);
             box-shadow: 0 0 0.16rem 0 rgba(106, 128, 234, 0.4);
@@ -1617,6 +1678,7 @@ input[type="submit"] {
   .all-school .tab-cont .cont-item li {
     font-size: 0.29333rem;
     text-align: left;
+    margin-top: 0.06667rem;
   }
   .all-school .tab-cont .cont-item li span {
     color: #888888;
@@ -1632,7 +1694,7 @@ input[type="submit"] {
     color: #ffffff;
     margin-top: 0.26667rem;
     border-radius: 0;
-    bottom: 0.4rem;
+    bottom: 0.26667rem;
   }
   .all-school .tab-cont.active {
     display: grid;
@@ -1640,26 +1702,9 @@ input[type="submit"] {
   .all-school .tab-cont .more {
     display: none;
   }
-  .all-school .sz .cont-item img {
-    width: 73%;
-  }
   .all-school .sz .cont-item .item-title {
-    color: #3c55d1;
-    border-bottom: 1px solid #eeeeee;
-    padding-bottom: 0.26667rem;
     margin-bottom: 0.26667rem;
-  }
-  .all-school .sz .more {
-    display: block;
-    width: 205%;
-    height: 0.77333rem;
-    line-height: 0.77333rem;
-    border: solid 1px #d0d9ff;
-    font-size: 0.32rem;
-    color: #6a80ea;
-    text-align: center;
-    cursor: pointer;
-    margin-top: 0.18667rem;
+    padding-bottom: 0.26667rem;
   }
   /* 如何顺利进入心仪国际学校 */
   .goal-school {
@@ -1686,7 +1731,6 @@ input[type="submit"] {
   }
   .goal-school .goal-cont {
     width: 100%;
-    height: 8.10667rem;
     background-color: #ffffff;
     background-image: none;
     -webkit-box-shadow: 0 0 12px 0 rgba(18, 38, 137, 0.4);
@@ -1701,22 +1745,23 @@ input[type="submit"] {
   }
   .goal-school .goal-cont li .icon {
     width: 0.42667rem;
-    height: 1.22667rem;
-    background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/step.png") no-repeat;
+    height: 1.2rem;
+    background: url("../images/wap-step.png") no-repeat;
     background-size: 100% 100%;
     text-align: center;
-    padding-top: 0.16rem;
+    padding-top: 0.18667rem;
     padding-right: 0.04rem;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     color: #ffffff;
     font-size: 0.24rem;
-    line-height: 0.37333rem;
+    line-height: 0.29333rem;
     float: left;
     margin-right: 0.4rem;
   }
   .goal-school .goal-cont li .text {
     float: left;
+    margin-top: 0.12rem;
   }
   .goal-school .goal-cont li .text .text-title {
     font-size: 0.4rem;
@@ -1736,12 +1781,11 @@ input[type="submit"] {
     -webkit-box-shadow: 0 0.04rem 0.05333rem 0 rgba(240, 86, 48, 0.3);
             box-shadow: 0 0.04rem 0.05333rem 0 rgba(240, 86, 48, 0.3);
     border-radius: 0.32rem;
-    padding: 0 1.33333rem;
     height: 0.64rem;
     line-height: 0.64rem;
     font-size: 0.34667rem;
     color: #ffffff;
-    margin-top: 0.13333rem;
+    margin-top: 0.52rem;
   }
   /* 国际学校入学能力免费评估 */
   .assess {
@@ -1785,66 +1829,6 @@ input[type="submit"] {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     font-size: 0.32rem;
-    /*.grade {
-        .grade-select {
-          display: none;
-        }
-        .grade-replace {
-          cursor: default;
-          overflow: visible;
-          position: relative;
-          width: 100%;
-          text-align: left;
-          .current-type {
-            width: 100%;
-            height: pr(58px);
-            line-height: pr(58px);
-            background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/triangle.png") no-repeat 95% center #ffffff;
-            box-sizing: border-box;
-            color: #999999;
-            outline: none;
-            margin-bottom: 0;
-            border: solid 1px #dddddd;
-          }
-          .grade-options {
-            display: none;
-            list-style-type: none;
-            margin-top: 0;
-            position: absolute;
-            width: 100%;
-            background-color: #FFF;
-            z-index: 10;
-            color: #666666;
-            border: 1px solid $bg-color;
-            box-sizing: border-box;
-            li {
-              line-height: pr(58px);
-              padding: 0 pr(15px);
-              background-color: #FFF;
-              &:hover {
-                background-color: #dfe5ff;
-                color: $bg-color;
-              }
-            }
-          }
-        }
-        .download{
-          width: 360px;
-          height: 44px;
-          background-color: #ff4b02;
-
-          font-size: 16px;
-          line-height: 44px;
-          letter-spacing: 1px;
-          color: #ffffff;
-          text-align: center;
-          margin-top: 16px;
-          outline: none;
-          border: none;
-          cursor: pointer;
-          //@extend .hover-effect;
-        }
-      }*/
   }
   .assess .sign-in input {
     width: 100%;
