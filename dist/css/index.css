@@ -1,26 +1,32 @@
 @charset "UTF-8";
-.header {
+.all-school .tab-head .head-item, .goal-school .goal-cont .btn, .look-school .step .step-item .icon, .look-school .btn {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+
+.header, .visit .study .study-item, .good-teach, .all-school .tab-head, .all-school .tab-cont, .goal-school .goal-cont li, .assess .sign-in, .reading .reading-cont, .past-exam .exam-cont, .look-school .step, .school-fair .sign-in {
   zoom: 1;
 }
 
-.header:after {
+.header:after, .visit .study .study-item:after, .good-teach:after, .all-school .tab-head:after, .all-school .tab-cont:after, .goal-school .goal-cont li:after, .assess .sign-in:after, .reading .reading-cont:after, .past-exam .exam-cont:after, .look-school .step:after, .school-fair .sign-in:after {
   clear: both;
 }
 
-.header:before, .header:after {
+.header:before, .visit .study .study-item:before, .good-teach:before, .all-school .tab-head:before, .all-school .tab-cont:before, .goal-school .goal-cont li:before, .assess .sign-in:before, .reading .reading-cont:before, .past-exam .exam-cont:before, .look-school .step:before, .school-fair .sign-in:before, .header:after, .visit .study .study-item:after, .good-teach:after, .all-school .tab-head:after, .all-school .tab-cont:after, .goal-school .goal-cont li:after, .assess .sign-in:after, .reading .reading-cont:after, .past-exam .exam-cont:after, .look-school .step:after, .school-fair .sign-in:after {
   content: "";
   display: table;
 }
 
 body {
-  font-size: 0.21333rem;
   color: #444444;
-  padding-bottom: 2.26667rem;
 }
 
 .wrap {
+  width: 1200px;
   margin: 0 auto;
   overflow: hidden;
+  position: relative;
 }
 
 p {
@@ -108,15 +114,36 @@ input[type="submit"] {
   border: none;
 }
 
+/* 公共标题 */
+.title {
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+}
+
+.title img {
+  height: 100%;
+}
+
+/* 公共副标题 */
+.subhead {
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 56px;
+  text-align: center;
+}
+
 /* 弹窗 */
 .popup {
   display: none;
 }
 
 .header {
-  width: 1100px;
-  margin: 0 auto;
-  border: 1px solid red;
+  padding-top: 13px;
+  padding-bottom: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .header .logo {
@@ -126,38 +153,1030 @@ input[type="submit"] {
 .header .detail {
   float: left;
   color: #888888;
+  width: 144px;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 14px;
+  margin-left: 15px;
+}
+
+.header .nav {
+  float: left;
+  font-size: 16px;
+  line-height: 16px;
+  color: #333333;
+  margin-top: 24px;
+}
+
+.header .nav .nav-item {
+  padding: 0 25px;
+  border-right: 1px dashed #4b4b4b;
+  cursor: pointer;
+}
+
+.header .nav .nav-item.active {
+  color: #f05630;
+}
+
+.header .nav .nav-item:last-child {
+  border-right: none;
+}
+
+.header .mobile {
+  float: right;
+  margin-top: 18px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #f05630;
+}
+
+.header .mobile .icon {
+  float: left;
+  width: 28px;
+  height: 28px;
+  background: url("../images/tel.png") no-repeat;
+}
+
+.header .mobile .tel {
+  float: left;
+}
+
+.wap-nav {
+  display: none;
+}
+
+.banner {
+  background: url("../images/pc-banner.png") no-repeat center;
+  background-size: cover;
+  padding-top: 364px;
+  padding-bottom: 54px;
+}
+
+.banner .btn {
+  width: 360px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 24px;
+  border: solid 2px #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 14px;
+  margin-left: 36%;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.banner .btn .tel {
+  float: left;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 46px;
+}
+
+.banner .btn .know {
+  float: right;
+  width: 180px;
+  height: 50px;
+  background-color: #f84949;
+  border-radius: 24px;
+  margin-top: -2px;
+  margin-right: -2px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.wap-banner {
+  display: none;
+}
+
+/* 预约探校 */
+.visit {
+  padding-top: 36px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.visit .study {
+  width: 319px;
+  height: 266px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 12px 0 rgba(37, 59, 163, 0.15);
+          box-shadow: 0 0 12px 0 rgba(37, 59, 163, 0.15);
+  border-radius: 12px;
+  float: left;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.visit .study .study-item img {
+  height: 85px;
+  float: left;
+  margin-left: 14px;
+}
+
+.visit .study .study-item .item-detail {
+  width: 144px;
+  float: right;
+  line-height: 36px;
+  margin-top: 15px;
+}
+
+.visit .study .study-item .item-detail .item-title {
+  font-size: 24px;
+}
+
+.visit .study .study-item .item-detail p {
+  font-size: 16px;
+  color: #888888;
+}
+
+.visit .study .study-item:first-child {
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.visit .study .study-item:nth-of-type(2) {
+  margin-bottom: 14px;
+}
+
+.visit .appoint {
+  width: 767px;
+  height: 266px;
+  border-radius: 12px;
+  background: url("../images/info.png") no-repeat;
+  float: right;
+  padding: 28px 29px 21px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.visit .appoint .sign-in {
+  width: 451px;
+  float: right;
+}
+
+.visit .appoint .sign-in input {
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  border: solid 1px #e6e6e6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 13px;
+  border-radius: 9px;
+  background-color: #fdfdfd;
+  font-size: 16px;
+}
+
+.visit .appoint .sign-in .user-name {
+  width: 255px;
+  height: 64px;
+  float: left;
+  margin-right: 13px;
+}
+
+.visit .appoint .sign-in .grade {
+  width: 183px;
+  height: 64px;
+  float: right;
+}
+
+.visit .appoint .sign-in input[type='submit'] {
+  background-image: -webkit-gradient(linear, right top, left top, from(#ff5c34), to(#ffb454)), -webkit-gradient(linear, left top, left bottom, from(#ff623b), to(#ff623b));
+  background-image: linear-gradient(-90deg, #ff5c34 0%, #ffb454 100%), linear-gradient(#ff623b, #ff623b);
+  -webkit-box-shadow: 0 3px 4px 0 rgba(240, 86, 48, 0.3);
+          box-shadow: 0 3px 4px 0 rgba(240, 86, 48, 0.3);
+  font-size: 26px;
+  color: #ffffff;
+  border: none;
+}
+
+.wap-study {
+  display: none;
+}
+
+.wap-appoint {
+  display: none;
+}
+
+.banner-2 {
+  display: none;
+}
+
+/* 直击家长焦虑，解决孩子上学难题 */
+.good-teach {
+  height: 719px;
+  padding-top: 1.18667rem;
+  margin-bottom: 0.13333rem;
+  background: url("../images/pc-bg_1.png") no-repeat center;
+  background-size: 100% 100%;
+}
+
+.good-teach .title {
+  color: #ffffff;
+  margin-bottom: 13px;
+}
+
+.good-teach .cont {
+  width: 830px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.good-teach .cont .cont-item {
+  height: 132px;
+  overflow: hidden;
+  padding-top: 26px;
+  padding-left: 20px;
+  padding-right: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.good-teach .cont .cont-item .num {
+  float: left;
+  width: 0.42667rem;
+  height: 0.42667rem;
+  line-height: 0.42667rem;
+  background-image: linear-gradient(-55deg, #f05830 0%, #fed700 100%), linear-gradient(#ffffff, #ffffff);
+  background-blend-mode: normal, normal;
+  -webkit-box-shadow: 0 0.02667rem 0.06667rem 0 rgba(240, 89, 48, 0.75);
+          box-shadow: 0 0.02667rem 0.06667rem 0 rgba(240, 89, 48, 0.75);
+  font-size: 0.37333rem;
+  color: #fefeff;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 0.26667rem;
+}
+
+.good-teach .cont .cont-item .item-detail {
+  float: left;
+}
+
+.good-teach .cont .cont-item .item-detail .detail-title {
+  font-size: 0.37333rem;
+  font-weight: bold;
+  line-height: 0.32rem;
+  color: #fed700;
+  margin-bottom: 0.16rem;
+}
+
+.good-teach .cont .cont-item .item-detail p {
+  font-size: 0.29333rem;
+  line-height: 0.4rem;
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.good-teach .cont .cont-item:nth-child(odd) {
+  padding-left: 59px;
+}
+
+.good-teach .cont .cont-item:nth-of-type(3) {
+  padding-top: 16px;
+}
+
+.good-teach .cont .cont-item:nth-of-type(4) {
+  padding-top: 18px;
+}
+
+/* 国际学校大全 */
+.all-school {
+  width: 1200px;
+  text-align: center;
+  padding-top: 0.26667rem;
+  margin-bottom: 0.4rem;
+  /* 深圳国际学校 */
+}
+
+.all-school .title {
+  background-size: contain;
+  padding-top: 0.13333rem;
+  margin-bottom: 0.26667rem;
+}
+
+.all-school .title span {
+  font-weight: bold;
+  font-size: 0.48rem;
+  line-height: 0.32rem;
+  color: #444444;
+}
+
+.all-school .tab-head .head-item {
+  width: 230px;
+  height: 58px;
+  line-height: 58px;
+  border: solid 1px #dddddd;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  font-size: 22px;
+  color: #444444;
+  margin-right: 10px;
+}
+
+.all-school .tab-head .head-item.active {
+  background: #6a80ea;
+  border: solid 1px #6a80ea;
+  color: #ffffff;
+}
+
+.all-school .tab-head .head-item:hover {
+  background: #6a80ea;
+  border: solid 1px #6a80ea;
+  color: #ffffff;
+}
+
+.all-school .tab-cont {
+  padding: 0 10px;
+  margin-top: 20px;
+  margin-right: -27px;
+  display: none;
+}
+
+.all-school .tab-cont .cont-item {
+  background-color: #ffffff;
+  border: solid 1px #d0d9ff;
+  padding: 28px 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 0 0.16rem 0 rgba(106, 128, 234, 0.4);
+          box-shadow: 0 0 0.16rem 0 rgba(106, 128, 234, 0.4);
+  text-align: center;
+  width: 269px;
+  height: 355px;
+  float: left;
+  margin-right: 27px;
+  margin-bottom: 46px;
+  position: relative;
+}
+
+.all-school .tab-cont .cont-item img {
+  margin-bottom: 0.10667rem;
+}
+
+.all-school .tab-cont .cont-item .item-title {
+  font-size: 20px;
+  line-height: 24px;
+  display: block;
+}
+
+.all-school .tab-cont .cont-item li {
+  font-size: 16px;
+  text-align: left;
+}
+
+.all-school .tab-cont .cont-item li span {
+  color: #888888;
+}
+
+.all-school .tab-cont .cont-item li strong {
+  font-weight: normal;
+}
+
+.all-school .tab-cont .cont-item .btn {
+  display: block;
+  width: 140px;
+  height: 40px;
+  background-color: #6a80ea;
+  border-radius: 8px 8px 0 0;
+  font-size: 16px;
+  line-height: 40px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.all-school .tab-cont.active {
+  display: block;
+}
+
+.all-school .tab-cont .more {
+  display: block;
+  width: 710px;
+  height: 58px;
+  line-height: 58px;
+  border: solid 1px #d0d9ff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  font-size: 20px;
+  color: #6a80ea;
+}
+
+.all-school .sz .cont-item img {
+  width: 73%;
+}
+
+.all-school .sz .cont-item .item-title {
+  color: #3c55d1;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 0.26667rem;
+  margin-bottom: 0.26667rem;
+}
+
+.all-school .sz .more {
+  display: block;
+  width: 205%;
+  height: 0.77333rem;
+  line-height: 0.77333rem;
+  border: solid 1px #d0d9ff;
+  font-size: 0.32rem;
+  color: #6a80ea;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 0.18667rem;
+}
+
+/* 如何顺利进入心仪国际学校 */
+.goal-school {
+  width: 100%;
+  background: url("../images/pc-bg_2.png") no-repeat top;
+  padding-top: 79px;
+}
+
+.goal-school .title {
+  background-size: contain;
+  padding-top: 0.13333rem;
+}
+
+.goal-school .title span {
+  font-weight: bold;
+  font-size: 0.48rem;
+  line-height: 0.32rem;
+  color: #ffffff;
+}
+
+.goal-school .goal-cont {
+  width: 1100px;
+  height: 490px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 0 0 12px 0 rgba(18, 38, 137, 0.4);
+          box-shadow: 0 0 12px 0 rgba(18, 38, 137, 0.4);
+  border-radius: 12px;
+  padding-left: 124px;
+  padding-top: 38px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url("../images/pc-bg_2-1.png") no-repeat #ffffff;
+  background-size: 100% 100%;
+}
+
+.goal-school .goal-cont li {
+  text-align: left;
+}
+
+.goal-school .goal-cont li .icon {
+  width: 32px;
+  height: 84px;
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/step.png") no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  padding-top: 12px;
+  padding-right: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 22px;
+  float: left;
+  margin-right: 30px;
+}
+
+.goal-school .goal-cont li .text {
+  float: left;
+}
+
+.goal-school .goal-cont li .text .text-title {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 32px;
+  color: #6a80ea;
+}
+
+.goal-school .goal-cont li .text p {
+  font-size: 18px;
+  color: #666666;
+}
+
+.goal-school .goal-cont .btn {
+  width: 399px;
+  height: 54px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#ff5c34), to(#ffb454)), -webkit-gradient(linear, left top, left bottom, from(#ff623b), to(#ff623b));
+  background-image: linear-gradient(-90deg, #ff5c34 0%, #ffb454 100%), linear-gradient(#ff623b, #ff623b);
+  -webkit-box-shadow: 0 3px 4px 0 rgba(240, 86, 48, 0.3);
+          box-shadow: 0 3px 4px 0 rgba(240, 86, 48, 0.3);
+  border-radius: 9px;
+  font-size: 22px;
+  line-height: 54px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* 国际学校入学能力免费评估 */
+.assess {
+  margin-top: 73px;
+  background: url("../images/pc-bg_3.png") no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 47px;
+}
+
+.assess .assess-title {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 0.56rem;
+  color: #ffffff;
+}
+
+.assess .assess-title strong {
+  color: #ffcc00;
+}
+
+.assess .exam {
+  font-size: 20px;
+  line-height: 42px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.assess .population {
+  width: 411px;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 42px;
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_6.png") no-repeat center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 42px;
+}
+
+.assess .sign-in {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  /*.grade {
+      .grade-select {
+        display: none;
+      }
+      .grade-replace {
+        cursor: default;
+        overflow: visible;
+        position: relative;
+        width: 100%;
+        text-align: left;
+        .current-type {
+          width: 100%;
+          height: pr(58px);
+          line-height: pr(58px);
+          background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/triangle.png") no-repeat 95% center #ffffff;
+          box-sizing: border-box;
+          color: #999999;
+          outline: none;
+          margin-bottom: 0;
+          border: solid 1px #dddddd;
+        }
+        .grade-options {
+          display: none;
+          list-style-type: none;
+          margin-top: 0;
+          position: absolute;
+          width: 100%;
+          background-color: #FFF;
+          z-index: 10;
+          color: #666666;
+          border: 1px solid $bg-color;
+          box-sizing: border-box;
+          li {
+            line-height: pr(58px);
+            padding: 0 pr(15px);
+            background-color: #FFF;
+            &:hover {
+              background-color: #dfe5ff;
+              color: $bg-color;
+            }
+          }
+        }
+      }
+      .download{
+        width: 360px;
+        height: 44px;
+        background-color: #ff4b02;
+
+        font-size: 16px;
+        line-height: 44px;
+        letter-spacing: 1px;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 16px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        //@extend .hover-effect;
+      }
+    }*/
+}
+
+.assess .sign-in input {
+  width: 292px;
+  height: 55px;
+  background-color: #ffffff;
+  border-radius: 9px;
+  float: left;
+  margin-right: 10px;
+}
+
+.assess .sign-in select {
+  float: left;
+  width: 292px;
+  height: 55px;
+  background-color: #ffffff;
+  border-radius: 9px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.assess .sign-in input[type='submit'] {
+  width: 292px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#ff5c34), to(#ffb454)), -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+  background-image: linear-gradient(-90deg, #ff5c34 0%, #ffb454 100%), linear-gradient(#ffffff, #ffffff);
+  -webkit-box-shadow: 0 3px 4px 0 rgba(240, 86, 48, 0.3);
+          box-shadow: 0 3px 4px 0 rgba(240, 86, 48, 0.3);
+  margin-right: 0;
+  color: #ffffff;
+}
+
+/* 多维度评估 全方位解读 */
+.reading {
+  width: 643px;
+  height: 460px;
+  background: url("../images/pc-bg_4.png") no-repeat center;
+  background-size: 100% 100%;
+  margin-top: 65px;
+  margin-bottom: 77px;
+}
+
+.reading .reading-title {
+  font-size: 35px;
+  line-height: 69px;
+  font-weight: bold;
+  padding-left: 55px;
+  color: #ffffff;
+}
+
+.reading .explain {
+  width: 306px;
+  padding-left: 260px;
+  padding-top: 70px;
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 0.45333rem;
+}
+
+.reading .reading-cont .cont-btn {
+  width: 238px;
+  height: 80px;
+  float: left;
+  background-image: -webkit-gradient(linear, right top, left top, from(#f05830), to(#f09930)), -webkit-gradient(linear, left top, left bottom, from(#f05830), to(#f05830));
+  background-image: linear-gradient(-90deg, #f05830 0%, #f09930 100%), linear-gradient(#f05830, #f05830);
+  border-radius: 0 47px 47px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 38px;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+  margin-right: 9px;
+}
+
+.reading .reading-cont .report {
+  width: 320px;
+  height: 103px;
+  float: left;
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_7.png") no-repeat center;
+  background-size: 100% 100%;
+  padding: 23px 65px 31px 44px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  color: #ffffff;
+  opacity: 0.7;
+  margin-right: 61px;
+}
+
+.wap-reading {
+  display: none;
+}
+
+/* 从国际学校面试真题 */
+.past-exam {
+  width: 665px;
+  height: 405px;
+  background: url("../images/pc-bg_5.png") no-repeat;
+  position: absolute;
+  top: 108px;
+  right: 0;
+  padding-top: 33px;
+  padding-left: 51px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.past-exam .title {
+  font-size: 34px;
+  line-height: 36px;
+  color: #444444;
+}
+
+.past-exam .subhead {
+  color: #666666;
+  margin-bottom: 0.38667rem;
+}
+
+.past-exam .exam-cont {
+  margin-bottom: 0.4rem;
+}
+
+.past-exam .exam-cont .cont-item {
+  width: 180px;
+  height: 148px;
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/interview_1.png");
+  background-size: 100% 100%;
+  float: left;
+  margin-right: 20px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.past-exam .exam-cont .cont-item img {
+  width: 0.85333rem;
+  margin-bottom: 0.26667rem;
+}
+
+.past-exam .exam-cont .cont-item span {
+  display: block;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.past-exam .exam-cont .cont-item:nth-of-type(2) {
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/interview_2.png");
+  background-size: 100% 100%;
+}
+
+.past-exam .exam-cont .cont-item:nth-of-type(2) img {
+  width: 0.69333rem;
+}
+
+.past-exam .exam-cont .cont-item:nth-of-type(3) {
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/interview_3.png");
+  background-size: 100% 100%;
+}
+
+.past-exam .exam-cont .cont-item:nth-of-type(3) img {
+  width: 0.64rem;
+  margin-bottom: 0.2rem;
+}
+
+.past-exam .exam-btn {
+  display: block;
+  width: 272px;
+  height: 44px;
+  border-radius: 22px;
+  border: solid 1px #f95b34;
+  font-size: 24px;
+  line-height: 44px;
+  color: #ee5f3c;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wap-past-exam {
+  display: none;
+}
+
+/* 预约看校流程 */
+.look-school {
+  width: 1096px;
+  text-align: center;
+  padding-bottom: 0.4rem;
+}
+
+.look-school .title {
+  background-size: contain;
+  padding-top: 0.13333rem;
+}
+
+.look-school .title span {
+  font-size: 0.48rem;
+  font-weight: bold;
+  line-height: 0.48rem;
+}
+
+.look-school .step {
+  margin: 0.6rem 0.26667rem 0.52rem;
+}
+
+.look-school .step .step-item {
+  width: 20%;
+  float: left;
+}
+
+.look-school .step .step-item .icon {
+  width: 100%;
+  height: 115px;
+  background: url("../images/pc-icon_10.png") no-repeat;
+  background-size: 100% 100%;
+  font-size: 0.48rem;
+  line-height: 1.33333rem;
+  color: #ffffff;
+}
+
+.look-school .step .step-item span {
+  display: block;
+  font-size: 0.29333rem;
+  line-height: 0.48rem;
+}
+
+.look-school .btn {
+  width: 347px;
+  height: 58px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#ff5c34), to(#ffb454)), -webkit-gradient(linear, left top, left bottom, from(#ff623b), to(#ff623b));
+  background-image: linear-gradient(-90deg, #ff5c34 0%, #ffb454 100%), linear-gradient(#ff623b, #ff623b);
+  background-blend-mode: normal, normal;
+  -webkit-box-shadow: 0 3px 4px 0 rgba(240, 86, 48, 0.3);
+          box-shadow: 0 3px 4px 0 rgba(240, 86, 48, 0.3);
+  border-radius: 9px;
+  font-size: 24px;
+  line-height: 58px;
+  color: #ffffff;
+}
+
+/* 第十一届国际学校择校展 */
+.school-fair {
+  padding: 60px 0.26667rem 0.38667rem;
+  background: url("../images/pc-bg_5.png") no-repeat top;
+  background-size: contain;
+  text-align: center;
+}
+
+.school-fair .assess-title {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 0.56rem;
+  color: #f05630;
+}
+
+.school-fair .assess-title strong {
+  font-size: 38px;
+  background-color: #f05630;
+  color: #ffffff;
+  border-radius: 45% 50%;
+  padding: 0 0.05333rem;
+  margin: 0 -0.02667rem;
+}
+
+.school-fair .exam {
+  font-size: 26px;
+  line-height: 42px;
+}
+
+.school-fair .population {
+  width: 420px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 0.56rem;
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_12.png") no-repeat center;
+  background-size: cover;
+  margin-bottom: 0.22667rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.school-fair .population img {
+  width: 0.13333rem;
+  height: 0.18667rem;
+  vertical-align: middle;
+}
+
+.school-fair .population span {
+  color: rgba(255, 255, 255, 0.28);
+  margin-left: 0.10667rem;
+  padding-right: 0.06667rem;
+}
+
+.school-fair .sign-in {
+  width: 909px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 12px 0 rgba(99, 99, 99, 0.4);
+          box-shadow: 0 0 12px 0 rgba(99, 99, 99, 0.4);
+  border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 35px 37px 35px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.school-fair .sign-in .fair-title {
+  margin-bottom: 34px;
+}
+
+.school-fair .sign-in .fair-title span {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 32px;
+}
+
+.school-fair .sign-in .fair-title span strong {
+  color: #f05830;
+}
+
+.school-fair .sign-in input {
+  width: 286px;
+  height: 53px;
+  background-color: #ffffff;
+  border-radius: 9px;
+  border: solid 1px #dddddd;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  margin-right: 13px;
+  float: left;
+}
+
+.school-fair .sign-in input[type='submit'] {
+  width: 241px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#ff5c34), to(#ffb454)), -webkit-gradient(linear, left top, left bottom, from(#ff623b), to(#ff623b));
+  background-image: linear-gradient(-90deg, #ff5c34 0%, #ffb454 100%), linear-gradient(#ff623b, #ff623b);
+  -webkit-box-shadow: 0 3px 4px 0 rgba(240, 86, 48, 0.3);
+          box-shadow: 0 3px 4px 0 rgba(240, 86, 48, 0.3);
+  color: #ffffff;
+  border: none;
+  margin-right: 0;
+}
+
+.pc-footer {
+  height: 89px;
+  background-color: #f6f6f6;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 21px;
+  padding-bottom: 26px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.pc-footer .footer-nav {
+  margin-bottom: 10px;
+}
+
+.pc-footer .footer-nav a {
+  padding: 0 20px;
+}
+
+.copyright {
+  display: none;
+}
+
+.footer-fixed {
+  display: none;
 }
 
 /*mobile*/
 @media screen and (max-width: 750px) {
-  body, html, div, h1, h2, h3, p, span, strong, a, em {
+  body {
+    padding-bottom: 2.26667rem;
+  }
+  body, html, div, input, select, option, ul, li, h1, h2, h3, p, span, strong, a, em {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+  }
+  /* 去除前后伪类 */
+  .all-school .tab-cont:before, .all-school .tab-cont:after {
+    display: none;
   }
   .wrap {
     max-width: 10rem;
   }
-  /*%one {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-  }
-  %in-b {
-    display: inline-block;
-    *zoom: 1;
-    *display: inline;
-  }
-  %clearfix {
-    zoom: 1;
-    &:after {
-      clear: both;
-    }
-    &:before,
-    &:after {
-      content: "";
-      display: table;
-    }
-  }*/
   /* 公共标题 */
   .title {
     font-weight: bold;
@@ -274,24 +1293,27 @@ input[type="submit"] {
     padding: 0.21333rem 0.26667rem;
   }
   .header .logo {
-    width: 2.22667rem;
+    width: 2.08rem;
     height: 0.73333rem;
   }
   .header .detail {
-    float: left;
     width: 2.93333rem;
     font-size: 0.21333rem;
     line-height: 0.4rem;
-    margin-left: 0.13333rem;
+    margin-left: 0.26667rem;
+    margin-top: 0;
+  }
+  .header .nav {
+    display: none;
   }
   .header .mobile {
-    float: right;
-    height: 0.37333rem;
-    margin-top: 0.2rem;
+    margin-top: 0.21333rem;
     color: #f05630;
   }
-  .header .mobile img {
-    height: 100%;
+  .header .mobile .icon {
+    width: 0.37333rem;
+    height: 0.37333rem;
+    background-size: 100% 100%;
   }
   .header .mobile .tel {
     font-weight: bold;
@@ -299,7 +1321,7 @@ input[type="submit"] {
     line-height: 0.32rem;
     color: #f05630;
   }
-  .nav {
+  .wap-nav {
     padding: 0 0.26667rem;
     border-top: 1px solid #dddddd;
     display: -webkit-box;
@@ -308,21 +1330,25 @@ input[type="submit"] {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .nav .nav-item {
+  .wap-nav .nav-item {
     line-height: 0.93333rem;
     font-size: 0.4rem;
   }
-  .nav .nav-item.active {
+  .wap-nav .nav-item.active {
     color: #f05630;
   }
   .banner {
+    display: none;
+  }
+  .wap-banner {
+    display: block;
     padding-top: 4.2rem;
     padding-bottom: 1.13333rem;
     padding-left: 2.05333rem;
     background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/banner_1.png") no-repeat center;
     background-size: 100% 100%;
   }
-  .banner .btn {
+  .wap-banner .btn {
     width: 4.8rem;
     height: 0.66667rem;
     line-height: 0.66667rem;
@@ -332,7 +1358,7 @@ input[type="submit"] {
             box-sizing: border-box;
     padding-left: 0.26667rem;
   }
-  .banner .btn .tel {
+  .wap-banner .btn .tel {
     float: left;
     font-size: 0.32rem;
     line-height: 0.64rem;
@@ -340,7 +1366,7 @@ input[type="submit"] {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-  .banner .btn .know {
+  .wap-banner .btn .know {
     float: right;
     background: #f84949;
     border-radius: 0.33333rem;
@@ -353,7 +1379,11 @@ input[type="submit"] {
     line-height: 0.66667rem;
   }
   /* 预约探校 */
-  .study {
+  .visit {
+    display: none;
+  }
+  .wap-study {
+    display: block;
     padding: 0.4rem 0.25333rem 0.4rem 0rem;
     background-color: #ffffff;
     -webkit-box-shadow: 0 0 0.16rem 0 rgba(37, 59, 163, 0.32);
@@ -368,24 +1398,24 @@ input[type="submit"] {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .study .study-item img {
+  .wap-study .study-item img {
     height: 1.29333rem;
     float: left;
     margin-right: 0.25333rem;
   }
-  .study .study-item .item-detail {
+  .wap-study .study-item .item-detail {
     float: right;
     line-height: 0.48rem;
     margin-top: 0.2rem;
   }
-  .study .study-item .item-detail .item-title {
+  .wap-study .study-item .item-detail .item-title {
     font-size: 0.42667rem;
   }
-  .study .study-item .item-detail p {
+  .wap-study .study-item .item-detail p {
     font-size: 0.32rem;
     color: #888888;
   }
-  .study .study-item:first-child {
+  .wap-study .study-item:first-child {
     border-right: 1px solid #dddddd;
     padding-right: 0.2rem;
     margin-right: 0.2rem;
@@ -394,10 +1424,11 @@ input[type="submit"] {
     margin: 0 0.26667rem 0.26667rem;
   }
   /* 立即预约 */
-  .appoint {
+  .wap-appoint {
+    display: block;
     margin: 0 0.26667rem;
   }
-  .appoint input {
+  .wap-appoint input {
     width: 100%;
     height: 0.77333rem;
     line-height: 0.77333rem;
@@ -406,7 +1437,7 @@ input[type="submit"] {
             box-sizing: border-box;
     margin-bottom: 0.26667rem;
   }
-  .appoint input[type='submit'] {
+  .wap-appoint input[type='submit'] {
     background-image: -webkit-gradient(linear, right top, left top, from(#f05630), to(#f09c30)), -webkit-gradient(linear, left top, left bottom, from(#f05630), to(#f05630));
     background-image: linear-gradient(-90deg, #f05630 0%, #f09c30 100%), linear-gradient(#f05630, #f05630);
     background-blend-mode: normal, normal;
@@ -421,7 +1452,7 @@ input[type="submit"] {
   /* 直击家长焦虑，解决孩子上学难题 */
   .good-teach {
     height: 10.01333rem;
-    padding-top: 1.18667rem;
+    padding-top: 1.14667rem;
     margin-bottom: 0.13333rem;
     background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/bg_1.png") no-repeat center;
     background-size: 100% 100%;
@@ -431,19 +1462,22 @@ input[type="submit"] {
     margin-bottom: 0.10667rem;
   }
   .good-teach .subhead {
-    margin-bottom: 1.12rem;
+    font-size: 0.34667rem;
+    margin-bottom: 0.78667rem;
+    line-height: 0.32rem;
     color: #ffffff;
     opacity: 0.36;
   }
-  .good-teach .cont-item {
-    margin: 0 0.66667rem 0 0.48rem;
+  .good-teach .cont {
+    width: 8.98667rem;
+  }
+  .good-teach .cont .cont-item {
     padding-top: 0.37333rem;
     padding-left: 0.45333rem;
-    height: 1.73333rem;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    padding-right: 0.93333rem;
+    height: 1.57333rem;
   }
-  .good-teach .cont-item .num {
+  .good-teach .cont .cont-item .num {
     float: left;
     width: 0.42667rem;
     height: 0.42667rem;
@@ -458,45 +1492,46 @@ input[type="submit"] {
     border-radius: 50%;
     margin-right: 0.26667rem;
   }
-  .good-teach .cont-item .item-detail {
+  .good-teach .cont .cont-item .item-detail {
     float: left;
   }
-  .good-teach .cont-item .item-detail .detail-title {
+  .good-teach .cont .cont-item .item-detail .detail-title {
     font-size: 0.37333rem;
     font-weight: bold;
     line-height: 0.32rem;
     color: #fed700;
     margin-bottom: 0.16rem;
   }
-  .good-teach .cont-item .item-detail p {
+  .good-teach .cont .cont-item .item-detail p {
     font-size: 0.29333rem;
     line-height: 0.4rem;
     color: #ffffff;
     opacity: 0.6;
   }
-  .good-teach .cont-item:nth-child(even) {
-    padding-left: 1.10667rem;
+  .good-teach .cont .cont-item:nth-child(odd) {
+    padding-left: 0.4rem;
   }
-  .good-teach .cont-item:nth-of-type(2) {
-    height: 2rem;
+  .good-teach .cont .cont-item:nth-child(even) {
+    padding-left: 0.8rem;
   }
-  .good-teach .cont-item:nth-of-type(2) .item-detail {
+  .good-teach .cont .cont-item:nth-of-type(2) .item-detail {
     width: 4.16rem;
   }
-  .good-teach .cont-item:nth-of-type(3) {
+  .good-teach .cont .cont-item:nth-of-type(3) {
     padding-top: 0.13333rem;
   }
-  .good-teach .cont-item:nth-of-type(3) .item-detail {
+  .good-teach .cont .cont-item:nth-of-type(3) .item-detail {
     width: 5.65333rem;
   }
-  .good-teach .cont-item:nth-of-type(4) {
+  .good-teach .cont .cont-item:nth-of-type(4) {
     padding-top: 0.22667rem;
   }
-  .good-teach .cont-item:nth-of-type(4) .item-detail {
-    width: 6.72rem;
+  .good-teach .cont .cont-item:nth-of-type(4) .item-detail {
+    width: 6.26667rem;
   }
   /* 国际学校大全 */
   .all-school {
+    width: 100%;
     text-align: center;
     padding-top: 0.26667rem;
     margin-bottom: 0.4rem;
@@ -527,6 +1562,7 @@ input[type="submit"] {
             align-items: center;
   }
   .all-school .tab-head .head-item {
+    width: 3.06667rem;
     height: 0.77333rem;
     line-height: 0.77333rem;
     border: solid 1px #dddddd;
@@ -535,6 +1571,7 @@ input[type="submit"] {
     cursor: pointer;
     font-size: 0.34667rem;
     padding: 0 0.45333rem;
+    margin-right: 0;
   }
   .all-school .tab-head .head-item.active {
     background: #6a80ea;
@@ -547,6 +1584,7 @@ input[type="submit"] {
     color: #ffffff;
   }
   .all-school .tab-cont {
+    width: 100%;
     padding: 0 0.26667rem;
     margin-top: 0.26667rem;
     grid-template-columns: repeat(2, 1fr);
@@ -555,12 +1593,18 @@ input[type="submit"] {
     display: none;
   }
   .all-school .tab-cont .cont-item {
+    width: 4.58667rem;
+    height: 5.54667rem;
     background-color: #ffffff;
     -webkit-box-shadow: 0 0 0.16rem 0 rgba(106, 128, 234, 0.4);
             box-shadow: 0 0 0.16rem 0 rgba(106, 128, 234, 0.4);
     border: solid 1px #d0d9ff;
     padding: 0.28rem 0.28rem 0.41333rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     text-align: center;
+    margin-right: 0;
+    margin-bottom: 0;
   }
   .all-school .tab-cont .cont-item img {
     margin-bottom: 0.10667rem;
@@ -587,9 +1631,14 @@ input[type="submit"] {
     background-color: #6a80ea;
     color: #ffffff;
     margin-top: 0.26667rem;
+    border-radius: 0;
+    bottom: 0.4rem;
   }
   .all-school .tab-cont.active {
     display: grid;
+  }
+  .all-school .tab-cont .more {
+    display: none;
   }
   .all-school .sz .cont-item img {
     width: 73%;
@@ -614,14 +1663,15 @@ input[type="submit"] {
   }
   /* 如何顺利进入心仪国际学校 */
   .goal-school {
+    width: 100%;
     background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/bg_2.png") no-repeat top;
     background-size: contain;
-    padding-top: 1.05333rem;
-    padding-bottom: 0.13333rem;
+    padding: 1.05333rem 0.26667rem 0.13333rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     text-align: center;
   }
   .goal-school .title {
-    width: 8.52rem;
     background-size: contain;
     padding-top: 0.13333rem;
   }
@@ -632,15 +1682,16 @@ input[type="submit"] {
     color: #ffffff;
   }
   .goal-school .subhead {
-    color: #ffffff;
-    opacity: 0.36;
+    margin-bottom: 0.38667rem;
   }
   .goal-school .goal-cont {
+    width: 100%;
+    height: 8.10667rem;
     background-color: #ffffff;
+    background-image: none;
     -webkit-box-shadow: 0 0 12px 0 rgba(18, 38, 137, 0.4);
             box-shadow: 0 0 12px 0 rgba(18, 38, 137, 0.4);
     border-radius: 12px;
-    margin: 0.38667rem 0.26667rem 0;
     padding-top: 0.26667rem;
     padding-left: 0.54667rem;
     padding-bottom: 0.54667rem;
@@ -678,6 +1729,7 @@ input[type="submit"] {
     color: #666666;
   }
   .goal-school .goal-cont .btn {
+    width: 4rem;
     background-image: -webkit-gradient(linear, right top, left top, from(#f05630), to(#f09c30)), -webkit-gradient(linear, left top, left bottom, from(#f08830), to(#f08830));
     background-image: linear-gradient(-90deg, #f05630 0%, #f09c30 100%), linear-gradient(#f08830, #f08830);
     background-blend-mode: normal, normal;
@@ -709,6 +1761,7 @@ input[type="submit"] {
   }
   .assess .assess-title strong {
     color: #ffcc00;
+    font-size: 0.48rem;
   }
   .assess .exam {
     font-size: 0.34667rem;
@@ -726,9 +1779,72 @@ input[type="submit"] {
     margin-bottom: 0.22667rem;
   }
   .assess .sign-in {
+    width: 100%;
     background-color: #ffffff;
     padding: 0.4rem 0.28rem 0.13333rem 0.25333rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-size: 0.32rem;
+    /*.grade {
+        .grade-select {
+          display: none;
+        }
+        .grade-replace {
+          cursor: default;
+          overflow: visible;
+          position: relative;
+          width: 100%;
+          text-align: left;
+          .current-type {
+            width: 100%;
+            height: pr(58px);
+            line-height: pr(58px);
+            background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/triangle.png") no-repeat 95% center #ffffff;
+            box-sizing: border-box;
+            color: #999999;
+            outline: none;
+            margin-bottom: 0;
+            border: solid 1px #dddddd;
+          }
+          .grade-options {
+            display: none;
+            list-style-type: none;
+            margin-top: 0;
+            position: absolute;
+            width: 100%;
+            background-color: #FFF;
+            z-index: 10;
+            color: #666666;
+            border: 1px solid $bg-color;
+            box-sizing: border-box;
+            li {
+              line-height: pr(58px);
+              padding: 0 pr(15px);
+              background-color: #FFF;
+              &:hover {
+                background-color: #dfe5ff;
+                color: $bg-color;
+              }
+            }
+          }
+        }
+        .download{
+          width: 360px;
+          height: 44px;
+          background-color: #ff4b02;
+
+          font-size: 16px;
+          line-height: 44px;
+          letter-spacing: 1px;
+          color: #ffffff;
+          text-align: center;
+          margin-top: 16px;
+          outline: none;
+          border: none;
+          cursor: pointer;
+          //@extend .hover-effect;
+        }
+      }*/
   }
   .assess .sign-in input {
     width: 100%;
@@ -739,68 +1855,15 @@ input[type="submit"] {
             box-sizing: border-box;
     margin-bottom: 0.26667rem;
   }
-  .assess .sign-in .grade .grade-select {
-    display: none;
-  }
-  .assess .sign-in .grade .grade-replace {
-    cursor: default;
-    overflow: visible;
-    position: relative;
-    width: 100%;
-    text-align: left;
-  }
-  .assess .sign-in .grade .grade-replace .current-type {
+  .assess .sign-in select {
     width: 100%;
     height: 0.77333rem;
-    line-height: 0.77333rem;
-    background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/triangle.png") no-repeat 95% center #ffffff;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    color: #999999;
-    outline: none;
-    margin-bottom: 0;
     border: solid 1px #dddddd;
   }
-  .assess .sign-in .grade .grade-replace .grade-options {
-    display: none;
-    list-style-type: none;
-    margin-top: 0;
-    position: absolute;
-    width: 100%;
-    background-color: #FFF;
-    z-index: 10;
-    color: #666666;
-    border: 1px solid #6a80ea;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  .assess .sign-in .grade .grade-replace .grade-options li {
-    line-height: 0.77333rem;
-    padding: 0 0.2rem;
-    background-color: #FFF;
-  }
-  .assess .sign-in .grade .grade-replace .grade-options li:hover {
-    background-color: #dfe5ff;
-    color: #6a80ea;
-  }
-  .assess .sign-in .grade .download {
-    width: 360px;
-    height: 44px;
-    background-color: #ff4b02;
-    font-size: 16px;
-    line-height: 44px;
-    letter-spacing: 1px;
-    color: #ffffff;
-    text-align: center;
-    margin-top: 16px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-  }
   .assess .sign-in input[type='submit'] {
+    width: 100%;
     background-image: -webkit-gradient(linear, right top, left top, from(#f05630), to(#f09c30)), -webkit-gradient(linear, left top, left bottom, from(#f05630), to(#f05630));
     background-image: linear-gradient(-90deg, #f05630 0%, #f09c30 100%), linear-gradient(#f05630, #f05630);
-    background-blend-mode: normal, normal;
     -webkit-box-shadow: 0 0.04rem 0.05333rem 0 rgba(240, 86, 48, 0.3);
             box-shadow: 0 0.04rem 0.05333rem 0 rgba(240, 86, 48, 0.3);
     border-radius: 0.37333rem;
@@ -812,27 +1875,31 @@ input[type="submit"] {
   }
   /* 多维度评估 全方位解读 */
   .reading {
+    display: none;
+  }
+  .wap-reading {
+    display: block;
     margin: 0 0.26667rem 0.10667rem;
     padding-right: 0.26667rem;
     height: 6.48rem;
     background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/bg_4.png") no-repeat center;
     background-size: 100% 100%;
   }
-  .reading .reading-title {
+  .wap-reading .reading-title {
     font-size: 0.48rem;
     font-weight: bold;
     line-height: 0.93333rem;
     padding-left: 0.76rem;
     color: #ffffff;
   }
-  .reading .explain {
+  .wap-reading .explain {
     padding-left: 3.86667rem;
     padding-top: 0.77333rem;
     color: #ffffff;
     font-size: 0.34667rem;
     margin-bottom: 0.45333rem;
   }
-  .reading .reading-cont .cont-btn {
+  .wap-reading .reading-cont .cont-btn {
     float: left;
     background-image: -webkit-gradient(linear, right top, left top, from(#f05830), to(#f09930)), -webkit-gradient(linear, left top, left bottom, from(#f05830), to(#f05830));
     background-image: linear-gradient(-90deg, #f05830 0%, #f09930 100%), linear-gradient(#f05830, #f05830);
@@ -844,26 +1911,32 @@ input[type="submit"] {
     color: #ffffff;
     margin-top: 0.66667rem;
   }
-  .reading .reading-cont .report {
+  .wap-reading .reading-cont .report {
     float: right;
+    width: 4.66667rem;
+    height: 1.38667rem;
     background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_7.png") no-repeat center;
     background-size: 100% 100%;
-    padding: 0.26667rem 0.26667rem 0.26667rem 0.53333rem;
+    padding: 0.26667rem 0rem 0.26667rem 0.4rem;
     font-size: 0.29333rem;
     color: #ffffff;
     opacity: 0.7;
   }
   /* 从国际学校面试真题 */
   .past-exam {
+    display: none;
+  }
+  .wap-past-exam {
+    display: block;
     text-align: center;
     padding-top: 0.26667rem;
     padding-bottom: 0.4rem;
   }
-  .past-exam .subhead {
+  .wap-past-exam .subhead {
     color: #666666;
     margin-bottom: 0.38667rem;
   }
-  .past-exam .exam-cont {
+  .wap-past-exam .exam-cont {
     padding: 0 0.26667rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -873,7 +1946,7 @@ input[type="submit"] {
             justify-content: space-between;
     margin-bottom: 0.4rem;
   }
-  .past-exam .exam-cont .cont-item {
+  .wap-past-exam .exam-cont .cont-item {
     width: 32%;
     height: 2.18667rem;
     background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/interview_1.png");
@@ -892,31 +1965,32 @@ input[type="submit"] {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .past-exam .exam-cont .cont-item img {
+  .wap-past-exam .exam-cont .cont-item img {
     width: 0.85333rem;
     margin-bottom: 0.26667rem;
   }
-  .past-exam .exam-cont .cont-item span {
+  .wap-past-exam .exam-cont .cont-item span {
     font-size: 0.34667rem;
     line-height: 0.4rem;
     color: #ffffff;
   }
-  .past-exam .exam-cont .cont-item:nth-of-type(2) {
+  .wap-past-exam .exam-cont .cont-item:nth-of-type(2) {
     background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/interview_2.png");
     background-size: 100% 100%;
   }
-  .past-exam .exam-cont .cont-item:nth-of-type(2) img {
+  .wap-past-exam .exam-cont .cont-item:nth-of-type(2) img {
     width: 0.69333rem;
   }
-  .past-exam .exam-cont .cont-item:nth-of-type(3) {
+  .wap-past-exam .exam-cont .cont-item:nth-of-type(3) {
     background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/interview_3.png");
     background-size: 100% 100%;
   }
-  .past-exam .exam-cont .cont-item:nth-of-type(3) img {
+  .wap-past-exam .exam-cont .cont-item:nth-of-type(3) img {
     width: 0.64rem;
     margin-bottom: 0.2rem;
   }
-  .past-exam .exam-btn {
+  .wap-past-exam .exam-btn {
+    display: inline-block;
     width: 4rem;
     height: 0.64rem;
     border-radius: 0.32rem;
@@ -931,7 +2005,6 @@ input[type="submit"] {
     padding-bottom: 0.4rem;
   }
   .look-school .title {
-    width: 5.98667rem;
     background-size: contain;
     padding-top: 0.13333rem;
   }
@@ -993,6 +2066,7 @@ input[type="submit"] {
     border-radius: 45% 50%;
     padding: 0 0.05333rem;
     margin: 0 -0.02667rem;
+    font-size: 0.48rem;
   }
   .school-fair .exam {
     font-size: 0.34667rem;
@@ -1018,18 +2092,19 @@ input[type="submit"] {
     padding-right: 0.06667rem;
   }
   .school-fair .sign-in {
+    width: 100%;
     background-color: #ffffff;
     -webkit-box-shadow: 0 0 12px 0 rgba(99, 99, 99, 0.4);
             box-shadow: 0 0 12px 0 rgba(99, 99, 99, 0.4);
     border-radius: 12px;
     padding: 0.52rem 0.54667rem 0.26667rem 0.52rem;
   }
-  .school-fair .sign-in .title {
+  .school-fair .sign-in .fair-title {
     background-size: contain;
     padding-bottom: 0.08rem;
     margin-bottom: 0.4rem;
   }
-  .school-fair .sign-in .title span {
+  .school-fair .sign-in .fair-title span {
     font-family: NotoSansHans-Black;
     font-size: 0.48rem;
     font-weight: bold;
@@ -1043,8 +2118,11 @@ input[type="submit"] {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin-bottom: 0.26667rem;
+    font-size: 0.34667rem;
+    border-radius: 0;
   }
   .school-fair .sign-in input[type='submit'] {
+    width: 100%;
     background-image: -webkit-gradient(linear, right top, left top, from(#f05630), to(#f09c30)), -webkit-gradient(linear, left top, left bottom, from(#f05630), to(#f05630));
     background-image: linear-gradient(-90deg, #f05630 0%, #f09c30 100%), linear-gradient(#f05630, #f05630);
     background-blend-mode: normal, normal;
@@ -1056,7 +2134,11 @@ input[type="submit"] {
     line-height: 0.48rem;
     color: #ffffff;
   }
+  .pc-footer {
+    display: none;
+  }
   .copyright {
+    display: block;
     font-size: 0.34667rem;
     line-height: 0.48rem;
     color: #999999;
@@ -1081,7 +2163,8 @@ input[type="submit"] {
     background-color: #dddddd;
     vertical-align: middle;
   }
-  .footer {
+  .footer-fixed {
+    display: block;
     position: fixed;
     bottom: 0;
     width: 10rem;
@@ -1090,12 +2173,12 @@ input[type="submit"] {
     left: 0;
     right: 0;
   }
-  .footer .footer-cont {
+  .footer-fixed .footer-cont {
     position: relative;
     text-align: center;
     font-size: 0.42667rem;
   }
-  .footer .footer-cont a {
+  .footer-fixed .footer-cont a {
     display: block;
     width: 38%;
     height: 1.30667rem;
@@ -1104,18 +2187,18 @@ input[type="submit"] {
             box-sizing: border-box;
     color: #ffffff;
   }
-  .footer .footer-cont a img {
+  .footer-fixed .footer-cont a img {
     width: 0.53333rem;
     height: 0.53333rem;
     vertical-align: middle;
   }
-  .footer .footer-cont a:first-child {
+  .footer-fixed .footer-cont a:first-child {
     float: left;
     padding-left: 0.48rem;
     padding-right: 0.76rem;
     line-height: 1.30667rem;
   }
-  .footer .footer-cont a:nth-of-type(2) {
+  .footer-fixed .footer-cont a:nth-of-type(2) {
     background-color: #f05830;
     height: 2.05333rem;
     border-radius: 2.05333rem 2.05333rem 0 0;
@@ -1129,7 +2212,7 @@ input[type="submit"] {
     padding-top: 0.54667rem;
     padding-bottom: 0.44rem;
   }
-  .footer .footer-cont a:nth-of-type(3) {
+  .footer-fixed .footer-cont a:nth-of-type(3) {
     float: right;
     background-color: #f09330;
     padding-left: 0.76rem;

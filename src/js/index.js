@@ -1,10 +1,9 @@
 $(function () {
-  theaMsForm($('.sign-in'), function ($data) {
-    // console.log(11111111);
-    if ($data.flag == 'ok') {
-      $(".popup").css("display", "none");
-    } else if ($data.flag == 'no') {}
-  });
+  // theaMsForm($('.sign-in'), function ($data) {
+  //   if ($data.flag == 'ok') {
+  //     $(".popup").css("display", "none");
+  //   } else if ($data.flag == 'no') {}
+  // });
 
   /* tab 切换 */
   function tabSwitch(ele, content) {
