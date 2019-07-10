@@ -1710,6 +1710,7 @@ input[type="submit"] {
   }
   .goal-school .goal-cont {
     width: 100%;
+    height: auto;
     background-color: #ffffff;
     background-image: none;
     -webkit-box-shadow: 0 0 12px 0 rgba(18, 38, 137, 0.4);
