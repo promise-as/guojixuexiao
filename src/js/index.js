@@ -9,7 +9,7 @@ $(function () {
   function tabSwitch(ele, content) {
     $(ele).each(function (index) {
       var that = this;
-      $(that).click(function () {
+      $(that).mouseenter(function () {
         $(that).addClass('active').siblings().removeClass('active');
         $($(content)[index]).addClass('active').siblings().removeClass('active');
       });
@@ -55,4 +55,3 @@ $(function () {
     $('.popup').css('display', 'block');
   });
 });
-

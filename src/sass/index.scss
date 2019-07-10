@@ -26,9 +26,6 @@ $padding-size: pr(20px);
     display: table;
   }
 }
-body {
-  color: #444444;
-}
 .wrap{
   width: 1200px;
   margin: 0 auto;
@@ -104,8 +101,6 @@ input[type="submit"] {
 .title{
   font-weight: bold;
   font-size: 36px;
-  //height: 40px;
-  //line-height: 24px;
   text-align: center;
   img{
     height: 100%;
@@ -120,10 +115,6 @@ input[type="submit"] {
   text-align: center;
 }
 
-/* 弹窗 */
-.popup{
-  //display: none;
-}
 .header{
   @extend %clearfix;
   //border: 1px solid red;
@@ -172,7 +163,7 @@ input[type="submit"] {
       float: left;
       width: 28px;
       height: 28px;
-      background: url("../images/tel.png") no-repeat;
+      background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/tel.png") no-repeat;
     }
     .tel{
       float: left;
@@ -184,7 +175,7 @@ input[type="submit"] {
 }
 .banner{
   //height: 450px;
-  background: url("../images/pc-banner.png") no-repeat center;
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/pc-banner.png") no-repeat center;
   background-size: cover;
   padding-top: 364px;
   padding-bottom: 54px;
@@ -228,7 +219,7 @@ input[type="submit"] {
   padding-bottom: 10px;
   .study{
     width: 319px;
-    height: 266px;
+    //height: 266px;
     background-color: #ffffff;
     box-shadow: 0 0 12px 0 rgba(37, 59, 163, 0.15);
     border-radius: 12px;
@@ -250,6 +241,7 @@ input[type="submit"] {
         margin-top: 15px;
         .item-title{
           font-size: 24px;
+          cursor: pointer;
         }
         p{
           font-size: 16px;
@@ -269,9 +261,9 @@ input[type="submit"] {
   }
   .appoint{
     width: 767px;
-    height: 266px;
+    //height: 266px;
     border-radius: 12px;
-    background: url("../images/info.png") no-repeat;
+    background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/info.png") no-repeat;
     float: right;
     padding: 28px 29px 21px 0;
     box-sizing: border-box;
@@ -329,9 +321,8 @@ input[type="submit"] {
 /* 直击家长焦虑，解决孩子上学难题 */
 .good-teach{
   height: 719px;
-  padding-top: pr(89px);
-  margin-bottom: pr(10px);
-  background: url("../images/pc-bg_1.png") no-repeat center;
+  padding-top: 90px;
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/pc-bg_1.png") no-repeat center;
   background-size: 100% 100%;
 
   @extend %clearfix;
@@ -355,9 +346,9 @@ input[type="submit"] {
       box-sizing: border-box;
       .num{
         float: left;
-        width: pr(32px);
-        height: pr(32px);
-        line-height: pr(32px);
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
         background-image: linear-gradient(-55deg,
             #f05830 0%,
             #fed700 100%),
@@ -365,10 +356,9 @@ input[type="submit"] {
                 #ffffff,
                 #ffffff);
         background-blend-mode: normal, normal;
-        box-shadow: 0 pr(2px) pr(5px) 0
-        rgba(240, 89, 48, 0.75);
+        box-shadow: 0 2px 5px 0 rgba(240, 89, 48, 0.75);
 
-        font-size: pr(28px);
+        font-size: 28px;
         color: #fefeff;
         text-align: center;
         border-radius: 50%;
@@ -377,16 +367,15 @@ input[type="submit"] {
       .item-detail{
         float: left;
         .detail-title{
-          font-size: pr(28px);
+          font-size: 28px;
           font-weight: bold;
-          line-height: pr(24px);
+          line-height: 28px;
           color: #fed700;
-          //@extend %in-b;
-          margin-bottom: pr(12px);
+          margin-bottom: 12px;
         }
         p{
-          font-size: pr(22px);
-          line-height: pr(30px);
+          font-size: 22px;
+          line-height: 24px;
           color: #ffffff;
           opacity: 0.6;
         }
@@ -419,17 +408,12 @@ input[type="submit"] {
 .all-school{
   width: 1200px;
   text-align: center;
-  padding-top: $padding-size;
-  margin-bottom: pr(30px);
+  padding-top: 60px;
+  margin-bottom: 50px;
   .title{
-    //background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_5.png") no-repeat top center;
     background-size: contain;
-    padding-top: pr(10px);
-    margin-bottom: pr(20px);
+    margin-bottom: 29px;
     span{
-      font-weight: bold;
-      font-size: pr(36px);
-      line-height: pr(24px);
       color: #444444;
     }
   }
@@ -437,10 +421,11 @@ input[type="submit"] {
     @extend %clearfix;
     .head-item{
       @extend %in-b;
-      width: 230px;
+      //width: 230px;
       height: 58px;
       line-height: 58px;
       border: solid 1px #dddddd;
+      padding: 0 49px;
       box-sizing: border-box;
       cursor: pointer;
       font-size: 22px;
@@ -469,7 +454,6 @@ input[type="submit"] {
       border: solid 1px #d0d9ff;
       padding: 28px 25px;
       box-sizing: border-box;
-      box-shadow: 0 0 pr(12px) 0 rgba(106, 128, 234, 0.4);
       text-align: center;
       width: 269px;
       height: 355px;
@@ -478,7 +462,7 @@ input[type="submit"] {
       margin-bottom: 46px;
       position: relative;
       img{
-        margin-bottom: pr(8px);
+        margin-bottom: 10px;
       }
       .item-title{
         font-size: 20px;
@@ -512,6 +496,9 @@ input[type="submit"] {
         left: 0;
         right: 0;
         margin: auto;
+      }
+      &:hover{
+        box-shadow: 0 0 12px 0 rgba(106, 128, 234, 0.4);
       }
     }
     &.active{
@@ -552,17 +539,12 @@ input[type="submit"] {
 .goal-school{
   width: 100%;
   //height: 422px;
-  background: url("../images/pc-bg_2.png") no-repeat top;
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/pc-bg_2.png") no-repeat top;
   padding-top: 79px;
   .title{
-    //background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_5.png") no-repeat top center;
     background-size: contain;
     padding-top: pr(10px);
-    //margin-bottom: pr(20px);
     span{
-      font-weight: bold;
-      font-size: pr(36px);
-      line-height: pr(24px);
       color: #ffffff;
     }
   }
@@ -570,7 +552,7 @@ input[type="submit"] {
 
   .goal-cont{
     width: 1100px;
-    //height: 490px;
+    height: 490px;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 0 12px 0 rgba(18, 38, 137, 0.4);
@@ -578,7 +560,7 @@ input[type="submit"] {
     padding-left: 124px;
     padding-top: 38px;
     box-sizing: border-box;
-    background: url("../images/pc-bg_2-1.png") no-repeat #ffffff;
+    background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/pc-bg_2-1.png") no-repeat #ffffff;
     background-size: 100% 100%;
     li{
       text-align: left;
@@ -587,7 +569,7 @@ input[type="submit"] {
       .icon{
         width: 32px;
         height: 70px;
-        background: url("../images/step.png") no-repeat;
+        background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/step.png") no-repeat;
         background-size: 100% 100%;
         text-align: center;
         padding-top: 20px;
@@ -602,6 +584,8 @@ input[type="submit"] {
       .text{
         float: left;
         margin-top: 16px;
+        width: 92%;
+        @extend %one;
         .text-title{
           font-size: 22px;
           font-weight: bold;
@@ -639,7 +623,7 @@ input[type="submit"] {
 /* 国际学校入学能力免费评估 */
 .assess{
   margin-top: 73px;
-  background: url("../images/pc-bg_3.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/pc-bg_3.png") no-repeat;
   background-size: 100% 100%;
   text-align: center;
   padding-top: 40px;
@@ -647,7 +631,7 @@ input[type="submit"] {
   .assess-title{
     font-size: 36px;
     font-weight: bold;
-    line-height: pr(42px);
+    line-height: 42px;
     color: #ffffff;
     strong{
       color: #ffcc00;
@@ -664,7 +648,7 @@ input[type="submit"] {
     color: #ffffff;
     font-size: 24px;
     line-height: 42px;
-    background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_6.png") no-repeat center;
+    background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/icon_6.png") no-repeat center;
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
@@ -689,11 +673,11 @@ input[type="submit"] {
       float: left;
       width: 292px;
       height: 55px;
-      background-color: #ffffff;
       border-radius: 9px;
       margin-right: 10px;
       outline: none;
       color: #999999;
+      background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/triangle.png") no-repeat 92% center #ffffff;
     }
     input[type='submit']{
       width: 292px;
@@ -714,7 +698,7 @@ input[type="submit"] {
 .reading{
   width: 643px;
   height: 460px;
-  background: url("../images/pc-bg_4.png") no-repeat center;
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/pc-bg_4.png") no-repeat center;
   background-size: 100% 100%;
   margin-top: 65px;
   margin-bottom: 77px;
@@ -758,7 +742,7 @@ input[type="submit"] {
       width: 320px;
       height: 103px;
       float: left;
-      background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_7.png") no-repeat center;
+      background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/icon_7.png") no-repeat center;
       background-size: 100% 100%;
       padding: 23px 65px 31px 44px;
       box-sizing: border-box;
@@ -777,7 +761,7 @@ input[type="submit"] {
 .past-exam{
   width: 665px;
   height: 405px;
-  background: url("../images/pc-bg_5.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/pc-bg_5.png") no-repeat;
   position: absolute;
   top: 108px;
   right: 0;
@@ -799,7 +783,7 @@ input[type="submit"] {
     .cont-item{
       width: 180px;
       height: 148px;
-      background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/interview_1.png");
+      background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/interview_1.png");
       background-size: 100% 100%;
       float: left;
       margin-right: 20px;
@@ -818,14 +802,14 @@ input[type="submit"] {
         color: #ffffff;
       }
       &:nth-of-type(2){
-        background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/interview_2.png");
+        background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/interview_2.png");
         background-size: 100% 100%;
         img{
           width: pr(52px);
         }
       }
       &:nth-of-type(3){
-        background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/interview_3.png");
+        background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/interview_3.png");
         background-size: 100% 100%;
         img{
           width: pr(48px);
@@ -858,16 +842,7 @@ input[type="submit"] {
   text-align: center;
   padding-bottom: pr(30px);
   .title{
-    //@extend %in-b;
-    //width: pr(449px);
-    //background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_9.png") no-repeat top center;
-    background-size: contain;
     padding-top: pr(10px);
-    span{
-      font-size: pr(36px);
-      font-weight: bold;
-      line-height: pr(36px);
-    }
   }
   .step{
     margin: pr(45px) $padding-size pr(39px);
@@ -879,7 +854,7 @@ input[type="submit"] {
         @extend %in-b;
         width: 100%;
         height: 115px;
-        background: url("../images/pc-icon_10.png") no-repeat;
+        background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/pc-icon_10.png") no-repeat;
         background-size: 100% 100%;
         font-size: pr(36px);
         line-height: pr(100px);
@@ -913,10 +888,10 @@ input[type="submit"] {
   }
 }
 
-/* 第十一届国际学校择校展 */
+/* 第十二届国际学校择校展 */
 .school-fair{
   padding: 60px $padding-size pr(29px);
-  background: url("../images/pc-bg_6.png") no-repeat top;
+  background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/pc-bg_6.png") no-repeat top;
   background-size: contain;
   text-align: center;
   .assess-title{
@@ -942,7 +917,7 @@ input[type="submit"] {
     color: #ffffff;
     font-size: 18px;
     line-height: pr(42px);
-    background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_12.png") no-repeat center;
+    background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/icon_12.png") no-repeat center;
     background-size: cover;
     margin-bottom: pr(17px);
     margin-left: auto;
@@ -1064,7 +1039,7 @@ input[type="submit"] {
     left: 50%;
     z-index: 1;
     padding: 154px 15px 16px;
-    background: url("../images/pc-popup.png") no-repeat;
+    background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/pc-popup.png") no-repeat;
     background-size: 100% 100%;
     .close{
       width: 16px;
@@ -1159,7 +1134,7 @@ input[type="submit"] {
   body{
     padding-bottom: pr(170px);
   }
-  body, html, div, input, select, option, ul, li, h1, h2, h3, p, span, strong, a, em{
+  body, html, div, input, select, option, ul, li, h1, h2, h3, p, span, strong, a{
     box-sizing: border-box;
   }
 
@@ -1205,7 +1180,7 @@ input[type="submit"] {
       margin-right: auto;
       z-index: 500;
       padding: pr(210px) $padding-size pr(22px);
-      background: url("../images/popup.png") no-repeat;
+      background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/popup.png") no-repeat;
       background-size: 100% 100%;
       .close{
         width: pr(20px);
@@ -1241,7 +1216,7 @@ input[type="submit"] {
             }
             span{
               font-size: pr(26px);
-              line-height: pr(30px);
+              line-height: pr(26px);
             }
             &.active{
               .circle{
@@ -1344,7 +1319,7 @@ input[type="submit"] {
     padding-top: pr(315px);
     padding-bottom: pr(85px);
     padding-left: pr(154px);
-    background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/banner_1.png") no-repeat center;
+    background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/banner_1.png") no-repeat center;
     background-size: 100% 100%;
     .btn{
       width: pr(360px);
@@ -1380,15 +1355,12 @@ input[type="submit"] {
     display: none;
   }
   .wap-study{
-    display: block;
     padding: pr(30px) pr(19px) pr(30px) pr(0px);
     background-color: #ffffff;
     box-shadow: 0 0 pr(12px) 0 rgba(37, 59, 163, 0.32);
     border-radius: pr(12px);
-    //position: absolute;
     margin: pr(-35px) $padding-size pr(30px);
     z-index: 30;
-    //@extend %clearfix;
     display: flex;
     justify-content: center;
     .study-item{
@@ -1451,8 +1423,7 @@ input[type="submit"] {
   .good-teach{
     height: pr(751px);
     padding-top: pr(86px);
-    margin-bottom: pr(10px);
-    background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/bg_1.png") no-repeat center;
+    background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/bg_1.png") no-repeat center;
     background-size: 100% 100%;
     .title{
       color: #ffffff;
@@ -1468,7 +1439,6 @@ input[type="submit"] {
     .cont{
       width: pr(674px);
       .cont-item{
-        //margin: 0 pr(50px) 0 pr(36px);
         padding-top: pr(28px);
         padding-left: pr(34px);
         padding-right: pr(70px);
@@ -1501,7 +1471,6 @@ input[type="submit"] {
             font-weight: bold;
             line-height: pr(24px);
             color: #fed700;
-            //@extend %in-b;
             margin-bottom: pr(12px);
           }
           p{
@@ -1545,10 +1514,7 @@ input[type="submit"] {
     padding-top: $padding-size;
     margin-bottom: pr(30px);
     .title{
-      //@extend %in-b;
       width: pr(663px);
-      //background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_5.png") no-repeat top center;
-      background-size: contain;
       padding-top: pr(10px);
       margin-bottom: pr(20px);
       span{
@@ -1564,14 +1530,14 @@ input[type="submit"] {
       justify-content: space-between;
       align-items: center;
       .head-item{
-        width: pr(230px);
+        //width: pr(230px);
         height: pr(58px);
         line-height: pr(58px);
         border: solid 1px #dddddd;
+        padding: 0 pr(34px);
         box-sizing: border-box;
         cursor: pointer;
         font-size: pr(26px);
-        padding: 0 pr(34px);
         margin-right: 0;
         &.active{
           background: $bg-color;
@@ -1655,16 +1621,13 @@ input[type="submit"] {
   /* 如何顺利进入心仪国际学校 */
   .goal-school{
     width: 100%;
-    background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/bg_2.png") no-repeat top;
+    background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/bg_2.png") no-repeat top;
     background-size: contain;
     padding: pr(79px) $padding-size pr(10px);
     box-sizing: border-box;
     text-align: center;
     .title{
-      //background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_5.png") no-repeat top center;
-      background-size: contain;
       padding-top: pr(10px);
-      //margin-bottom: pr(20px);
       span{
         font-weight: bold;
         font-size: pr(36px);
@@ -1678,7 +1641,6 @@ input[type="submit"] {
 
     .goal-cont{
       width: 100%;
-      //height: pr(608px);
       background-color: #ffffff;
       background-image: none;
       box-shadow: 0 0 12px 0 rgba(18, 38, 137, 0.4);
@@ -1688,12 +1650,11 @@ input[type="submit"] {
       padding-bottom: pr(41px);
       li{
         text-align: left;
-        //@extend %clearfix;
         .icon{
           //@extend %in-b;
           width: pr(32px);
           height: pr(90px);
-          background: url("../images/wap-step.png") no-repeat;
+          background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/wap-step.png") no-repeat;
           background-size: 100% 100%;
           text-align: center;
           padding-top: pr(14px);
@@ -1708,6 +1669,7 @@ input[type="submit"] {
         .text{
           float: left;
           margin-top: pr(9px);
+          width: 88%;
           .text-title{
             font-size: pr(30px);
             font-weight: bold;
@@ -1731,7 +1693,6 @@ input[type="submit"] {
         background-blend-mode: normal, normal;
         box-shadow: 0 pr(3px) pr(4px) 0 rgba(240, 86, 48, 0.3);
         border-radius: pr(24px);
-        //padding: 0 pr(100px);
         height: pr(48px);
         line-height: pr(48px);
         font-size: pr(26px);
@@ -1744,7 +1705,7 @@ input[type="submit"] {
   .assess{
     margin: 0 $padding-size pr(30px); 
     padding: pr(30px) $padding-size;
-    background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/bg_3.png") no-repeat;
+    background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/bg_3.png") no-repeat;
     background-size: 100% 100%;
     text-align: center;
     border-top: $padding-size solid transparent; // 为描点显示顶部有空隙
@@ -1767,12 +1728,11 @@ input[type="submit"] {
       opacity: 0.7;
     }
     .population{
-      //@extend %in-b;
       width: pr(407px);
       color: #ffffff;
       font-size: pr(24px);
       line-height: pr(42px);
-      background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_6.png") no-repeat center;
+      background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/icon_6.png") no-repeat center;
       background-size: cover;
       margin-bottom: pr(17px);
     }
@@ -1794,6 +1754,7 @@ input[type="submit"] {
         width: 100%;
         height: pr(58px);
         border: solid 1px #dddddd;
+
       }
       input[type='submit']{
         width: 100%;
@@ -1822,7 +1783,7 @@ input[type="submit"] {
     margin: 0 $padding-size pr(8px);
     padding-right: $padding-size;
     height: pr(486px);
-    background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/bg_4.png") no-repeat center;
+    background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/bg_4.png") no-repeat center;
     background-size: 100% 100%;
     .reading-title{
       font-size: pr(36px);
@@ -1839,9 +1800,7 @@ input[type="submit"] {
       margin-bottom: pr(34px);
     }
     .reading-cont{
-      //@extend %clearfix;
       .cont-btn{
-        //@extend %in-b;
         float: left;
         background-image: linear-gradient(-90deg,
             #f05830 0%,
@@ -1863,7 +1822,7 @@ input[type="submit"] {
         float: right;
         width: pr(350px);
         height: pr(104px);
-        background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_7.png") no-repeat center;
+        background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/icon_7.png") no-repeat center;
         background-size: 100% 100%;
         padding: $padding-size pr(0px) $padding-size pr(30px);
 
@@ -1892,10 +1851,9 @@ input[type="submit"] {
       justify-content: space-between;
       margin-bottom: pr(30px);
       .cont-item{
-        //width: pr(220px);
         width: 32%;
         height: pr(164px);
-        background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/interview_1.png");
+        background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/interview_1.png");
         background-size: 100% 100%;
         display: flex;
         flex-direction: column;
@@ -1911,14 +1869,14 @@ input[type="submit"] {
           color: #ffffff;
         }
         &:nth-of-type(2){
-          background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/interview_2.png");
+          background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/interview_2.png");
           background-size: 100% 100%;
           img{
             width: pr(52px);
           }
         }
         &:nth-of-type(3){
-          background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/interview_3.png");
+          background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/interview_3.png");
           background-size: 100% 100%;
           img{
             width: pr(48px);
@@ -1943,8 +1901,6 @@ input[type="submit"] {
     text-align: center;
     padding-bottom: pr(30px);
     .title{
-      //background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_9.png") no-repeat top center;
-      background-size: contain;
       padding-top: pr(10px);
       span{
         font-size: pr(36px);
@@ -1954,15 +1910,13 @@ input[type="submit"] {
     }
     .step{
       margin: pr(45px) $padding-size pr(39px);
-      //@extend %clearfix;
       .step-item{
         width: 20%;
         float: left;
         .icon{
-          //@extend %in-b;
           height: pr(109px);
           width: 100%;
-          background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_10.png");
+          background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/icon_10.png");
           background-size: 100% 100%;
           font-size: pr(36px);
           line-height: pr(100px);
@@ -1975,14 +1929,12 @@ input[type="submit"] {
       }
     }
     .btn{
-      //@extend %in-b;
       background-image: linear-gradient(-90deg,
           #f05630 0%,
           #f09c30 100%),
       linear-gradient(
               #f08830,
               #f08830);
-      background-blend-mode: normal, normal;
       box-shadow: 0 pr(3px) pr(4px) 0 rgba(240, 86, 48, 0.3);
       border-radius: pr(24px);
       padding: 0 pr(74px);
@@ -1996,11 +1948,10 @@ input[type="submit"] {
   /* 第十一届国际学校择校展 */
   .school-fair{
     padding: $padding-size $padding-size pr(29px);
-    background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/bg_5.png") no-repeat top;
+    background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/bg_5.png") no-repeat top;
     background-size: contain;
     text-align: center;
     .assess-title{
-      //@extend %in-b;
       font-size: pr(36px);
       font-weight: bold;
       line-height: pr(42px);
@@ -2020,15 +1971,13 @@ input[type="submit"] {
     }
     .population{
       width: pr(420px);
-      //@extend %in-b;
       color: #ffffff;
       font-size: pr(18px);
       line-height: pr(42px);
-      background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_12.png") no-repeat center;
+      background: url("https://img.thea.cn/public/platform/thea/201906/hbj/adaptive-school/images/icon_12.png") no-repeat center;
       background-size: cover;
       margin-bottom: pr(17px);
       img{
-        //@extend %in-b;
         width: pr(10px);
         height: pr(14px);
         vertical-align: middle;
@@ -2046,14 +1995,10 @@ input[type="submit"] {
       border-radius: 12px;
       padding: pr(39px) pr(41px) pr(20px) pr(39px);
       .fair-title{
-        //@extend %in-b;
-        //width: pr(400px);
-        //background: url("https://img.thea.cn/public/platform/thea/201906/hbj/gjxx/images/icon_13.png") no-repeat bottom center;
         background-size: contain;
         padding-bottom: pr(6px);
         margin-bottom: pr(30px);
         span{
-          font-family: NotoSansHans-Black;
           font-size: pr(36px);
           font-weight: bold;
           line-height: pr(20px);
@@ -2098,13 +2043,11 @@ input[type="submit"] {
     text-align: center;
     margin: 0 $padding-size;
     .company{
-      //position: absolute;
       display: flex;
       justify-content: space-between;
       align-items: center;
       &:before, &:after{
         content: '';
-        //@extend %in-b;
         width: pr(116px);
         height: 1px;
         background-color: #dddddd;
@@ -2116,7 +2059,6 @@ input[type="submit"] {
     display: block;
     position: fixed;
     bottom: 0;
-    //width: 100%;
     width: pr(750px);
 
     margin: 0 auto;
@@ -2127,8 +2069,6 @@ input[type="submit"] {
       position: relative;
       text-align: center;
       font-size: pr(32px);
-      //height: pr(154px);
-      //@extend %clearfix;
       a{
         display: block;
         width: 38%;
